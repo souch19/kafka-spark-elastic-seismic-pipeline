@@ -11,9 +11,7 @@ Pipeline de donnees complet pour la collecte, la transmission, la transformation
 ## Architecture
 
 ```
-USGS API ──> Kafka ──> Logstash ──> Elasticsearch ──> Kibana
-                                         |
-                                         └──> Spark
+![Architecture du pipeline](screenshots/pipeline.png)
 ```
 
 Le pipeline suit un modele de streaming en 5 etapes :
