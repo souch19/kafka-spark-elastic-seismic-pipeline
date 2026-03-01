@@ -136,6 +136,8 @@ pipeline-earthquakes/
 |   |-- queries/                        # Resultats des requetes ES (*_request.json, *_response.json, *_resume.txt)
 |   |-- spark/                          # Resultats Spark (*.json, *.csv)
 |
+|-- rapport/
+|   |-- rapport.pdf  
 |-- screenshots/                        # Captures d'ecran (Kibana, Kafka, ES, Spark)
 
 ```
