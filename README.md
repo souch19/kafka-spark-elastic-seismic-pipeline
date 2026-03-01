@@ -251,7 +251,7 @@ docker exec kafka kafka-consumer-groups --list --bootstrap-server localhost:9092
 # Logs Logstash
 docker logs logstash --tail 50
 
-# Verifier le consumer debug (optionnel)
+# Verifier le consumer debug
 python scripts/kafka_consumer.py
 ```
 
