@@ -2,7 +2,7 @@
 
 **Kafka / Logstash / ElasticStack / Spark**
 
-> Projet realise dans le cadre de l'UE *Indexation et visualisation de donnees massives* — Master, Universite Paris-Saclay / UVSQ.
+> Projet realise dans le cadre de l'UE *Indexation et visualisation de donnees massives* — Master DataScale - UVSQ / Universite Paris-Saclay .
 
 Pipeline de donnees complet pour la collecte, la transmission, la transformation, l'indexation, la visualisation et l'analyse de donnees sismiques mondiales a partir de l'API USGS Earthquake Hazards Program.
 
@@ -264,4 +264,4 @@ python scripts/kafka_consumer.py
 - **Souhil OUCHENE**
 
 
-Master — Universite Paris-Saclay / UVSQ — Fevrier 2026
+Master DataScale - UVSQ / Universite Paris-Saclay — Fevrier 2026
