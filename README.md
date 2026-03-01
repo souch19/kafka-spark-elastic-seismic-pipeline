@@ -47,7 +47,7 @@ Cela demarre 7 services : Zookeeper, Kafka, Elasticsearch, Logstash, Kibana, Spa
 
 ```bash
 # Verifier qu'ES est operationnel
-curl http://localhost:9200/_cluster/health?pretty
+curl.exe http://localhost:9200/_cluster/health?pretty
 ```
 
 ### 2. Creer l'index Elasticsearch
@@ -70,7 +70,7 @@ Le script commence par charger 12 mois d'historique par tranches mensuelles (ca 
 
 ```bash
 # Attendre que l'indexation soit terminee (verifier le nombre de documents)
-curl http://localhost:9200/earthquakes/_count
+curl.exe http://localhost:9200/earthquakes/_count
 
 python queries/run_queries.py
 ```
@@ -238,10 +238,10 @@ Le pipeline integre plusieurs mecanismes de robustesse pour gerer les aleas d'un
 
 ```bash
 # Etat du cluster ES
-curl http://localhost:9200/_cluster/health?pretty
+curl.exe http://localhost:9200/_cluster/health?pretty
 
 # Nombre de documents indexes
-curl http://localhost:9200/earthquakes/_count
+curl.exe http://localhost:9200/earthquakes/_count
 
 # Lister les topics Kafka
 docker exec kafka kafka-topics --list --bootstrap-server localhost:9092
