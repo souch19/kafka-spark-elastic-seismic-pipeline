@@ -10,9 +10,9 @@ Pipeline de donnees complet pour la collecte, la transmission, la transformation
 
 ## Architecture
 
-```
+
 ![Architecture du pipeline](screenshots/pipeline.png)
-```
+
 
 Le pipeline suit un modele de streaming en 5 etapes :
 
