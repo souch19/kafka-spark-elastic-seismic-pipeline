@@ -1,0 +1,824 @@
+\documentclass[12pt,a4paper]{article}
+
+% ── Packages ────────────────────────────────────────────────────
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[french]{babel}
+\usepackage{geometry}
+\usepackage{graphicx}
+\usepackage{listings}
+\usepackage{xcolor}
+\usepackage{hyperref}
+\usepackage{fancyhdr}
+\usepackage{titlesec}
+\usepackage{booktabs}
+\usepackage{float}
+\usepackage{caption}
+\usepackage{subcaption}
+\usepackage{amsmath}
+\usepackage{enumitem}
+\usepackage{tcolorbox}
+\usepackage{longtable}
+
+\geometry{margin=2.5cm}
+\hypersetup{colorlinks=true, linkcolor=blue!60!black, urlcolor=blue!70!black, citecolor=green!50!black}
+
+% ── Style des listings ──────────────────────────────────────────
+\definecolor{codebg}{RGB}{248, 248, 248}
+\definecolor{codegreen}{RGB}{40, 160, 80}
+\definecolor{codegray}{RGB}{100, 100, 100}
+\definecolor{codeblue}{RGB}{30, 100, 200}
+\definecolor{codepurple}{RGB}{140, 60, 180}
+
+\lstdefinestyle{mystyle}{
+    backgroundcolor=\color{codebg},
+    basicstyle=\ttfamily\scriptsize,
+    breaklines=true,
+    captionpos=b,
+    commentstyle=\color{codegreen}\itshape,
+    keywordstyle=\color{codeblue}\bfseries,
+    stringstyle=\color{codepurple},
+    numberstyle=\tiny\color{codegray},
+    numbers=left,
+    numbersep=8pt,
+    frame=single,
+    rulecolor=\color{codegray!30},
+    showstringspaces=false,
+    tabsize=2,
+    xleftmargin=1.5em,
+    framexleftmargin=1.5em,
+}
+\lstset{style=mystyle}
+
+\lstdefinestyle{json}{
+    basicstyle=\ttfamily\scriptsize,
+    breaklines=true,
+    frame=single,
+    backgroundcolor=\color{codebg},
+    xleftmargin=1.5em,
+    framexleftmargin=1.5em,
+    showstringspaces=false,
+}
+
+\lstdefinestyle{config}{
+    basicstyle=\ttfamily\scriptsize,
+    breaklines=true,
+    frame=single,
+    backgroundcolor=\color{codebg},
+    xleftmargin=1.5em,
+    framexleftmargin=1.5em,
+    commentstyle=\color{codegreen}\itshape,
+    showstringspaces=false,
+}
+
+% ── En-tête / Pied de page ─────────────────────────────────────
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[L]{\footnotesize UE Indexation et visualisation de données massives}
+\fancyhead[R]{\footnotesize Université Paris-Saclay}
+\fancyfoot[C]{\thepage}
+\renewcommand{\headrulewidth}{0.4pt}
+
+% ── Titre ───────────────────────────────────────────────────────
+\title{
+    \vspace{-1cm}
+    \textbf{Construction d'un Pipeline de Données}\\[0.3cm]
+    \Large Kafka, Logstash, ElasticStack \& Spark\\[0.3cm]
+    \large Données sismiques USGS
+}
+\author{
+    % TODO: Remplacer par vos noms
+    \textbf{Nom Étudiant 1} \and \textbf{Nom Étudiant 2}\\[0.2cm]
+    \normalsize Master --- Université Paris-Saclay / UVSQ\\
+    \normalsize UE Indexation et visualisation de données massives
+}
+\date{Février 2025}
+
+% ════════════════════════════════════════════════════════════════
+\begin{document}
+\maketitle
+\thispagestyle{fancy}
+
+\begin{abstract}
+Ce rapport présente la conception et l'implémentation d'un pipeline de données complet pour la collecte, la transmission, la transformation, l'indexation et l'analyse de données sismiques mondiales. Le pipeline s'appuie sur l'API publique USGS Earthquake, Apache Kafka pour le streaming, Logstash et Elasticsearch pour l'ETL et l'indexation, Kibana pour la visualisation, et Apache Spark pour le traitement distribué. L'ensemble de l'infrastructure est orchestré via Docker Compose. Les données couvrent une période de 12 mois afin de disposer d'un jeu de données conséquent pour l'analyse.
+\end{abstract}
+
+\tableofcontents
+\newpage
+
+% ════════════════════════════════════════════════════════════════
+\section{Introduction}
+
+L'objectif de ce projet est de construire un pipeline de données end-to-end capable de gérer un flux continu de données structurées. Nous avons choisi de travailler avec les données sismiques du programme USGS Earthquake Hazards, qui offrent plusieurs avantages : des données temporelles riches, des champs textuels exploitables pour les recherches full-text et floues, des coordonnées géographiques pour la cartographie, et des métriques numériques (magnitude, profondeur) adaptées aux agrégations et aux traitements distribués.
+
+\subsection{Architecture globale}
+
+L'architecture suit un modèle de streaming pipeline classique :
+
+\begin{enumerate}[noitemsep]
+    \item \textbf{Collecte} : un script Python interroge l'API USGS sur 12 mois d'historique et normalise les données.
+    \item \textbf{Transmission} : les événements sont publiés dans un topic Kafka.
+    \item \textbf{Transformation} : Logstash consomme le topic, enrichit les données (geo\_point, classification de sévérité) et les indexe dans Elasticsearch.
+    \item \textbf{Indexation} : Elasticsearch stocke les documents avec un mapping personnalisé (analyzers, n-gram, geo\_point).
+    \item \textbf{Visualisation} : Kibana exploite l'index pour créer des tableaux de bord interactifs.
+    \item \textbf{Traitement distribué} : Spark charge les données et effectue des analyses statistiques avancées.
+\end{enumerate}
+
+\begin{figure}[H]
+\centering
+\begin{tcolorbox}[colback=white, colframe=black!50, width=\textwidth]
+\centering
+\texttt{%
+USGS API $\longrightarrow$ Kafka $\longrightarrow$ Logstash $\longrightarrow$ Elasticsearch $\longrightarrow$ Kibana\\[0.2cm]
+\hspace{6.5cm} $\downarrow$\\[0.1cm]
+\hspace{6.5cm} Spark
+}
+\end{tcolorbox}
+\caption{Vue d'ensemble de l'architecture du pipeline}
+\end{figure}
+
+\subsection{Structure du projet}
+
+\begin{lstlisting}[caption={Arborescence du projet}]
+projet-pipeline-earthquakes/
+  docker-compose.yml
+  README.md
+  config/
+    elasticsearch/mapping.json
+    logstash/pipeline.conf
+  scripts/
+    kafka_producer.py
+    kafka_consumer.py
+    setup_elasticsearch.py
+    export_es_to_json.py
+    requirements.txt
+  queries/
+    run_queries.py
+  spark/
+    spark_processing.py
+  results/
+    queries/           # Resultats des 5 requetes ES
+    spark/             # Resultats des 5 analyses Spark (JSON + CSV)
+  screenshots/         # Captures Kibana uniquement
+  rapport/
+    rapport.tex
+\end{lstlisting}
+
+% ════════════════════════════════════════════════════════════════
+\section{Partie 1 : Collecte des données via l'API USGS}
+
+\subsection{Choix de l'API}
+
+L'API \textbf{USGS Earthquake Hazards Program}\footnote{\url{https://earthquake.usgs.gov/fdsnws/event/1/}} est une API REST publique qui ne nécessite aucune clé d'authentification. Elle retourne des données au format GeoJSON contenant pour chaque séisme : la magnitude, les coordonnées géographiques, la profondeur, l'horodatage, le lieu, le type de magnitude, et d'autres métadonnées.
+
+\subsection{Script de collecte}
+
+Le script \texttt{kafka\_producer.py} combine la collecte API et la production Kafka. La collecte couvre \textbf{12 mois d'historique} (configurable via \texttt{HISTORY\_MONTHS}), paginée par tranches mensuelles pour respecter les limites de l'API (20~000 événements par requête). Aucune limite artificielle n'est imposée sur le paramètre \texttt{limit} de l'API. Après le chargement initial, le script bascule en mode incrémental (toutes les 60 secondes).
+
+\begin{lstlisting}[language=Python, caption={Collecte paginée par tranches mensuelles (kafka\_producer.py)}]
+HISTORY_MONTHS = 12
+MIN_MAGNITUDE_HISTORY = 2.0
+
+def fetch_earthquakes(start_time, end_time, min_magnitude=1.0):
+    """Aucune limite artificielle -- l'API renvoie jusqu'a 20 000 evenements."""
+    params = {
+        "format": "geojson",
+        "starttime": start_time,
+        "endtime": end_time,
+        "minmagnitude": min_magnitude,
+        "orderby": "time",
+    }
+    resp = requests.get(USGS_API_URL, params=params, timeout=60)
+    resp.raise_for_status()
+    return [normalize_event(f) for f in resp.json().get("features", [])]
+
+def generate_monthly_ranges(months_back):
+    """Genere des tranches mensuelles pour paginer les appels API."""
+    now = datetime.utcnow()
+    ranges = []
+    for i in range(months_back, 0, -1):
+        start = now - timedelta(days=i * 30)
+        end = now - timedelta(days=(i - 1) * 30)
+        ranges.append((start.strftime("%Y-%m-%d"), end.strftime("%Y-%m-%d")))
+    return ranges
+
+def bulk_load_history(producer):
+    ranges = generate_monthly_ranges(HISTORY_MONTHS)
+    total = 0
+    for start, end in ranges:
+        events = fetch_earthquakes(start, end, MIN_MAGNITUDE_HISTORY)
+        for event in events:
+            producer.send(KAFKA_TOPIC, key=event["id"], value=event)
+        producer.flush()
+        total += len(events)
+    return total
+\end{lstlisting}
+
+\subsection{Normalisation des données}
+
+Les données brutes GeoJSON sont normalisées en un schéma plat, plus adapté à l'indexation Elasticsearch et au traitement Spark :
+
+\begin{lstlisting}[language=Python, caption={Normalisation d'un événement GeoJSON}]
+def normalize_event(feature):
+    props = feature["properties"]
+    coords = feature["geometry"]["coordinates"]
+    return {
+        "id": feature["id"],
+        "magnitude": props.get("mag"),
+        "place": props.get("place", ""),
+        "time": datetime.utcfromtimestamp(
+            props["time"] / 1000).isoformat() + "Z",
+        "type": props.get("type", "earthquake"),
+        "title": props.get("title", ""),
+        "tsunami": props.get("tsunami", 0),
+        "sig": props.get("sig", 0),
+        "mag_type": props.get("magType", ""),
+        "longitude": coords[0],
+        "latitude": coords[1],
+        "depth": coords[2],
+        # ... autres champs (status, net, nst, dmin, rms, gap, url)
+    }
+\end{lstlisting}
+
+\subsection{Exemple de donnée extraite}
+
+\begin{lstlisting}[style=json, caption={Exemple d'événement sismique normalisé}]
+{
+  "id": "us7000n1ab",
+  "magnitude": 5.2,
+  "place": "45 km NE of Hualien City, Taiwan",
+  "time": "2025-02-10T14:23:45Z",
+  "type": "earthquake",
+  "title": "M 5.2 - 45 km NE of Hualien City, Taiwan",
+  "tsunami": 0,
+  "sig": 416,
+  "mag_type": "mww",
+  "longitude": 121.8234,
+  "latitude": 24.2156,
+  "depth": 12.5
+}
+\end{lstlisting}
+
+% ════════════════════════════════════════════════════════════════
+\section{Partie 2 : Transmission des données avec Kafka}
+
+\subsection{Configuration de l'infrastructure Kafka}
+
+Kafka est déployé via Docker Compose avec Zookeeper comme coordinateur. Le topic \texttt{earthquakes} est créé automatiquement lors du premier envoi grâce à \texttt{KAFKA\_AUTO\_CREATE\_TOPICS\_ENABLE=true}.
+
+\begin{lstlisting}[style=config, caption={Configuration Docker Compose pour Kafka}]
+kafka:
+  image: confluentinc/cp-kafka:7.5.0
+  depends_on:
+    - zookeeper
+  ports:
+    - "9092:9092"
+    - "29092:29092"
+  environment:
+    KAFKA_BROKER_ID: 1
+    KAFKA_ZOOKEEPER_CONNECT: zookeeper:2181
+    KAFKA_ADVERTISED_LISTENERS: >
+      PLAINTEXT://kafka:9092,
+      PLAINTEXT_HOST://localhost:29092
+    KAFKA_LISTENER_SECURITY_PROTOCOL_MAP: >
+      PLAINTEXT:PLAINTEXT,PLAINTEXT_HOST:PLAINTEXT
+    KAFKA_INTER_BROKER_LISTENER_NAME: PLAINTEXT
+    KAFKA_OFFSETS_TOPIC_REPLICATION_FACTOR: 1
+    KAFKA_AUTO_CREATE_TOPICS_ENABLE: "true"
+\end{lstlisting}
+
+Deux listeners sont configurés : \texttt{PLAINTEXT} pour la communication inter-conteneurs (Logstash accède à \texttt{kafka:9092}) et \texttt{PLAINTEXT\_HOST} pour les scripts Python exécutés sur l'hôte (\texttt{localhost:29092}).
+
+\subsection{Producteur Kafka}
+
+Le producteur utilise \texttt{kafka-python} avec une sérialisation JSON. Chaque événement est envoyé avec une clé correspondant à l'identifiant unique du séisme, ce qui garantit l'idempotence lors des réexécutions. Un mécanisme de retry exponentiel gère les cas où le broker n'est pas encore prêt.
+
+\begin{lstlisting}[language=Python, caption={Création du producteur Kafka avec retry}]
+def create_producer(bootstrap_servers, retries=10):
+    for attempt in range(retries):
+        try:
+            producer = KafkaProducer(
+                bootstrap_servers=bootstrap_servers,
+                value_serializer=lambda v: json.dumps(v).encode("utf-8"),
+                key_serializer=lambda k: k.encode("utf-8") if k else None,
+                acks="all",
+                retries=3,
+            )
+            return producer
+        except NoBrokersAvailable:
+            wait = min(2 ** attempt, 30)
+            time.sleep(wait)
+\end{lstlisting}
+
+\subsection{Consommateur Kafka (debug)}
+
+Un consommateur standalone (\texttt{kafka\_consumer.py}) est fourni pour le débogage et la validation des messages transmis. En production, c'est Logstash qui joue le rôle de consommateur.
+
+\begin{lstlisting}[language=Python, caption={Configuration du consommateur Kafka}]
+consumer = KafkaConsumer(
+    "earthquakes",
+    bootstrap_servers="localhost:29092",
+    group_id="earthquake-debug-consumer",
+    auto_offset_reset="earliest",
+    value_deserializer=lambda m: json.loads(m.decode("utf-8")),
+    consumer_timeout_ms=10000,
+)
+\end{lstlisting}
+
+% ════════════════════════════════════════════════════════════════
+\section{Partie 3 : Transformation, indexation et requêtes}
+
+\subsection{Pipeline Logstash}
+
+Logstash est configuré pour lire le topic Kafka, appliquer des transformations, puis indexer dans Elasticsearch. Les principales transformations sont :
+
+\begin{itemize}[noitemsep]
+    \item Parsing de la date ISO 8601 comme \texttt{@timestamp}.
+    \item Création d'un champ \texttt{location} de type \texttt{geo\_point} à partir de la latitude et longitude.
+    \item Classification automatique de la sévérité basée sur la magnitude.
+\end{itemize}
+
+\begin{lstlisting}[style=config, caption={Pipeline Logstash complet (pipeline.conf)}]
+input {
+  kafka {
+    bootstrap_servers => "kafka:9092"
+    topics            => ["earthquakes"]
+    group_id          => "logstash-earthquake-consumer"
+    codec             => "json"
+    auto_offset_reset => "earliest"
+    consumer_threads  => 1
+    decorate_events   => "basic"
+  }
+}
+
+filter {
+  date {
+    match  => ["time", "ISO8601"]
+    target => "@timestamp"
+  }
+  if [latitude] and [longitude] {
+    mutate {
+      add_field => {
+        "[location][lat]" => "%{latitude}"
+        "[location][lon]" => "%{longitude}"
+      }
+    }
+    mutate {
+      convert => {
+        "[location][lat]" => "float"
+        "[location][lon]" => "float"
+      }
+    }
+  }
+  if [magnitude] {
+    if [magnitude] >= 7 {
+      mutate { add_field => { "severity" => "major" } }
+    } else if [magnitude] >= 5 {
+      mutate { add_field => { "severity" => "moderate" } }
+    } else if [magnitude] >= 3 {
+      mutate { add_field => { "severity" => "light" } }
+    } else {
+      mutate { add_field => { "severity" => "minor" } }
+    }
+  }
+  mutate {
+    remove_field => ["@version", "[event][original]"]
+  }
+}
+
+output {
+  elasticsearch {
+    hosts => ["http://elasticsearch:9200"]
+    index => "earthquakes"
+    document_id => "%{id}"
+    action => "index"
+  }
+  stdout { codec => dots }
+}
+\end{lstlisting}
+
+\subsection{Mapping Elasticsearch}
+
+Le mapping définit des types explicites pour chaque champ et intègre deux analyzers personnalisés :
+
+\begin{itemize}[noitemsep]
+    \item \textbf{text\_analyzer} : tokenisation standard + lowercase + filtres stop words anglais et français, pour les recherches full-text.
+    \item \textbf{ngram\_analyzer} : tokenisation standard + lowercase + filtre n-gram (min=3, max=4), pour la recherche partielle via le sous-champ \texttt{place.ngram}.
+\end{itemize}
+
+Le champ \texttt{place} est indexé avec trois variantes (multi-field) : \texttt{text} (recherche full-text), \texttt{keyword} (agrégations exactes), et \texttt{ngram} (recherche partielle).
+
+\begin{lstlisting}[style=json, caption={Mapping Elasticsearch — analyzers et filtres}]
+"analysis": {
+  "filter": {
+    "ngram_filter": {
+      "type": "ngram", "min_gram": 3, "max_gram": 4
+    },
+    "english_stop": {
+      "type": "stop", "stopwords": "_english_"
+    },
+    "french_stop": {
+      "type": "stop", "stopwords": "_french_"
+    }
+  },
+  "analyzer": {
+    "ngram_analyzer": {
+      "type": "custom",
+      "tokenizer": "standard",
+      "filter": ["lowercase", "ngram_filter"]
+    },
+    "text_analyzer": {
+      "type": "custom",
+      "tokenizer": "standard",
+      "filter": ["lowercase", "english_stop", "french_stop"]
+    }
+  }
+}
+\end{lstlisting}
+
+\begin{lstlisting}[style=json, caption={Mapping — champ multi-field \texttt{place} et geo\_point}]
+"place": {
+  "type": "text",
+  "analyzer": "text_analyzer",
+  "fields": {
+    "keyword": {"type": "keyword"},
+    "ngram":   {"type": "text", "analyzer": "ngram_analyzer"}
+  }
+},
+"location": {"type": "geo_point"},
+"time": {"type": "date",
+         "format": "strict_date_optional_time||epoch_millis"}
+\end{lstlisting}
+
+\subsection{Les 5 requêtes Elasticsearch}
+
+Le script \texttt{queries/run\_queries.py} exécute les 5 requêtes demandées et sauvegarde pour chacune : la requête (\texttt{*\_request.json}), la réponse (\texttt{*\_response.json}), et un résumé lisible (\texttt{*\_resume.txt}).
+
+\subsubsection{Requête 1 — Recherche textuelle}
+
+Recherche full-text sur le champ \texttt{place} avec l'analyzer personnalisé.
+
+\begin{lstlisting}[style=json, caption={Requête textuelle — séismes en Californie}]
+{
+  "size": 10,
+  "query": {
+    "match": {
+      "place": {
+        "query": "California",
+        "analyzer": "text_analyzer"
+      }
+    }
+  },
+  "_source": ["title", "magnitude", "place", "time", "depth"]
+}
+\end{lstlisting}
+
+% TODO: Inclure le résultat après exécution
+% \lstinputlisting[style=json, caption={Résultat — requête textuelle}]{../results/queries/1_requete_textuelle_resume.txt}
+
+\subsubsection{Requête 2 — Agrégation}
+
+Statistiques étendues de magnitude groupées par type d'échelle (\texttt{mag\_type}).
+
+\begin{lstlisting}[style=json, caption={Agrégation — statistiques par type de magnitude}]
+{
+  "size": 0,
+  "aggs": {
+    "par_mag_type": {
+      "terms": {"field": "mag_type", "size": 10},
+      "aggs": {
+        "stats_magnitude": {
+          "extended_stats": {"field": "magnitude"}
+        },
+        "profondeur_moyenne": {
+          "avg": {"field": "depth"}
+        }
+      }
+    },
+    "par_severite": {
+      "terms": {"field": "severity", "size": 5}
+    }
+  }
+}
+\end{lstlisting}
+
+% TODO: Inclure le résultat après exécution
+% \lstinputlisting[style=json, caption={Résultat — agrégation}]{../results/queries/2_requete_aggregation_resume.txt}
+
+\subsubsection{Requête 3 — N-gram}
+
+Recherche partielle via le sous-champ \texttt{place.ngram}. Le terme \og Alas \fg{} retrouve \og Alaska \fg{}.
+
+\begin{lstlisting}[style=json, caption={Requête N-gram — recherche partielle}]
+{
+  "size": 10,
+  "query": {
+    "match": {
+      "place.ngram": {"query": "Alas"}
+    }
+  },
+  "_source": ["title", "magnitude", "place", "time"]
+}
+\end{lstlisting}
+
+% TODO: Inclure le résultat après exécution
+% \lstinputlisting[style=json, caption={Résultat — N-gram}]{../results/queries/3_requete_ngram_resume.txt}
+
+\subsubsection{Requête 4 — Fuzzy}
+
+Recherche floue tolérant les fautes de frappe avec une distance d'édition de Levenshtein de 2.
+
+\begin{lstlisting}[style=json, caption={Requête fuzzy — tolérance aux erreurs de saisie}]
+{
+  "size": 10,
+  "query": {
+    "fuzzy": {
+      "place": {
+        "value": "Californya",
+        "fuzziness": 2,
+        "prefix_length": 2
+      }
+    }
+  },
+  "_source": ["title", "magnitude", "place", "time"]
+}
+\end{lstlisting}
+
+% TODO: Inclure le résultat après exécution
+% \lstinputlisting[style=json, caption={Résultat — fuzzy}]{../results/queries/4_requete_fuzzy_resume.txt}
+
+\subsubsection{Requête 5 — Série temporelle}
+
+Histogramme quotidien du nombre de séismes sur l'ensemble de la période collectée avec magnitude moyenne et maximale.
+
+\begin{lstlisting}[style=json, caption={Série temporelle — activité sismique quotidienne}]
+{
+  "size": 0,
+  "aggs": {
+    "seismes_par_jour": {
+      "date_histogram": {
+        "field": "time",
+        "calendar_interval": "day",
+        "format": "yyyy-MM-dd"
+      },
+      "aggs": {
+        "magnitude_moyenne": {"avg": {"field": "magnitude"}},
+        "magnitude_max": {"max": {"field": "magnitude"}},
+        "profondeur_moyenne": {"avg": {"field": "depth"}}
+      }
+    }
+  }
+}
+\end{lstlisting}
+
+% TODO: Inclure le résultat après exécution
+% \lstinputlisting[style=json, caption={Résultat — série temporelle (extrait)}]{../results/queries/5_requete_temporelle_resume.txt}
+
+% ════════════════════════════════════════════════════════════════
+\section{Partie 4 : Visualisation avec Kibana}
+
+Kibana est accessible à l'adresse \texttt{http://localhost:5601}. Après création d'un \textit{Data View} sur l'index \texttt{earthquakes}, les visualisations suivantes ont été construites :
+
+\begin{enumerate}[noitemsep]
+    \item \textbf{Carte mondiale} : répartition géographique des séismes via le champ \texttt{location} (geo\_point), avec un gradient de couleur basé sur la magnitude.
+    \item \textbf{Histogramme temporel} : nombre de séismes par jour, empilé par niveau de sévérité (\texttt{severity}).
+    \item \textbf{Camembert} : répartition par type de magnitude (\texttt{mag\_type}).
+    \item \textbf{Courbe de tendance} : magnitude moyenne quotidienne sur la période collectée.
+    \item \textbf{Tableau top régions} : les 15 régions avec le plus de séismes, incluant la magnitude moyenne.
+\end{enumerate}
+
+% ── CAPTURES KIBANA ─────────────────────────────────────────
+% Décommenter et remplacer par vos captures d'écran Kibana
+
+% \begin{figure}[H]
+%     \centering
+%     \includegraphics[width=\textwidth]{../screenshots/kibana_carte_mondiale.png}
+%     \caption{Carte mondiale des séismes — gradient par magnitude}
+% \end{figure}
+
+% \begin{figure}[H]
+%     \centering
+%     \includegraphics[width=\textwidth]{../screenshots/kibana_histogramme_temporel.png}
+%     \caption{Histogramme temporel — séismes par jour empilés par sévérité}
+% \end{figure}
+
+% \begin{figure}[H]
+%     \centering
+%     \includegraphics[width=0.7\textwidth]{../screenshots/kibana_camembert_magtype.png}
+%     \caption{Camembert — répartition par type de magnitude}
+% \end{figure}
+
+% \begin{figure}[H]
+%     \centering
+%     \includegraphics[width=\textwidth]{../screenshots/kibana_courbe_tendance.png}
+%     \caption{Courbe de tendance — magnitude moyenne quotidienne}
+% \end{figure}
+
+% \begin{figure}[H]
+%     \centering
+%     \includegraphics[width=\textwidth]{../screenshots/kibana_top_regions.png}
+%     \caption{Tableau — Top 15 régions sismiques}
+% \end{figure}
+
+% \begin{figure}[H]
+%     \centering
+%     \includegraphics[width=\textwidth]{../screenshots/kibana_dashboard.png}
+%     \caption{Dashboard Kibana complet — vue d'ensemble}
+% \end{figure}
+
+\textit{Note : les captures d'écran des visualisations Kibana sont fournies dans le dossier \texttt{screenshots/}.}
+
+% ════════════════════════════════════════════════════════════════
+\section{Partie 5 : Traitement distribué avec Spark}
+
+\subsection{Justification du choix de Spark}
+
+Nous avons choisi Apache Spark plutôt que Hadoop MapReduce pour les raisons suivantes :
+
+\begin{itemize}[noitemsep]
+    \item \textbf{Performance} : Spark effectue les calculs en mémoire (DAG), là où MapReduce écrit sur disque à chaque étape, ce qui est significativement plus rapide pour des analyses itératives.
+    \item \textbf{API de haut niveau} : l'API DataFrame de PySpark offre des transformations expressives (filtres, agrégations, fenêtres glissantes) sans avoir à écrire des fonctions Map et Reduce bas niveau.
+    \item \textbf{Connecteur Elasticsearch} : le package \texttt{elasticsearch-spark} permet de lire directement depuis un index ES, évitant une étape intermédiaire HDFS.
+    \item \textbf{Écosystème unifié} : Spark gère batch et streaming dans le même framework.
+\end{itemize}
+
+\subsection{Configuration Spark dans Docker}
+
+\begin{lstlisting}[style=config, caption={Configuration Docker Compose pour Spark}]
+spark-master:
+  image: apache/spark:3.5.1
+  container_name: spark-master
+  command: /opt/spark/sbin/start-master.sh
+  ports:
+    - "8080:8080"
+    - "7077:7077"
+  volumes:
+    - ./spark:/opt/spark-processing
+    - ./results:/opt/spark-processing/results
+  networks:
+    - pipeline-network
+\end{lstlisting}
+
+\subsection{Analyses réalisées}
+
+Le script \texttt{spark/spark\_processing.py} exécute cinq analyses. Les résultats sont exportés en JSON et CSV dans \texttt{results/spark/}.
+
+\paragraph{1. Statistiques globales} — Calcul du nombre total de séismes, de la magnitude moyenne et son écart-type, des extrema, de la profondeur moyenne, et du nombre d'alertes tsunami.
+
+\begin{lstlisting}[language=Python, caption={Analyse globale avec Spark}]
+stats = df.agg(
+    F.count("magnitude").alias("total_seismes"),
+    F.round(F.avg("magnitude"), 3).alias("magnitude_moyenne"),
+    F.round(F.stddev("magnitude"), 3).alias("magnitude_ecart_type"),
+    F.min("magnitude").alias("magnitude_min"),
+    F.max("magnitude").alias("magnitude_max"),
+    F.round(F.avg("depth"), 2).alias("profondeur_moyenne_km"),
+    F.max("depth").alias("profondeur_max_km"),
+    F.sum(F.when(F.col("tsunami") == 1, 1)
+          .otherwise(0)).alias("alertes_tsunami"),
+)
+\end{lstlisting}
+
+% TODO: Inclure le résultat après exécution
+% \lstinputlisting[style=json, caption={Résultat — statistiques globales}]{../results/spark/stats_globales.json}
+
+\paragraph{2. Analyse par région} — Extraction de la région depuis le champ \texttt{place} (parsing du texte après \og of \fg{}), puis agrégation par région.
+
+\begin{lstlisting}[language=Python, caption={Extraction de la région et agrégation}]
+df_region = df.withColumn(
+    "region",
+    F.when(F.col("place").contains(" of "),
+           F.trim(F.element_at(
+               F.split(F.col("place"), " of "), -1)))
+    .otherwise(F.col("place"))
+)
+regions = (df_region.groupBy("region")
+    .agg(
+        F.count("*").alias("nombre_seismes"),
+        F.round(F.avg("magnitude"), 2).alias("magnitude_moyenne"),
+        F.round(F.max("magnitude"), 1).alias("magnitude_max"),
+    )
+    .orderBy(F.desc("nombre_seismes"))
+    .limit(20))
+\end{lstlisting}
+
+% TODO: Inclure le résultat après exécution
+% \lstinputlisting[style=json, caption={Résultat — top 20 régions}]{../results/spark/top_regions.json}
+
+\paragraph{3. Analyse temporelle} — Nombre de séismes par jour avec calcul d'une moyenne mobile sur 3 jours via une fonction de fenêtrage (\texttt{Window}).
+
+\begin{lstlisting}[language=Python, caption={Moyenne mobile sur 3 jours avec Spark Window}]
+window_3d = Window.orderBy("date").rowsBetween(-2, 0)
+daily = daily.withColumn(
+    "moyenne_mobile_3j",
+    Fila.round(F.avg("nb_seismes").over(window_3d), 1)
+)
+\end{lstlisting}
+
+\paragraph{4. Corrélation magnitude / profondeur} — Calcul du coefficient de Pearson entre magnitude et profondeur, avec distribution par tranches de profondeur.
+
+\begin{lstlisting}[language=Python, caption={Corrélation et tranches de profondeur}]
+corr = df.stat.corr("magnitude", "depth")
+
+df_depth = df.withColumn(
+    "tranche_profondeur",
+    F.when(F.col("depth") < 10, "0-10 km")
+    .when(F.col("depth") < 50, "10-50 km")
+    .when(F.col("depth") < 100, "50-100 km")
+    .when(F.col("depth") < 300, "100-300 km")
+    .otherwise("300+ km")
+)
+\end{lstlisting}
+
+% TODO: Inclure le résultat après exécution
+% \lstinputlisting[style=json, caption={Résultat — corrélation}]{../results/spark/correlation.json}
+% \lstinputlisting[style=json, caption={Résultat — profondeur}]{../results/spark/profondeur_stats.json}
+
+\paragraph{5. Analyse par type de magnitude} — Répartition des séismes par échelle de magnitude (\texttt{ml}, \texttt{mb}, \texttt{mww}, etc.) avec statistiques descriptives.
+
+% TODO: Inclure le résultat après exécution
+% \lstinputlisting[style=json, caption={Résultat — types de magnitude}]{../results/spark/mag_type_stats.json}
+
+\subsection{Export des résultats}
+
+Tous les résultats sont exportés en JSON et CSV dans le dossier \texttt{results/spark/}. L'export utilise la conversion Spark DataFrame $\rightarrow$ Pandas pour obtenir des fichiers CSV propres.
+
+% ════════════════════════════════════════════════════════════════
+\section{Organisation du projet et choix techniques}
+
+\subsection{Orchestration Docker}
+
+L'ensemble de l'infrastructure (Kafka, Zookeeper, Elasticsearch, Logstash, Kibana, Spark) est conteneurisée dans un fichier \texttt{docker-compose.yml}. Le fichier complet est fourni dans le dépôt. Un réseau Docker dédié (\texttt{pipeline-network}) assure la communication inter-services.
+
+\subsection{Gestion de la robustesse}
+
+Plusieurs mécanismes de robustesse ont été implémentés :
+
+\begin{itemize}[noitemsep]
+    \item \textbf{Retry exponentiel} pour la connexion Kafka.
+    \item \textbf{Health check} Elasticsearch dans Docker Compose pour s'assurer que Logstash ne démarre qu'une fois ES prêt.
+    \item \textbf{Idempotence} via le \texttt{document\_id} dans Logstash, évitant les doublons en cas de réexécution.
+    \item \textbf{Fallback JSON} dans Spark : si le connecteur ES-Hadoop n'est pas disponible, le script charge un export JSON.
+    \item \textbf{Pagination mensuelle} pour la collecte API, évitant les dépassements de limites.
+\end{itemize}
+
+% ════════════════════════════════════════════════════════════════
+\section{Conclusion}
+
+Ce projet démontre la mise en \oe uvre d'un pipeline de données complet, depuis la collecte de 12 mois de données sismiques jusqu'à leur analyse distribuée. L'utilisation conjointe de Kafka pour le streaming, Elasticsearch pour l'indexation intelligente (analyzers, n-gram, fuzzy), Kibana pour la visualisation interactive, et Spark pour le traitement distribué constitue une architecture représentative des systèmes de données modernes.
+
+Les principaux enseignements techniques sont :
+
+\begin{itemize}[noitemsep]
+    \item L'importance du mapping Elasticsearch (analyzers, multi-fields) pour supporter différents types de requêtes sur les mêmes données.
+    \item L'intérêt de Logstash comme couche de transformation intermédiaire (enrichissement, normalisation).
+    \item La puissance de Spark pour des analyses complexes (fenêtres glissantes, corrélations) que les agrégations Elasticsearch seules ne couvrent pas.
+    \item La pagination mensuelle pour gérer de gros volumes de données API sans limitation artificielle.
+\end{itemize}
+
+% ════════════════════════════════════════════════════════════════
+\appendix
+\section{Annexe — Commandes utiles}
+
+\begin{lstlisting}[language=bash, caption={Commandes de gestion du pipeline}]
+# Demarrer l'infrastructure
+docker compose up -d
+
+# Installer les dependances Python
+pip install -r scripts/requirements.txt
+
+# Creer l'index Elasticsearch avec le mapping
+python scripts/setup_elasticsearch.py
+
+# Lancer le producteur Kafka (collecte 12 mois + mode live)
+python scripts/kafka_producer.py
+
+# Verifier les messages avec le consommateur debug
+python scripts/kafka_consumer.py
+
+# Executer les 5 requetes et sauvegarder les resultats
+python queries/run_queries.py
+
+# Exporter les donnees ES en JSON (fallback Spark)
+python scripts/export_es_to_json.py
+
+# Lancer le traitement Spark
+docker exec -u 0 -it spark-master \
+  pip install pandas --break-system-packages
+docker exec -it spark-master /opt/spark/bin/spark-submit \
+  --packages org.elasticsearch:elasticsearch-spark-30_2.12:8.11.0 \
+  /opt/spark-processing/spark_processing.py
+
+# Verifier l'etat d'Elasticsearch
+curl http://localhost:9200/_cluster/health?pretty
+curl http://localhost:9200/earthquakes/_count
+
+# Lister les topics Kafka
+docker exec kafka kafka-topics --list \
+  --bootstrap-server localhost:9092
+
+# Arreter et nettoyer
+docker compose down -v
+\end{lstlisting}
+
+\end{document}

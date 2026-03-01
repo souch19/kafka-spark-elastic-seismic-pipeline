@@ -1,0 +1,140 @@
+# ===================================================================
+# Docker Compose - Pipeline de donnees sismiques
+#
+# 7 services sur un reseau commun (pipeline-network) :
+#   - Zookeeper + Kafka   : messaging
+#   - Elasticsearch       : indexation et recherche
+#   - Logstash            : ETL (Kafka -> ES)
+#   - Kibana              : visualisation
+#   - Spark Master/Worker : traitement distribue
+#
+# Demarrage : docker compose up -d
+# Arret     : docker compose down -v
+# ===================================================================
+
+services:
+  # Zookeeper est requis par Kafka pour la coordination du cluster
+  zookeeper:
+    image: confluentinc/cp-zookeeper:7.5.0
+    container_name: zookeeper
+    environment:
+      ZOOKEEPER_CLIENT_PORT: 2181
+      ZOOKEEPER_TICK_TIME: 2000
+    ports:
+      - "2181:2181"
+    networks:
+      - pipeline-network
+
+  # Broker Kafka avec deux listeners :
+  #   - PLAINTEXT (kafka:9092) : pour la communication entre conteneurs (Logstash)
+  #   - PLAINTEXT_HOST (localhost:29092) : pour les scripts Python sur l'hote
+  kafka:
+    image: confluentinc/cp-kafka:7.5.0
+    container_name: kafka
+    depends_on:
+      - zookeeper
+    ports:
+      - "9092:9092"
+      - "29092:29092"
+    environment:
+      KAFKA_BROKER_ID: 1
+      KAFKA_ZOOKEEPER_CONNECT: zookeeper:2181
+      KAFKA_ADVERTISED_LISTENERS: PLAINTEXT://kafka:9092,PLAINTEXT_HOST://localhost:29092
+      KAFKA_LISTENER_SECURITY_PROTOCOL_MAP: PLAINTEXT:PLAINTEXT,PLAINTEXT_HOST:PLAINTEXT
+      KAFKA_INTER_BROKER_LISTENER_NAME: PLAINTEXT
+      KAFKA_OFFSETS_TOPIC_REPLICATION_FACTOR: 1
+      KAFKA_AUTO_CREATE_TOPICS_ENABLE: "true"
+    networks:
+      - pipeline-network
+
+  # Elasticsearch en mode single-node (suffisant pour le projet)
+  # La securite xpack est desactivee pour simplifier le developpement
+  elasticsearch:
+    image: docker.elastic.co/elasticsearch/elasticsearch:8.11.0
+    container_name: elasticsearch
+    environment:
+      - discovery.type=single-node
+      - xpack.security.enabled=false
+      - "ES_JAVA_OPTS=-Xms512m -Xmx512m"
+    ports:
+      - "9200:9200"
+    volumes:
+      - es-data:/usr/share/elasticsearch/data
+    networks:
+      - pipeline-network
+    healthcheck:
+      test: ["CMD-SHELL", "curl -s http://localhost:9200/_cluster/health | grep -q '\"status\":\"green\"\\|\"status\":\"yellow\"'"]
+      interval: 10s
+      timeout: 5s
+      retries: 10
+
+  # Logstash consomme le topic Kafka et indexe dans ES
+  # Il attend qu'ES soit healthy avant de demarrer grace au depends_on
+  logstash:
+    image: docker.elastic.co/logstash/logstash:8.11.0
+    container_name: logstash
+    depends_on:
+      elasticsearch:
+        condition: service_healthy
+      kafka:
+        condition: service_started
+    volumes:
+      - ./config/logstash/pipeline.conf:/usr/share/logstash/pipeline/pipeline.conf:ro
+    ports:
+      - "5044:5044"
+    networks:
+      - pipeline-network
+
+  # Interface de visualisation Kibana
+  # Accessible sur http://localhost:5601
+  kibana:
+    image: docker.elastic.co/kibana/kibana:8.11.0
+    container_name: kibana
+    depends_on:
+      elasticsearch:
+        condition: service_healthy
+    environment:
+      - ELASTICSEARCH_HOSTS=http://elasticsearch:9200
+    ports:
+      - "5601:5601"
+    networks:
+      - pipeline-network
+
+  # Spark Master - coordonne les jobs
+  # Le dossier spark/ est monte pour que spark-submit puisse acceder au script
+  spark-master:
+    image: apache/spark:3.5.1
+    container_name: spark-master
+    command: /opt/spark/sbin/start-master.sh
+    ports:
+      - "8080:8080"
+      - "7077:7077"
+    environment:
+      - SPARK_MASTER_HOST=spark-master
+      - SPARK_NO_DAEMONIZE=true
+    volumes:
+      - ./spark:/opt/spark-processing
+      - ./results:/opt/spark-processing/results
+    networks:
+      - pipeline-network
+
+  # Spark Worker - execute les taches distribuees
+  spark-worker:
+    image: apache/spark:3.5.1
+    container_name: spark-worker
+    depends_on:
+      - spark-master
+    command: /opt/spark/sbin/start-worker.sh spark://spark-master:7077
+    environment:
+      - SPARK_WORKER_MEMORY=2g
+      - SPARK_WORKER_CORES=2
+      - SPARK_NO_DAEMONIZE=true
+    networks:
+      - pipeline-network
+
+volumes:
+  es-data:
+
+networks:
+  pipeline-network:
+    driver: bridge

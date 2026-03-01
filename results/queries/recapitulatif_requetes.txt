@@ -1,0 +1,209 @@
+Recapitulatif des 5 requetes Elasticsearch
+Date d'execution : 2026-03-01T00:28:11.583828
+Index : earthquakes
+
+CORRECTIONS APPLIQUEES :
+1. Textuelle : OK
+2. Agg : cardinality place -> place.keyword
+3. Ngram : terms place -> place.keyword
+4. Fuzzy : match avec fuzziness AUTO
+5. Temporelle : OK (moving_fn)
+
+=================================================================
+  1_requete_textuelle
+  Bool multi-champ + boosting + highlight (California, M>=2.5)
+=================================================================
+Temps d'execution : 69 ms
+Resultats totaux  : 65
+
+--- Top 10 resultats ---
+   1. [score=19.12] M2.7 | off the coast of Northern California | 2025-09-05T01:18:10 | prof=10km
+      highlight(place): off the coast of Northern <em>California</em>
+      highlight(title): M 2.7 - off the coast of Northern <em>California</em>
+   2. [score=17.57] M3.8 | 163 km W of Ferndale, California | 2025-08-06T04:39:17 | prof=10km
+      highlight(place): 163 km W of Ferndale, <em>California</em>
+      highlight(title): M 3.8 - 163 km W of Ferndale, <em>California</em>
+   3. [score=17.57] M3.3 | 235 km W of Ferndale, California | 2025-03-27T08:17:38 | prof=10km
+      highlight(place): 235 km W of Ferndale, <em>California</em>
+      highlight(title): M 3.3 - 235 km W of Ferndale, <em>California</em>
+   4. [score=17.57] M3.2 | 155 km W of Ferndale, California | 2025-05-29T20:11:00 | prof=10km
+      highlight(place): 155 km W of Ferndale, <em>California</em>
+      highlight(title): M 3.2 - 155 km W of Ferndale, <em>California</em>
+   5. [score=17.57] M3.2 | 175 km W of Ferndale, California | 2025-11-18T09:42:12 | prof=10km
+      highlight(place): 175 km W of Ferndale, <em>California</em>
+      highlight(title): M 3.2 - 175 km W of Ferndale, <em>California</em>
+   6. [score=17.57] M3.2 | 249 km W of Ferndale, California | 2025-11-15T02:17:47 | prof=10km
+      highlight(place): 249 km W of Ferndale, <em>California</em>
+      highlight(title): M 3.2 - 249 km W of Ferndale, <em>California</em>
+   7. [score=17.57] M3.1 | 234 km W of Ferndale, California | 2025-10-13T16:33:15 | prof=10km
+      highlight(place): 234 km W of Ferndale, <em>California</em>
+      highlight(title): M 3.1 - 234 km W of Ferndale, <em>California</em>
+   8. [score=17.57] M3.1 | 152 km W of Ferndale, California | 2025-07-15T15:23:05 | prof=10km
+      highlight(place): 152 km W of Ferndale, <em>California</em>
+      highlight(title): M 3.1 - 152 km W of Ferndale, <em>California</em>
+   9. [score=17.57] M3 | 15 km NW of Fillmore, California | 2025-12-11T18:27:31 | prof=12.013km
+      highlight(place): 15 km NW of Fillmore, <em>California</em>
+      highlight(title): M 3.0 - 15 km NW of Fillmore, <em>California</em>
+  10. [score=17.57] M3 | 130 km W of Ferndale, California | 2026-01-23T11:17:51 | prof=10km
+      highlight(place): 130 km W of Ferndale, <em>California</em>
+      highlight(title): M 3.0 - 130 km W of Ferndale, <em>California</em>
+
+
+=================================================================
+  2_requete_aggregation
+  Pipeline agg : percentiles, cardinality, range profondeur
+=================================================================
+Temps d'execution : 285 ms
+Resultats totaux  : 10000
+
+--- Agregations ---
+
+  [par_tranche_profondeur] (4 buckets)
+    superficiel (0-10 km): 10413 docs  mag_max=7.60 | mag_moyenne=2.48
+    peu profond (10-70 km): 24906 docs  mag_max=8.80 | mag_moyenne=3.57
+    intermediaire (70-300 km): 5985 docs  mag_max=6.70 | mag_moyenne=3.62
+    profond (300+ km): 1065 docs  mag_max=7.10 | mag_moyenne=4.38
+
+  [par_mag_type] (10 buckets)
+    ml: 20445 docs  profondeur_moyenne=26.46 | nb_regions_distinctes=9837
+    mb: 15778 docs  profondeur_moyenne=76.83 | nb_regions_distinctes=10266
+    md: 4348 docs  profondeur_moyenne=20.13 | nb_regions_distinctes=2714
+    mww: 1399 docs  profondeur_moyenne=51.26 | nb_regions_distinctes=1120
+    mwr: 376 docs  profondeur_moyenne=27.60 | nb_regions_distinctes=360
+    mb_lg: 141 docs  profondeur_moyenne=7.26 | nb_regions_distinctes=139
+    mw: 139 docs  profondeur_moyenne=7.92 | nb_regions_distinctes=115
+    mwb: 6 docs  profondeur_moyenne=17.63 | nb_regions_distinctes=6
+    mh: 2 docs  profondeur_moyenne=8.87 | nb_regions_distinctes=2
+    ms_vx: 1 docs  profondeur_moyenne=0.00 | nb_regions_distinctes=1
+
+=================================================================
+  3_requete_ngram
+  N-gram 'Alaska' + stats magnitude
+=================================================================
+Temps d'execution : 61 ms
+Resultats totaux  : 10000
+
+--- Top 10 resultats ---
+   1. [score=-] M7.3 | 2025 Sand Point, Alaska Earthquake | 2025-07-16T20:37:41 | prof=38km
+      highlight(place): 2025 Sand Point, <em>Alaska</em> Earthquake
+   2. [score=-] M6.2 | 88 km SSE of Adak, Alaska | 2025-03-21T14:53:41 | prof=17km
+      highlight(place): 88 km SSE of Adak, <em>Alaska</em>
+   3. [score=-] M6.2 | 91 km SSE of Sand Point, Alaska | 2025-07-20T22:28:00 | prof=40km
+      highlight(place): 91 km SSE of Sand Point, <em>Alaska</em>
+   4. [score=-] M6.1 | 93 km SW of Nikolski, Alaska | 2026-02-23T05:11:48 | prof=14km
+      highlight(place): 93 km SW of Nikolski, <em>Alaska</em>
+   5. [score=-] M6 | 12 km WNW of Susitna, Alaska | 2025-11-27T17:11:29 | prof=69.43339538574219km
+      highlight(place): 12 km WNW of Susitna, <em>Alaska</em>
+   6. [score=-] M5.9 | 87 km SSE of Adak, Alaska | 2025-03-21T14:58:28 | prof=26.674km
+      highlight(place): 87 km SSE of Adak, <em>Alaska</em>
+   7. [score=-] M5.9 | 237 km W of Adak, Alaska | 2025-08-28T11:07:48 | prof=130km
+      highlight(place): 237 km W of Adak, <em>Alaska</em>
+   8. [score=-] M5.9 | 92 km SSW of Nikolski, Alaska | 2025-09-03T20:57:47 | prof=18km
+      highlight(place): 92 km SSW of Nikolski, <em>Alaska</em>
+   9. [score=-] M5.9 | 278 km ESE of Attu Station, Alaska | 2026-01-15T08:52:45 | prof=41.164km
+      highlight(place): 278 km ESE of Attu Station, <em>Alaska</em>
+  10. [score=-] M5.8 | 89 km N of Yakutat, Alaska | 2025-12-08T00:56:50 | prof=10km
+      highlight(place): 89 km N of Yakutat, <em>Alaska</em>
+
+--- Agregations ---
+
+  [mag_distribution] (11 buckets)
+    2.0: 8561 docs
+    2.5: 3789 docs
+    3.0: 1774 docs
+    3.5: 670 docs
+    4.0: 280 docs
+    4.5: 104 docs
+    5.0: 44 docs
+    5.5: 15 docs
+    6.0: 4 docs
+    6.5: 0 docs
+    7.0: 1 docs
+
+  [top_lieux] (10 buckets)
+    Rat Islands, Aleutian Islands, Alaska: 236 docs
+    112 km N of Yakutat, Alaska: 179 docs
+    113 km N of Yakutat, Alaska: 179 docs
+    114 km N of Yakutat, Alaska: 168 docs
+    111 km N of Yakutat, Alaska: 158 docs
+    115 km N of Yakutat, Alaska: 133 docs
+    108 km N of Yakutat, Alaska: 129 docs
+    116 km N of Yakutat, Alaska: 125 docs
+    110 km N of Yakutat, Alaska: 117 docs
+    107 km N of Yakutat, Alaska: 115 docs
+
+=================================================================
+  4_requete_fuzzy
+  Match multi-field avec fuzziness AUTO + function_score
+=================================================================
+Temps d'execution : 415 ms
+Resultats totaux  : 10000
+
+--- Top 10 resultats ---
+   1. [score=34.61] M7.3 | 2025 Sand Point, Alaska Earthquake | 2025-07-16T20:37:41 | prof=38km
+      highlight(place): 2025 Sand Point, <em>Alaska</em> Earthquake
+      highlight(title): M 7.3 - 2025 Sand Point, Alaska <em>Earthquake</em>
+   2. [score=32.96] M8.8 | 2025 Kamchatka Peninsula, Russia Earthquake | 2025-07-29T23:24:52 | prof=35km
+      highlight(title): M 8.8 - 2025 Kamchatka Peninsula, Russia <em>Earthquake</em>
+   3. [score=32.42] M7.4 | 2025 Drake Passage Earthquake | 2025-05-02T12:58:26 | prof=10km
+      highlight(title): M 7.4 - 2025 Drake Passage <em>Earthquake</em>
+   4. [score=31.53] M7 | 2025 Hubbard Glacier Earthquake | 2025-12-06T20:41:49 | prof=10.317km
+      highlight(title): M 7.0 - 2025 Hubbard Glacier <em>Earthquake</em>
+   5. [score=30.83] M7.7 | 2025 Mandalay, Burma (Myanmar) Earthquake | 2025-03-28T06:20:52 | prof=10km
+      highlight(title): M 7.7 - 2025 Mandalay, Burma (Myanmar) <em>Earthquake</em>
+   6. [score=30.63] M7.6 | 2025 Aomori Prefecture, Japan Earthquake | 2025-12-08T14:15:09 | prof=40.72km
+      highlight(title): M 7.6 - 2025 Aomori Prefecture, Japan <em>Earthquake</em>
+   7. [score=30.43] M7.5 | 2025 Southern Drake Passage Earthquake | 2025-08-22T02:16:18 | prof=10km
+      highlight(title): M 7.5 - 2025 Southern Drake Passage <em>Earthquake</em>
+   8. [score=30.22] M7.4 | 2025 Eastern Kamchatka, Russia Earthquake | 2025-07-20T06:49:04 | prof=34km
+      highlight(title): M 7.4 - 2025 Eastern Kamchatka, Russia <em>Earthquake</em>
+   9. [score=29.19] M6 | 2025 Taitung, Taiwan Earthquake | 2025-12-24T09:47:06 | prof=8km
+      highlight(title): M 6.0 - 2025 Taitung, Taiwan <em>Earthquake</em>
+  10. [score=25.01] M3.8 | 163 km W of Ferndale, California | 2025-08-06T04:39:17 | prof=10km
+      highlight(place): 163 km W of Ferndale, <em>California</em>
+
+
+=================================================================
+  5_requete_temporelle
+  Serie hebdo + moving_fn + cumulative_sum
+=================================================================
+Temps d'execution : 174 ms
+Resultats totaux  : 10000
+
+--- Agregations ---
+
+  [timeline_hebdo] (52 buckets)
+    2025-03-03: 456 docs  nb_seismes=456 | magnitude_moyenne=3.31 | profondeur_moyenne=58.52 | magnitude_max=6.00 | magnitude_min=2.00 | cumul_seismes=456.00
+    2025-03-10: 656 docs  nb_seismes=656 | magnitude_moyenne=3.26 | profondeur_moyenne=55.73 | magnitude_max=6.50 | magnitude_min=2.00 | moving_avg_magnitude=3.31 | cumul_seismes=1112.00
+    2025-03-17: 961 docs  nb_seismes=961 | magnitude_moyenne=3.15 | profondeur_moyenne=45.44 | magnitude_max=6.20 | magnitude_min=2.00 | moving_avg_magnitude=3.28 | cumul_seismes=2073.00
+    2025-03-24: 717 docs  nb_seismes=717 | magnitude_moyenne=3.29 | profondeur_moyenne=55.87 | magnitude_max=7.70 | magnitude_min=2.00 | moving_avg_magnitude=3.24 | cumul_seismes=2790.00
+    2025-03-31: 845 docs  nb_seismes=845 | magnitude_moyenne=3.56 | profondeur_moyenne=49.79 | magnitude_max=6.90 | magnitude_min=2.00 | moving_avg_magnitude=3.23 | cumul_seismes=3635.00
+    2025-04-07: 690 docs  nb_seismes=690 | magnitude_moyenne=3.34 | profondeur_moyenne=54.33 | magnitude_max=6.50 | magnitude_min=2.00 | moving_avg_magnitude=3.34 | cumul_seismes=4325.00
+    2025-04-14: 711 docs  nb_seismes=711 | magnitude_moyenne=3.33 | profondeur_moyenne=52.85 | magnitude_max=6.60 | magnitude_min=2.00 | moving_avg_magnitude=3.40 | cumul_seismes=5036.00
+    2025-04-21: 688 docs  nb_seismes=688 | magnitude_moyenne=3.23 | profondeur_moyenne=56.01 | magnitude_max=6.30 | magnitude_min=2.00 | moving_avg_magnitude=3.41 | cumul_seismes=5724.00
+    2025-04-28: 725 docs  nb_seismes=725 | magnitude_moyenne=3.57 | profondeur_moyenne=50.81 | magnitude_max=7.40 | magnitude_min=2.00 | moving_avg_magnitude=3.30 | cumul_seismes=6449.00
+    2025-05-05: 682 docs  nb_seismes=682 | magnitude_moyenne=3.31 | profondeur_moyenne=60.93 | magnitude_max=6.00 | magnitude_min=2.00 | moving_avg_magnitude=3.38 | cumul_seismes=7131.00
+    2025-05-12: 637 docs  nb_seismes=637 | magnitude_moyenne=3.25 | profondeur_moyenne=50.30 | magnitude_max=6.40 | magnitude_min=2.00 | moving_avg_magnitude=3.37 | cumul_seismes=7768.00
+    2025-05-19: 610 docs  nb_seismes=610 | magnitude_moyenne=3.29 | profondeur_moyenne=49.92 | magnitude_max=6.50 | magnitude_min=2.00 | moving_avg_magnitude=3.38 | cumul_seismes=8378.00
+    2025-05-26: 700 docs  nb_seismes=700 | magnitude_moyenne=3.35 | profondeur_moyenne=54.07 | magnitude_max=6.20 | magnitude_min=2.00 | moving_avg_magnitude=3.28 | cumul_seismes=9078.00
+    2025-06-02: 771 docs  nb_seismes=771 | magnitude_moyenne=3.15 | profondeur_moyenne=47.98 | magnitude_max=6.40 | magnitude_min=2.00 | moving_avg_magnitude=3.30 | cumul_seismes=9849.00
+    2025-06-09: 628 docs  nb_seismes=628 | magnitude_moyenne=3.23 | profondeur_moyenne=47.71 | magnitude_max=6.00 | magnitude_min=2.00 | moving_avg_magnitude=3.26 | cumul_seismes=10477.00
+    2025-06-16: 690 docs  nb_seismes=690 | magnitude_moyenne=3.38 | profondeur_moyenne=52.36 | magnitude_max=6.00 | magnitude_min=2.00 | moving_avg_magnitude=3.24 | cumul_seismes=11167.00
+    2025-06-23: 743 docs  nb_seismes=743 | magnitude_moyenne=3.39 | profondeur_moyenne=50.06 | magnitude_max=6.60 | magnitude_min=2.00 | moving_avg_magnitude=3.25 | cumul_seismes=11910.00
+    2025-06-30: 724 docs  nb_seismes=724 | magnitude_moyenne=3.39 | profondeur_moyenne=48.27 | magnitude_max=5.60 | magnitude_min=2.00 | moving_avg_magnitude=3.33 | cumul_seismes=12634.00
+    2025-07-07: 657 docs  nb_seismes=657 | magnitude_moyenne=3.40 | profondeur_moyenne=58.95 | magnitude_max=6.20 | magnitude_min=2.00 | moving_avg_magnitude=3.39 | cumul_seismes=13291.00
+    2025-07-14: 2166 docs  nb_seismes=2166 | magnitude_moyenne=2.96 | profondeur_moyenne=31.80 | magnitude_max=7.40 | magnitude_min=2.00 | moving_avg_magnitude=3.39 | cumul_seismes=15457.00
+
+  [repartition_mois] (12 buckets)
+    2025-03: 2901 docs  magnitude_moyenne_mois=3.24
+    2025-04: 3107 docs  magnitude_moyenne_mois=3.38
+    2025-05: 2978 docs  magnitude_moyenne_mois=3.36
+    2025-06: 3021 docs  magnitude_moyenne_mois=3.29
+    2025-07: 6127 docs  magnitude_moyenne_mois=3.40
+    2025-08: 4261 docs  magnitude_moyenne_mois=3.53
+    2025-09: 2936 docs  magnitude_moyenne_mois=3.64
+    2025-10: 2757 docs  magnitude_moyenne_mois=3.62
+    2025-11: 2929 docs  magnitude_moyenne_mois=3.40
+    2025-12: 5626 docs  magnitude_moyenne_mois=2.89
+    2026-01: 3324 docs  magnitude_moyenne_mois=3.25
+    2026-02: 2668 docs  magnitude_moyenne_mois=3.06

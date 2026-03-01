@@ -1,0 +1,12 @@
+[
+  {
+    "total_seismes": 42635,
+    "magnitude_moyenne": 3.32,
+    "magnitude_ecart_type": 1.085,
+    "magnitude_min": 2.0,
+    "magnitude_max": 8.800000190734863,
+    "profondeur_moyenne_km": 45.15,
+    "profondeur_max_km": 669.5560302734375,
+    "alertes_tsunami": 153
+  }
+]

@@ -1,0 +1,382 @@
+{
+  "took": 415,
+  "timed_out": false,
+  "_shards": {
+    "total": 1,
+    "successful": 1,
+    "skipped": 0,
+    "failed": 0
+  },
+  "hits": {
+    "total": {
+      "value": 10000,
+      "relation": "gte"
+    },
+    "max_score": 34.607384,
+    "hits": [
+      {
+        "_index": "earthquakes",
+        "_id": "us7000qd1y",
+        "_score": 34.607384,
+        "_source": {
+          "title": "M 7.3 - 2025 Sand Point, Alaska Earthquake",
+          "mag_type": "mww",
+          "time": "2025-07-16T20:37:41.667000Z",
+          "depth": 38,
+          "magnitude": 7.3,
+          "place": "2025 Sand Point, Alaska Earthquake"
+        },
+        "highlight": {
+          "place": [
+            "2025 Sand Point, <em>Alaska</em> Earthquake"
+          ],
+          "title": [
+            "M 7.3 - 2025 Sand Point, Alaska <em>Earthquake</em>"
+          ]
+        }
+      },
+      {
+        "_index": "earthquakes",
+        "_id": "us6000qw60",
+        "_score": 32.958588,
+        "_source": {
+          "title": "M 8.8 - 2025 Kamchatka Peninsula, Russia Earthquake",
+          "mag_type": "mww",
+          "time": "2025-07-29T23:24:52.483000Z",
+          "depth": 35,
+          "magnitude": 8.8,
+          "place": "2025 Kamchatka Peninsula, Russia Earthquake"
+        },
+        "highlight": {
+          "title": [
+            "M 8.8 - 2025 Kamchatka Peninsula, Russia <em>Earthquake</em>"
+          ]
+        }
+      },
+      {
+        "_index": "earthquakes",
+        "_id": "us7000pwkn",
+        "_score": 32.417435,
+        "_source": {
+          "title": "M 7.4 - 2025 Drake Passage Earthquake",
+          "mag_type": "mww",
+          "time": "2025-05-02T12:58:26.014000Z",
+          "depth": 10,
+          "magnitude": 7.4,
+          "place": "2025 Drake Passage Earthquake"
+        },
+        "highlight": {
+          "title": [
+            "M 7.4 - 2025 Drake Passage <em>Earthquake</em>"
+          ]
+        }
+      },
+      {
+        "_index": "earthquakes",
+        "_id": "us6000rsy1",
+        "_score": 31.529116,
+        "_source": {
+          "title": "M 7.0 - 2025 Hubbard Glacier Earthquake",
+          "mag_type": "mww",
+          "time": "2025-12-06T20:41:49.288000Z",
+          "depth": 10.317,
+          "magnitude": 7,
+          "place": "2025 Hubbard Glacier Earthquake"
+        },
+        "highlight": {
+          "title": [
+            "M 7.0 - 2025 Hubbard Glacier <em>Earthquake</em>"
+          ]
+        }
+      },
+      {
+        "_index": "earthquakes",
+        "_id": "us7000pn9s",
+        "_score": 30.829937,
+        "_source": {
+          "title": "M 7.7 - 2025 Mandalay, Burma (Myanmar) Earthquake",
+          "mag_type": "mww",
+          "time": "2025-03-28T06:20:52.715000Z",
+          "depth": 10,
+          "magnitude": 7.7,
+          "place": "2025 Mandalay, Burma (Myanmar) Earthquake"
+        },
+        "highlight": {
+          "title": [
+            "M 7.7 - 2025 Mandalay, Burma (Myanmar) <em>Earthquake</em>"
+          ]
+        }
+      },
+      {
+        "_index": "earthquakes",
+        "_id": "us6000rtdt",
+        "_score": 30.629087,
+        "_source": {
+          "title": "M 7.6 - 2025 Aomori Prefecture, Japan Earthquake",
+          "mag_type": "mww",
+          "time": "2025-12-08T14:15:09.896000Z",
+          "depth": 40.72,
+          "magnitude": 7.6,
+          "place": "2025 Aomori Prefecture, Japan Earthquake"
+        },
+        "highlight": {
+          "title": [
+            "M 7.6 - 2025 Aomori Prefecture, Japan <em>Earthquake</em>"
+          ]
+        }
+      },
+      {
+        "_index": "earthquakes",
+        "_id": "us6000r2xq",
+        "_score": 30.426914,
+        "_source": {
+          "title": "M 7.5 - 2025 Southern Drake Passage Earthquake",
+          "mag_type": "mww",
+          "time": "2025-08-22T02:16:18.246000Z",
+          "depth": 10,
+          "magnitude": 7.5,
+          "place": "2025 Southern Drake Passage Earthquake"
+        },
+        "highlight": {
+          "title": [
+            "M 7.5 - 2025 Southern Drake Passage <em>Earthquake</em>"
+          ]
+        }
+      },
+      {
+        "_index": "earthquakes",
+        "_id": "us7000qdyl",
+        "_score": 30.223387,
+        "_source": {
+          "title": "M 7.4 - 2025 Eastern Kamchatka, Russia Earthquake",
+          "mag_type": "mww",
+          "time": "2025-07-20T06:49:04.327000Z",
+          "depth": 34,
+          "magnitude": 7.4,
+          "place": "2025 Eastern Kamchatka, Russia Earthquake"
+        },
+        "highlight": {
+          "title": [
+            "M 7.4 - 2025 Eastern Kamchatka, Russia <em>Earthquake</em>"
+          ]
+        }
+      },
+      {
+        "_index": "earthquakes",
+        "_id": "us7000rkjm",
+        "_score": 29.190289,
+        "_source": {
+          "title": "M 6.0 - 2025 Taitung, Taiwan Earthquake",
+          "mag_type": "mww",
+          "time": "2025-12-24T09:47:06.905000Z",
+          "depth": 8,
+          "magnitude": 6,
+          "place": "2025 Taitung, Taiwan Earthquake"
+        },
+        "highlight": {
+          "title": [
+            "M 6.0 - 2025 Taitung, Taiwan <em>Earthquake</em>"
+          ]
+        }
+      },
+      {
+        "_index": "earthquakes",
+        "_id": "us6000qygg",
+        "_score": 25.01251,
+        "_source": {
+          "title": "M 3.8 - 163 km W of Ferndale, California",
+          "mag_type": "mb",
+          "time": "2025-08-06T04:39:17.263000Z",
+          "depth": 10,
+          "magnitude": 3.8,
+          "place": "163 km W of Ferndale, California"
+        },
+        "highlight": {
+          "place": [
+            "163 km W of Ferndale, <em>California</em>"
+          ]
+        }
+      },
+      {
+        "_index": "earthquakes",
+        "_id": "us7000pn0d",
+        "_score": 23.308935,
+        "_source": {
+          "title": "M 3.3 - 235 km W of Ferndale, California",
+          "mag_type": "ml",
+          "time": "2025-03-27T08:17:38.635000Z",
+          "depth": 10,
+          "magnitude": 3.3,
+          "place": "235 km W of Ferndale, California"
+        },
+        "highlight": {
+          "place": [
+            "235 km W of Ferndale, <em>California</em>"
+          ]
+        }
+      },
+      {
+        "_index": "earthquakes",
+        "_id": "us6000qgrk",
+        "_score": 22.953053,
+        "_source": {
+          "title": "M 3.2 - 155 km W of Ferndale, California",
+          "mag_type": "ml",
+          "time": "2025-05-29T20:11:00.607000Z",
+          "depth": 10,
+          "magnitude": 3.2,
+          "place": "155 km W of Ferndale, California"
+        },
+        "highlight": {
+          "place": [
+            "155 km W of Ferndale, <em>California</em>"
+          ]
+        }
+      },
+      {
+        "_index": "earthquakes",
+        "_id": "us6000rnws",
+        "_score": 22.953053,
+        "_source": {
+          "title": "M 3.2 - 175 km W of Ferndale, California",
+          "mag_type": "ml",
+          "time": "2025-11-18T09:42:12.754000Z",
+          "depth": 10,
+          "magnitude": 3.2,
+          "place": "175 km W of Ferndale, California"
+        },
+        "highlight": {
+          "place": [
+            "175 km W of Ferndale, <em>California</em>"
+          ]
+        }
+      },
+      {
+        "_index": "earthquakes",
+        "_id": "us6000rned",
+        "_score": 22.953053,
+        "_source": {
+          "title": "M 3.2 - 249 km W of Ferndale, California",
+          "mag_type": "ml",
+          "time": "2025-11-15T02:17:47.524000Z",
+          "depth": 10,
+          "magnitude": 3.2,
+          "place": "249 km W of Ferndale, California"
+        },
+        "highlight": {
+          "place": [
+            "249 km W of Ferndale, <em>California</em>"
+          ]
+        }
+      },
+      {
+        "_index": "earthquakes",
+        "_id": "us7000qtzq",
+        "_score": 22.94806,
+        "_source": {
+          "title": "M 2.7 - off the coast of Northern California",
+          "mag_type": "ml",
+          "time": "2025-09-05T01:18:10.114000Z",
+          "depth": 10,
+          "magnitude": 2.7,
+          "place": "off the coast of Northern California"
+        },
+        "highlight": {
+          "place": [
+            "off the coast of Northern <em>California</em>"
+          ]
+        }
+      },
+      {
+        "_index": "earthquakes",
+        "_id": "us6000rgvc",
+        "_score": 22.591564,
+        "_source": {
+          "title": "M 3.1 - 234 km W of Ferndale, California",
+          "mag_type": "ml",
+          "time": "2025-10-13T16:33:15.732000Z",
+          "depth": 10,
+          "magnitude": 3.1,
+          "place": "234 km W of Ferndale, California"
+        },
+        "highlight": {
+          "place": [
+            "234 km W of Ferndale, <em>California</em>"
+          ]
+        }
+      },
+      {
+        "_index": "earthquakes",
+        "_id": "us7000qcsx",
+        "_score": 22.591564,
+        "_source": {
+          "title": "M 3.1 - 152 km W of Ferndale, California",
+          "mag_type": "ml",
+          "time": "2025-07-15T15:23:05.918000Z",
+          "depth": 10,
+          "magnitude": 3.1,
+          "place": "152 km W of Ferndale, California"
+        },
+        "highlight": {
+          "place": [
+            "152 km W of Ferndale, <em>California</em>"
+          ]
+        }
+      },
+      {
+        "_index": "earthquakes",
+        "_id": "nn00895228",
+        "_score": 22.516142,
+        "_source": {
+          "title": "M 3.6 - 47 km E of Fort Bidwell, California",
+          "mag_type": "ml",
+          "time": "2025-03-28T00:13:15.709000Z",
+          "depth": 3.4,
+          "magnitude": 3.6,
+          "place": "47 km E of Fort Bidwell, California"
+        },
+        "highlight": {
+          "place": [
+            "47 km E of Fort Bidwell, <em>California</em>"
+          ]
+        }
+      },
+      {
+        "_index": "earthquakes",
+        "_id": "us6000ru7t",
+        "_score": 22.224197,
+        "_source": {
+          "title": "M 3.0 - 15 km NW of Fillmore, California",
+          "mag_type": "ml",
+          "time": "2025-12-11T18:27:31.797000Z",
+          "depth": 12.013,
+          "magnitude": 3,
+          "place": "15 km NW of Fillmore, California"
+        },
+        "highlight": {
+          "place": [
+            "15 km NW of Fillmore, <em>California</em>"
+          ]
+        }
+      },
+      {
+        "_index": "earthquakes",
+        "_id": "us7000rrk1",
+        "_score": 22.224197,
+        "_source": {
+          "title": "M 3.0 - 130 km W of Ferndale, California",
+          "mag_type": "ml",
+          "time": "2026-01-23T11:17:51.589000Z",
+          "depth": 10,
+          "magnitude": 3,
+          "place": "130 km W of Ferndale, California"
+        },
+        "highlight": {
+          "place": [
+            "130 km W of Ferndale, <em>California</em>"
+          ]
+        }
+      }
+    ]
+  }
+}

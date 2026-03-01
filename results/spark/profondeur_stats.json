@@ -1,0 +1,27 @@
+[
+  {
+    "tranche_profondeur": "0-10 km",
+    "nombre": 10679,
+    "mag_moyenne": 2.47
+  },
+  {
+    "tranche_profondeur": "10-50 km",
+    "nombre": 22517,
+    "mag_moyenne": 3.56
+  },
+  {
+    "tranche_profondeur": "50-100 km",
+    "nombre": 4697,
+    "mag_moyenne": 3.51
+  },
+  {
+    "tranche_profondeur": "100-300 km",
+    "nombre": 3677,
+    "mag_moyenne": 3.75
+  },
+  {
+    "tranche_profondeur": "300+ km",
+    "nombre": 1065,
+    "mag_moyenne": 4.38
+  }
+]

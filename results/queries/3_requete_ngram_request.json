@@ -1,0 +1,66 @@
+{
+  "size": 50,
+  "query": {
+    "bool": {
+      "must": [
+        {
+          "match": {
+            "place": {
+              "query": "Alaska",
+              "operator": "or"
+            }
+          }
+        }
+      ],
+      "filter": [
+        {
+          "range": {
+            "magnitude": {
+              "gte": 2.0
+            }
+          }
+        }
+      ]
+    }
+  },
+  "aggs": {
+    "mag_stats_alaska": {
+      "extended_stats": {
+        "field": "magnitude"
+      }
+    },
+    "top_lieux": {
+      "terms": {
+        "field": "place.keyword",
+        "size": 10
+      }
+    },
+    "mag_distribution": {
+      "histogram": {
+        "field": "magnitude",
+        "interval": 0.5
+      }
+    }
+  },
+  "highlight": {
+    "fields": {
+      "place": {
+        "number_of_fragments": 1
+      }
+    }
+  },
+  "sort": [
+    {
+      "magnitude": "desc"
+    }
+  ],
+  "_source": [
+    "title",
+    "magnitude",
+    "place",
+    "time",
+    "depth",
+    "latitude",
+    "longitude"
+  ]
+}

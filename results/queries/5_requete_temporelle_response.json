@@ -1,0 +1,3470 @@
+{
+  "took": 174,
+  "timed_out": false,
+  "_shards": {
+    "total": 1,
+    "successful": 1,
+    "skipped": 0,
+    "failed": 0
+  },
+  "hits": {
+    "total": {
+      "value": 10000,
+      "relation": "gte"
+    },
+    "max_score": null,
+    "hits": []
+  },
+  "aggregations": {
+    "timeline_hebdo": {
+      "buckets": [
+        {
+          "key_as_string": "2025-03-03",
+          "key": 1740960000000,
+          "doc_count": 456,
+          "nb_seismes": {
+            "value": 456
+          },
+          "magnitude_moyenne": {
+            "value": 3.3095833293178627
+          },
+          "repartition_mag_type": {
+            "doc_count_error_upper_bound": 0,
+            "sum_other_doc_count": 2,
+            "buckets": [
+              {
+                "key": "ml",
+                "doc_count": 215
+              },
+              {
+                "key": "mb",
+                "doc_count": 157
+              },
+              {
+                "key": "md",
+                "doc_count": 55
+              },
+              {
+                "key": "mww",
+                "doc_count": 21
+              },
+              {
+                "key": "mwr",
+                "doc_count": 6
+              }
+            ]
+          },
+          "profondeur_moyenne": {
+            "value": 58.515939319865744
+          },
+          "magnitude_max": {
+            "value": 6.0
+          },
+          "magnitude_min": {
+            "value": 2.0
+          },
+          "nb_significatifs": {
+            "doc_count": 180
+          },
+          "moving_avg_magnitude": {
+            "value": null
+          },
+          "cumul_seismes": {
+            "value": 456.0
+          }
+        },
+        {
+          "key_as_string": "2025-03-10",
+          "key": 1741564800000,
+          "doc_count": 656,
+          "nb_seismes": {
+            "value": 656
+          },
+          "magnitude_moyenne": {
+            "value": 3.258216461393891
+          },
+          "repartition_mag_type": {
+            "doc_count_error_upper_bound": 0,
+            "sum_other_doc_count": 12,
+            "buckets": [
+              {
+                "key": "ml",
+                "doc_count": 252
+              },
+              {
+                "key": "mb",
+                "doc_count": 221
+              },
+              {
+                "key": "md",
+                "doc_count": 139
+              },
+              {
+                "key": "mww",
+                "doc_count": 22
+              },
+              {
+                "key": "mb_lg",
+                "doc_count": 10
+              }
+            ]
+          },
+          "profondeur_moyenne": {
+            "value": 55.73195910403823
+          },
+          "magnitude_max": {
+            "value": 6.5
+          },
+          "magnitude_min": {
+            "value": 2.0
+          },
+          "nb_significatifs": {
+            "doc_count": 244
+          },
+          "moving_avg_magnitude": {
+            "value": 3.3095833293178627
+          },
+          "cumul_seismes": {
+            "value": 1112.0
+          }
+        },
+        {
+          "key_as_string": "2025-03-17",
+          "key": 1742169600000,
+          "doc_count": 961,
+          "nb_seismes": {
+            "value": 961
+          },
+          "magnitude_moyenne": {
+            "value": 3.1529754791001747
+          },
+          "repartition_mag_type": {
+            "doc_count_error_upper_bound": 0,
+            "sum_other_doc_count": 11,
+            "buckets": [
+              {
+                "key": "ml",
+                "doc_count": 520
+              },
+              {
+                "key": "mb",
+                "doc_count": 242
+              },
+              {
+                "key": "md",
+                "doc_count": 150
+              },
+              {
+                "key": "mww",
+                "doc_count": 32
+              },
+              {
+                "key": "mb_lg",
+                "doc_count": 6
+              }
+            ]
+          },
+          "profondeur_moyenne": {
+            "value": 45.44477689658504
+          },
+          "magnitude_max": {
+            "value": 6.199999809265137
+          },
+          "magnitude_min": {
+            "value": 2.0
+          },
+          "nb_significatifs": {
+            "doc_count": 261
+          },
+          "moving_avg_magnitude": {
+            "value": 3.283899895355877
+          },
+          "cumul_seismes": {
+            "value": 2073.0
+          }
+        },
+        {
+          "key_as_string": "2025-03-24",
+          "key": 1742774400000,
+          "doc_count": 717,
+          "nb_seismes": {
+            "value": 717
+          },
+          "magnitude_moyenne": {
+            "value": 3.2905578719688426
+          },
+          "repartition_mag_type": {
+            "doc_count_error_upper_bound": 0,
+            "sum_other_doc_count": 3,
+            "buckets": [
+              {
+                "key": "ml",
+                "doc_count": 329
+              },
+              {
+                "key": "mb",
+                "doc_count": 264
+              },
+              {
+                "key": "md",
+                "doc_count": 91
+              },
+              {
+                "key": "mww",
+                "doc_count": 22
+              },
+              {
+                "key": "mwr",
+                "doc_count": 8
+              }
+            ]
+          },
+          "profondeur_moyenne": {
+            "value": 55.8687341399257
+          },
+          "magnitude_max": {
+            "value": 7.699999809265137
+          },
+          "magnitude_min": {
+            "value": 2.0
+          },
+          "nb_significatifs": {
+            "doc_count": 279
+          },
+          "moving_avg_magnitude": {
+            "value": 3.240258423270643
+          },
+          "cumul_seismes": {
+            "value": 2790.0
+          }
+        },
+        {
+          "key_as_string": "2025-03-31",
+          "key": 1743379200000,
+          "doc_count": 845,
+          "nb_seismes": {
+            "value": 845
+          },
+          "magnitude_moyenne": {
+            "value": 3.563088748864168
+          },
+          "repartition_mag_type": {
+            "doc_count_error_upper_bound": 0,
+            "sum_other_doc_count": 5,
+            "buckets": [
+              {
+                "key": "mb",
+                "doc_count": 405
+              },
+              {
+                "key": "ml",
+                "doc_count": 332
+              },
+              {
+                "key": "md",
+                "doc_count": 66
+              },
+              {
+                "key": "mww",
+                "doc_count": 26
+              },
+              {
+                "key": "mwr",
+                "doc_count": 11
+              }
+            ]
+          },
+          "profondeur_moyenne": {
+            "value": 49.79272394242019
+          },
+          "magnitude_max": {
+            "value": 6.900000095367432
+          },
+          "magnitude_min": {
+            "value": 2.0
+          },
+          "nb_significatifs": {
+            "doc_count": 428
+          },
+          "moving_avg_magnitude": {
+            "value": 3.2339166041543024
+          },
+          "cumul_seismes": {
+            "value": 3635.0
+          }
+        },
+        {
+          "key_as_string": "2025-04-07",
+          "key": 1743984000000,
+          "doc_count": 690,
+          "nb_seismes": {
+            "value": 690
+          },
+          "magnitude_moyenne": {
+            "value": 3.3385362314141314
+          },
+          "repartition_mag_type": {
+            "doc_count_error_upper_bound": 0,
+            "sum_other_doc_count": 1,
+            "buckets": [
+              {
+                "key": "ml",
+                "doc_count": 315
+              },
+              {
+                "key": "mb",
+                "doc_count": 267
+              },
+              {
+                "key": "md",
+                "doc_count": 74
+              },
+              {
+                "key": "mww",
+                "doc_count": 26
+              },
+              {
+                "key": "mwr",
+                "doc_count": 7
+              }
+            ]
+          },
+          "profondeur_moyenne": {
+            "value": 54.33004523538377
+          },
+          "magnitude_max": {
+            "value": 6.5
+          },
+          "magnitude_min": {
+            "value": 2.0
+          },
+          "nb_significatifs": {
+            "doc_count": 288
+          },
+          "moving_avg_magnitude": {
+            "value": 3.3355406999777286
+          },
+          "cumul_seismes": {
+            "value": 4325.0
+          }
+        },
+        {
+          "key_as_string": "2025-04-14",
+          "key": 1744588800000,
+          "doc_count": 711,
+          "nb_seismes": {
+            "value": 711
+          },
+          "magnitude_moyenne": {
+            "value": 3.3318002760494143
+          },
+          "repartition_mag_type": {
+            "doc_count_error_upper_bound": 0,
+            "sum_other_doc_count": 3,
+            "buckets": [
+              {
+                "key": "ml",
+                "doc_count": 348
+              },
+              {
+                "key": "mb",
+                "doc_count": 265
+              },
+              {
+                "key": "md",
+                "doc_count": 61
+              },
+              {
+                "key": "mww",
+                "doc_count": 26
+              },
+              {
+                "key": "mwr",
+                "doc_count": 8
+              }
+            ]
+          },
+          "profondeur_moyenne": {
+            "value": 52.84626104949899
+          },
+          "magnitude_max": {
+            "value": 6.599999904632568
+          },
+          "magnitude_min": {
+            "value": 2.0
+          },
+          "nb_significatifs": {
+            "doc_count": 288
+          },
+          "moving_avg_magnitude": {
+            "value": 3.397394284082381
+          },
+          "cumul_seismes": {
+            "value": 5036.0
+          }
+        },
+        {
+          "key_as_string": "2025-04-21",
+          "key": 1745193600000,
+          "doc_count": 688,
+          "nb_seismes": {
+            "value": 688
+          },
+          "magnitude_moyenne": {
+            "value": 3.232950578248778
+          },
+          "repartition_mag_type": {
+            "doc_count_error_upper_bound": 0,
+            "sum_other_doc_count": 5,
+            "buckets": [
+              {
+                "key": "ml",
+                "doc_count": 314
+              },
+              {
+                "key": "mb",
+                "doc_count": 215
+              },
+              {
+                "key": "md",
+                "doc_count": 121
+              },
+              {
+                "key": "mww",
+                "doc_count": 20
+              },
+              {
+                "key": "mwr",
+                "doc_count": 13
+              }
+            ]
+          },
+          "profondeur_moyenne": {
+            "value": 56.01185332232176
+          },
+          "magnitude_max": {
+            "value": 6.300000190734863
+          },
+          "magnitude_min": {
+            "value": 2.0
+          },
+          "nb_significatifs": {
+            "doc_count": 239
+          },
+          "moving_avg_magnitude": {
+            "value": 3.4111417521092378
+          },
+          "cumul_seismes": {
+            "value": 5724.0
+          }
+        },
+        {
+          "key_as_string": "2025-04-28",
+          "key": 1745798400000,
+          "doc_count": 725,
+          "nb_seismes": {
+            "value": 725
+          },
+          "magnitude_moyenne": {
+            "value": 3.566965752963362
+          },
+          "repartition_mag_type": {
+            "doc_count_error_upper_bound": 0,
+            "sum_other_doc_count": 5,
+            "buckets": [
+              {
+                "key": "mb",
+                "doc_count": 338
+              },
+              {
+                "key": "ml",
+                "doc_count": 263
+              },
+              {
+                "key": "md",
+                "doc_count": 83
+              },
+              {
+                "key": "mww",
+                "doc_count": 25
+              },
+              {
+                "key": "mwr",
+                "doc_count": 11
+              }
+            ]
+          },
+          "profondeur_moyenne": {
+            "value": 50.812414652592146
+          },
+          "magnitude_max": {
+            "value": 7.400000095367432
+          },
+          "magnitude_min": {
+            "value": 2.0
+          },
+          "nb_significatifs": {
+            "doc_count": 366
+          },
+          "moving_avg_magnitude": {
+            "value": 3.301095695237441
+          },
+          "cumul_seismes": {
+            "value": 6449.0
+          }
+        },
+        {
+          "key_as_string": "2025-05-05",
+          "key": 1746403200000,
+          "doc_count": 682,
+          "nb_seismes": {
+            "value": 682
+          },
+          "magnitude_moyenne": {
+            "value": 3.3148680268145028
+          },
+          "repartition_mag_type": {
+            "doc_count_error_upper_bound": 0,
+            "sum_other_doc_count": 7,
+            "buckets": [
+              {
+                "key": "ml",
+                "doc_count": 316
+              },
+              {
+                "key": "mb",
+                "doc_count": 247
+              },
+              {
+                "key": "md",
+                "doc_count": 82
+              },
+              {
+                "key": "mww",
+                "doc_count": 22
+              },
+              {
+                "key": "mwr",
+                "doc_count": 8
+              }
+            ]
+          },
+          "profondeur_moyenne": {
+            "value": 60.92887206662916
+          },
+          "magnitude_max": {
+            "value": 6.0
+          },
+          "magnitude_min": {
+            "value": 2.0
+          },
+          "nb_significatifs": {
+            "doc_count": 267
+          },
+          "moving_avg_magnitude": {
+            "value": 3.3772388690871846
+          },
+          "cumul_seismes": {
+            "value": 7131.0
+          }
+        },
+        {
+          "key_as_string": "2025-05-12",
+          "key": 1747008000000,
+          "doc_count": 637,
+          "nb_seismes": {
+            "value": 637
+          },
+          "magnitude_moyenne": {
+            "value": 3.247362640626389
+          },
+          "repartition_mag_type": {
+            "doc_count_error_upper_bound": 0,
+            "sum_other_doc_count": 5,
+            "buckets": [
+              {
+                "key": "ml",
+                "doc_count": 298
+              },
+              {
+                "key": "mb",
+                "doc_count": 208
+              },
+              {
+                "key": "md",
+                "doc_count": 93
+              },
+              {
+                "key": "mww",
+                "doc_count": 24
+              },
+              {
+                "key": "mwr",
+                "doc_count": 9
+              }
+            ]
+          },
+          "profondeur_moyenne": {
+            "value": 50.2984169533292
+          },
+          "magnitude_max": {
+            "value": 6.400000095367432
+          },
+          "magnitude_min": {
+            "value": 2.0
+          },
+          "nb_significatifs": {
+            "doc_count": 234
+          },
+          "moving_avg_magnitude": {
+            "value": 3.371594786008881
+          },
+          "cumul_seismes": {
+            "value": 7768.0
+          }
+        },
+        {
+          "key_as_string": "2025-05-19",
+          "key": 1747612800000,
+          "doc_count": 610,
+          "nb_seismes": {
+            "value": 610
+          },
+          "magnitude_moyenne": {
+            "value": 3.2914754093670453
+          },
+          "repartition_mag_type": {
+            "doc_count_error_upper_bound": 0,
+            "sum_other_doc_count": 4,
+            "buckets": [
+              {
+                "key": "ml",
+                "doc_count": 298
+              },
+              {
+                "key": "mb",
+                "doc_count": 208
+              },
+              {
+                "key": "md",
+                "doc_count": 73
+              },
+              {
+                "key": "mww",
+                "doc_count": 18
+              },
+              {
+                "key": "mwr",
+                "doc_count": 9
+              }
+            ]
+          },
+          "profondeur_moyenne": {
+            "value": 49.918766189696356
+          },
+          "magnitude_max": {
+            "value": 6.5
+          },
+          "magnitude_min": {
+            "value": 2.0
+          },
+          "nb_significatifs": {
+            "doc_count": 229
+          },
+          "moving_avg_magnitude": {
+            "value": 3.376398806801418
+          },
+          "cumul_seismes": {
+            "value": 8378.0
+          }
+        },
+        {
+          "key_as_string": "2025-05-26",
+          "key": 1748217600000,
+          "doc_count": 700,
+          "nb_seismes": {
+            "value": 700
+          },
+          "magnitude_moyenne": {
+            "value": 3.351685709953308
+          },
+          "repartition_mag_type": {
+            "doc_count_error_upper_bound": 0,
+            "sum_other_doc_count": 4,
+            "buckets": [
+              {
+                "key": "ml",
+                "doc_count": 329
+              },
+              {
+                "key": "mb",
+                "doc_count": 252
+              },
+              {
+                "key": "md",
+                "doc_count": 77
+              },
+              {
+                "key": "mww",
+                "doc_count": 30
+              },
+              {
+                "key": "mwr",
+                "doc_count": 8
+              }
+            ]
+          },
+          "profondeur_moyenne": {
+            "value": 54.06662656277684
+          },
+          "magnitude_max": {
+            "value": 6.199999809265137
+          },
+          "magnitude_min": {
+            "value": 2.0
+          },
+          "nb_significatifs": {
+            "doc_count": 284
+          },
+          "moving_avg_magnitude": {
+            "value": 3.2845686922693123
+          },
+          "cumul_seismes": {
+            "value": 9078.0
+          }
+        },
+        {
+          "key_as_string": "2025-06-02",
+          "key": 1748822400000,
+          "doc_count": 771,
+          "nb_seismes": {
+            "value": 771
+          },
+          "magnitude_moyenne": {
+            "value": 3.1460570648950363
+          },
+          "repartition_mag_type": {
+            "doc_count_error_upper_bound": 0,
+            "sum_other_doc_count": 5,
+            "buckets": [
+              {
+                "key": "ml",
+                "doc_count": 382
+              },
+              {
+                "key": "mb",
+                "doc_count": 220
+              },
+              {
+                "key": "md",
+                "doc_count": 120
+              },
+              {
+                "key": "mww",
+                "doc_count": 24
+              },
+              {
+                "key": "mwr",
+                "doc_count": 20
+              }
+            ]
+          },
+          "profondeur_moyenne": {
+            "value": 47.98412040189083
+          },
+          "magnitude_max": {
+            "value": 6.400000095367432
+          },
+          "magnitude_min": {
+            "value": 2.0
+          },
+          "nb_significatifs": {
+            "doc_count": 243
+          },
+          "moving_avg_magnitude": {
+            "value": 3.2968412533155806
+          },
+          "cumul_seismes": {
+            "value": 9849.0
+          }
+        },
+        {
+          "key_as_string": "2025-06-09",
+          "key": 1749427200000,
+          "doc_count": 628,
+          "nb_seismes": {
+            "value": 628
+          },
+          "magnitude_moyenne": {
+            "value": 3.2277229299211196
+          },
+          "repartition_mag_type": {
+            "doc_count_error_upper_bound": 0,
+            "sum_other_doc_count": 3,
+            "buckets": [
+              {
+                "key": "ml",
+                "doc_count": 317
+              },
+              {
+                "key": "mb",
+                "doc_count": 197
+              },
+              {
+                "key": "md",
+                "doc_count": 81
+              },
+              {
+                "key": "mww",
+                "doc_count": 22
+              },
+              {
+                "key": "mwr",
+                "doc_count": 8
+              }
+            ]
+          },
+          "profondeur_moyenne": {
+            "value": 47.706206676769696
+          },
+          "magnitude_max": {
+            "value": 6.0
+          },
+          "magnitude_min": {
+            "value": 2.0
+          },
+          "nb_significatifs": {
+            "doc_count": 227
+          },
+          "moving_avg_magnitude": {
+            "value": 3.2630727280717964
+          },
+          "cumul_seismes": {
+            "value": 10477.0
+          }
+        },
+        {
+          "key_as_string": "2025-06-16",
+          "key": 1750032000000,
+          "doc_count": 690,
+          "nb_seismes": {
+            "value": 690
+          },
+          "magnitude_moyenne": {
+            "value": 3.38259419531062
+          },
+          "repartition_mag_type": {
+            "doc_count_error_upper_bound": 0,
+            "sum_other_doc_count": 4,
+            "buckets": [
+              {
+                "key": "ml",
+                "doc_count": 296
+              },
+              {
+                "key": "mb",
+                "doc_count": 287
+              },
+              {
+                "key": "md",
+                "doc_count": 79
+              },
+              {
+                "key": "mww",
+                "doc_count": 20
+              },
+              {
+                "key": "mb_lg",
+                "doc_count": 4
+              }
+            ]
+          },
+          "profondeur_moyenne": {
+            "value": 52.364955039149606
+          },
+          "magnitude_max": {
+            "value": 6.0
+          },
+          "magnitude_min": {
+            "value": 2.0
+          },
+          "nb_significatifs": {
+            "doc_count": 304
+          },
+          "moving_avg_magnitude": {
+            "value": 3.2418219015898213
+          },
+          "cumul_seismes": {
+            "value": 11167.0
+          }
+        },
+        {
+          "key_as_string": "2025-06-23",
+          "key": 1750636800000,
+          "doc_count": 743,
+          "nb_seismes": {
+            "value": 743
+          },
+          "magnitude_moyenne": {
+            "value": 3.3895423951412114
+          },
+          "repartition_mag_type": {
+            "doc_count_error_upper_bound": 0,
+            "sum_other_doc_count": 10,
+            "buckets": [
+              {
+                "key": "ml",
+                "doc_count": 304
+              },
+              {
+                "key": "mb",
+                "doc_count": 283
+              },
+              {
+                "key": "md",
+                "doc_count": 113
+              },
+              {
+                "key": "mww",
+                "doc_count": 27
+              },
+              {
+                "key": "mb_lg",
+                "doc_count": 6
+              }
+            ]
+          },
+          "profondeur_moyenne": {
+            "value": 50.06112983923601
+          },
+          "magnitude_max": {
+            "value": 6.599999904632568
+          },
+          "magnitude_min": {
+            "value": 2.0
+          },
+          "nb_significatifs": {
+            "doc_count": 313
+          },
+          "moving_avg_magnitude": {
+            "value": 3.2521247300422584
+          },
+          "cumul_seismes": {
+            "value": 11910.0
+          }
+        },
+        {
+          "key_as_string": "2025-06-30",
+          "key": 1751241600000,
+          "doc_count": 724,
+          "nb_seismes": {
+            "value": 724
+          },
+          "magnitude_moyenne": {
+            "value": 3.390364630775557
+          },
+          "repartition_mag_type": {
+            "doc_count_error_upper_bound": 0,
+            "sum_other_doc_count": 9,
+            "buckets": [
+              {
+                "key": "ml",
+                "doc_count": 292
+              },
+              {
+                "key": "mb",
+                "doc_count": 270
+              },
+              {
+                "key": "md",
+                "doc_count": 104
+              },
+              {
+                "key": "mww",
+                "doc_count": 40
+              },
+              {
+                "key": "mb_lg",
+                "doc_count": 9
+              }
+            ]
+          },
+          "profondeur_moyenne": {
+            "value": 48.265963655922214
+          },
+          "magnitude_max": {
+            "value": 5.599999904632568
+          },
+          "magnitude_min": {
+            "value": 2.0
+          },
+          "nb_significatifs": {
+            "doc_count": 310
+          },
+          "moving_avg_magnitude": {
+            "value": 3.3332865067909836
+          },
+          "cumul_seismes": {
+            "value": 12634.0
+          }
+        },
+        {
+          "key_as_string": "2025-07-07",
+          "key": 1751846400000,
+          "doc_count": 657,
+          "nb_seismes": {
+            "value": 657
+          },
+          "magnitude_moyenne": {
+            "value": 3.3982800624504845
+          },
+          "repartition_mag_type": {
+            "doc_count_error_upper_bound": 0,
+            "sum_other_doc_count": 8,
+            "buckets": [
+              {
+                "key": "ml",
+                "doc_count": 279
+              },
+              {
+                "key": "mb",
+                "doc_count": 253
+              },
+              {
+                "key": "md",
+                "doc_count": 79
+              },
+              {
+                "key": "mww",
+                "doc_count": 31
+              },
+              {
+                "key": "mwr",
+                "doc_count": 7
+              }
+            ]
+          },
+          "profondeur_moyenne": {
+            "value": 58.954669083467195
+          },
+          "magnitude_max": {
+            "value": 6.199999809265137
+          },
+          "magnitude_min": {
+            "value": 2.0
+          },
+          "nb_significatifs": {
+            "doc_count": 289
+          },
+          "moving_avg_magnitude": {
+            "value": 3.387500407075796
+          },
+          "cumul_seismes": {
+            "value": 13291.0
+          }
+        },
+        {
+          "key_as_string": "2025-07-14",
+          "key": 1752451200000,
+          "doc_count": 2166,
+          "nb_seismes": {
+            "value": 2166
+          },
+          "magnitude_moyenne": {
+            "value": 2.962137575404906
+          },
+          "repartition_mag_type": {
+            "doc_count_error_upper_bound": 0,
+            "sum_other_doc_count": 4,
+            "buckets": [
+              {
+                "key": "ml",
+                "doc_count": 1581
+              },
+              {
+                "key": "mb",
+                "doc_count": 449
+              },
+              {
+                "key": "md",
+                "doc_count": 80
+              },
+              {
+                "key": "mww",
+                "doc_count": 45
+              },
+              {
+                "key": "mwr",
+                "doc_count": 7
+              }
+            ]
+          },
+          "profondeur_moyenne": {
+            "value": 31.795511992945787
+          },
+          "magnitude_max": {
+            "value": 7.400000095367432
+          },
+          "magnitude_min": {
+            "value": 2.0
+          },
+          "nb_significatifs": {
+            "doc_count": 474
+          },
+          "moving_avg_magnitude": {
+            "value": 3.392729029455751
+          },
+          "cumul_seismes": {
+            "value": 15457.0
+          }
+        },
+        {
+          "key_as_string": "2025-07-21",
+          "key": 1753056000000,
+          "doc_count": 1230,
+          "nb_seismes": {
+            "value": 1230
+          },
+          "magnitude_moyenne": {
+            "value": 3.289471540606119
+          },
+          "repartition_mag_type": {
+            "doc_count_error_upper_bound": 0,
+            "sum_other_doc_count": 6,
+            "buckets": [
+              {
+                "key": "ml",
+                "doc_count": 612
+              },
+              {
+                "key": "mb",
+                "doc_count": 472
+              },
+              {
+                "key": "md",
+                "doc_count": 92
+              },
+              {
+                "key": "mww",
+                "doc_count": 40
+              },
+              {
+                "key": "mwr",
+                "doc_count": 8
+              }
+            ]
+          },
+          "profondeur_moyenne": {
+            "value": 36.026843076544566
+          },
+          "magnitude_max": {
+            "value": 6.599999904632568
+          },
+          "magnitude_min": {
+            "value": 2.0
+          },
+          "nb_significatifs": {
+            "doc_count": 510
+          },
+          "moving_avg_magnitude": {
+            "value": 3.250260756210316
+          },
+          "cumul_seismes": {
+            "value": 16687.0
+          }
+        },
+        {
+          "key_as_string": "2025-07-28",
+          "key": 1753660800000,
+          "doc_count": 2166,
+          "nb_seismes": {
+            "value": 2166
+          },
+          "magnitude_moyenne": {
+            "value": 4.082078656001104
+          },
+          "repartition_mag_type": {
+            "doc_count_error_upper_bound": 0,
+            "sum_other_doc_count": 10,
+            "buckets": [
+              {
+                "key": "mb",
+                "doc_count": 1596
+              },
+              {
+                "key": "ml",
+                "doc_count": 425
+              },
+              {
+                "key": "md",
+                "doc_count": 82
+              },
+              {
+                "key": "mww",
+                "doc_count": 48
+              },
+              {
+                "key": "mb_lg",
+                "doc_count": 5
+              }
+            ]
+          },
+          "profondeur_moyenne": {
+            "value": 35.024357374148686
+          },
+          "magnitude_max": {
+            "value": 8.800000190734863
+          },
+          "magnitude_min": {
+            "value": 2.0
+          },
+          "nb_significatifs": {
+            "doc_count": 1642
+          },
+          "moving_avg_magnitude": {
+            "value": 3.216629726153837
+          },
+          "cumul_seismes": {
+            "value": 18853.0
+          }
+        },
+        {
+          "key_as_string": "2025-08-04",
+          "key": 1754265600000,
+          "doc_count": 1156,
+          "nb_seismes": {
+            "value": 1156
+          },
+          "magnitude_moyenne": {
+            "value": 3.5335540975666375
+          },
+          "repartition_mag_type": {
+            "doc_count_error_upper_bound": 0,
+            "sum_other_doc_count": 7,
+            "buckets": [
+              {
+                "key": "mb",
+                "doc_count": 584
+              },
+              {
+                "key": "ml",
+                "doc_count": 441
+              },
+              {
+                "key": "md",
+                "doc_count": 83
+              },
+              {
+                "key": "mww",
+                "doc_count": 35
+              },
+              {
+                "key": "mb_lg",
+                "doc_count": 6
+              }
+            ]
+          },
+          "profondeur_moyenne": {
+            "value": 38.15149632595144
+          },
+          "magnitude_max": {
+            "value": 6.199999809265137
+          },
+          "magnitude_min": {
+            "value": 2.0
+          },
+          "nb_significatifs": {
+            "doc_count": 622
+          },
+          "moving_avg_magnitude": {
+            "value": 3.44456259067071
+          },
+          "cumul_seismes": {
+            "value": 20009.0
+          }
+        },
+        {
+          "key_as_string": "2025-08-11",
+          "key": 1754870400000,
+          "doc_count": 865,
+          "nb_seismes": {
+            "value": 865
+          },
+          "magnitude_moyenne": {
+            "value": 3.4666011518136615
+          },
+          "repartition_mag_type": {
+            "doc_count_error_upper_bound": 0,
+            "sum_other_doc_count": 3,
+            "buckets": [
+              {
+                "key": "mb",
+                "doc_count": 396
+              },
+              {
+                "key": "ml",
+                "doc_count": 357
+              },
+              {
+                "key": "md",
+                "doc_count": 64
+              },
+              {
+                "key": "mww",
+                "doc_count": 37
+              },
+              {
+                "key": "mwr",
+                "doc_count": 8
+              }
+            ]
+          },
+          "profondeur_moyenne": {
+            "value": 41.46484663296986
+          },
+          "magnitude_max": {
+            "value": 6.300000190734863
+          },
+          "magnitude_min": {
+            "value": 2.0
+          },
+          "nb_significatifs": {
+            "doc_count": 431
+          },
+          "moving_avg_magnitude": {
+            "value": 3.63503476472462
+          },
+          "cumul_seismes": {
+            "value": 20874.0
+          }
+        },
+        {
+          "key_as_string": "2025-08-18",
+          "key": 1755475200000,
+          "doc_count": 782,
+          "nb_seismes": {
+            "value": 782
+          },
+          "magnitude_moyenne": {
+            "value": 3.460217389609198
+          },
+          "repartition_mag_type": {
+            "doc_count_error_upper_bound": 0,
+            "sum_other_doc_count": 5,
+            "buckets": [
+              {
+                "key": "mb",
+                "doc_count": 342
+              },
+              {
+                "key": "ml",
+                "doc_count": 314
+              },
+              {
+                "key": "md",
+                "doc_count": 80
+              },
+              {
+                "key": "mww",
+                "doc_count": 29
+              },
+              {
+                "key": "mwr",
+                "doc_count": 12
+              }
+            ]
+          },
+          "profondeur_moyenne": {
+            "value": 46.357135719369595
+          },
+          "magnitude_max": {
+            "value": 7.5
+          },
+          "magnitude_min": {
+            "value": 2.0
+          },
+          "nb_significatifs": {
+            "doc_count": 379
+          },
+          "moving_avg_magnitude": {
+            "value": 3.6940779684604674
+          },
+          "cumul_seismes": {
+            "value": 21656.0
+          }
+        },
+        {
+          "key_as_string": "2025-08-25",
+          "key": 1756080000000,
+          "doc_count": 739,
+          "nb_seismes": {
+            "value": 739
+          },
+          "magnitude_moyenne": {
+            "value": 3.2966441037045118
+          },
+          "repartition_mag_type": {
+            "doc_count_error_upper_bound": 0,
+            "sum_other_doc_count": 6,
+            "buckets": [
+              {
+                "key": "ml",
+                "doc_count": 349
+              },
+              {
+                "key": "mb",
+                "doc_count": 255
+              },
+              {
+                "key": "md",
+                "doc_count": 86
+              },
+              {
+                "key": "mww",
+                "doc_count": 31
+              },
+              {
+                "key": "mw",
+                "doc_count": 12
+              }
+            ]
+          },
+          "profondeur_moyenne": {
+            "value": 46.1892269554577
+          },
+          "magnitude_max": {
+            "value": 6.099999904632568
+          },
+          "magnitude_min": {
+            "value": 2.0
+          },
+          "nb_significatifs": {
+            "doc_count": 289
+          },
+          "moving_avg_magnitude": {
+            "value": 3.486790879663166
+          },
+          "cumul_seismes": {
+            "value": 22395.0
+          }
+        },
+        {
+          "key_as_string": "2025-09-01",
+          "key": 1756684800000,
+          "doc_count": 734,
+          "nb_seismes": {
+            "value": 734
+          },
+          "magnitude_moyenne": {
+            "value": 3.499019071256757
+          },
+          "repartition_mag_type": {
+            "doc_count_error_upper_bound": 0,
+            "sum_other_doc_count": 4,
+            "buckets": [
+              {
+                "key": "mb",
+                "doc_count": 330
+              },
+              {
+                "key": "ml",
+                "doc_count": 289
+              },
+              {
+                "key": "md",
+                "doc_count": 82
+              },
+              {
+                "key": "mww",
+                "doc_count": 25
+              },
+              {
+                "key": "mw",
+                "doc_count": 4
+              }
+            ]
+          },
+          "profondeur_moyenne": {
+            "value": 52.97469254288751
+          },
+          "magnitude_max": {
+            "value": 5.900000095367432
+          },
+          "magnitude_min": {
+            "value": 2.0
+          },
+          "nb_significatifs": {
+            "doc_count": 342
+          },
+          "moving_avg_magnitude": {
+            "value": 3.407820881709124
+          },
+          "cumul_seismes": {
+            "value": 23129.0
+          }
+        },
+        {
+          "key_as_string": "2025-09-08",
+          "key": 1757289600000,
+          "doc_count": 656,
+          "nb_seismes": {
+            "value": 656
+          },
+          "magnitude_moyenne": {
+            "value": 3.525564026541826
+          },
+          "repartition_mag_type": {
+            "doc_count_error_upper_bound": 0,
+            "sum_other_doc_count": 5,
+            "buckets": [
+              {
+                "key": "mb",
+                "doc_count": 303
+              },
+              {
+                "key": "ml",
+                "doc_count": 225
+              },
+              {
+                "key": "md",
+                "doc_count": 91
+              },
+              {
+                "key": "mww",
+                "doc_count": 24
+              },
+              {
+                "key": "mwr",
+                "doc_count": 8
+              }
+            ]
+          },
+          "profondeur_moyenne": {
+            "value": 44.268730867560386
+          },
+          "magnitude_max": {
+            "value": 7.400000095367432
+          },
+          "magnitude_min": {
+            "value": 2.0
+          },
+          "nb_significatifs": {
+            "doc_count": 324
+          },
+          "moving_avg_magnitude": {
+            "value": 3.418626854856822
+          },
+          "cumul_seismes": {
+            "value": 23785.0
+          }
+        },
+        {
+          "key_as_string": "2025-09-15",
+          "key": 1757894400000,
+          "doc_count": 738,
+          "nb_seismes": {
+            "value": 738
+          },
+          "magnitude_moyenne": {
+            "value": 3.8935230363029127
+          },
+          "repartition_mag_type": {
+            "doc_count_error_upper_bound": 0,
+            "sum_other_doc_count": 4,
+            "buckets": [
+              {
+                "key": "mb",
+                "doc_count": 463
+              },
+              {
+                "key": "ml",
+                "doc_count": 173
+              },
+              {
+                "key": "md",
+                "doc_count": 64
+              },
+              {
+                "key": "mww",
+                "doc_count": 29
+              },
+              {
+                "key": "mw",
+                "doc_count": 5
+              }
+            ]
+          },
+          "profondeur_moyenne": {
+            "value": 41.57812837042864
+          },
+          "magnitude_max": {
+            "value": 7.800000190734863
+          },
+          "magnitude_min": {
+            "value": 2.0
+          },
+          "nb_significatifs": {
+            "doc_count": 495
+          },
+          "moving_avg_magnitude": {
+            "value": 3.4404090671676983
+          },
+          "cumul_seismes": {
+            "value": 24523.0
+          }
+        },
+        {
+          "key_as_string": "2025-09-22",
+          "key": 1758499200000,
+          "doc_count": 636,
+          "nb_seismes": {
+            "value": 636
+          },
+          "magnitude_moyenne": {
+            "value": 3.6337106861408404
+          },
+          "repartition_mag_type": {
+            "doc_count_error_upper_bound": 0,
+            "sum_other_doc_count": 6,
+            "buckets": [
+              {
+                "key": "mb",
+                "doc_count": 314
+              },
+              {
+                "key": "ml",
+                "doc_count": 224
+              },
+              {
+                "key": "md",
+                "doc_count": 54
+              },
+              {
+                "key": "mww",
+                "doc_count": 32
+              },
+              {
+                "key": "mwr",
+                "doc_count": 6
+              }
+            ]
+          },
+          "profondeur_moyenne": {
+            "value": 48.04621135955969
+          },
+          "magnitude_max": {
+            "value": 6.300000190734863
+          },
+          "magnitude_min": {
+            "value": 2.0
+          },
+          "nb_significatifs": {
+            "doc_count": 349
+          },
+          "moving_avg_magnitude": {
+            "value": 3.6393687113671653
+          },
+          "cumul_seismes": {
+            "value": 25159.0
+          }
+        },
+        {
+          "key_as_string": "2025-09-29",
+          "key": 1759104000000,
+          "doc_count": 657,
+          "nb_seismes": {
+            "value": 657
+          },
+          "magnitude_moyenne": {
+            "value": 3.682146116660247
+          },
+          "repartition_mag_type": {
+            "doc_count_error_upper_bound": 0,
+            "sum_other_doc_count": 3,
+            "buckets": [
+              {
+                "key": "mb",
+                "doc_count": 351
+              },
+              {
+                "key": "ml",
+                "doc_count": 210
+              },
+              {
+                "key": "md",
+                "doc_count": 54
+              },
+              {
+                "key": "mww",
+                "doc_count": 32
+              },
+              {
+                "key": "mwr",
+                "doc_count": 7
+              }
+            ]
+          },
+          "profondeur_moyenne": {
+            "value": 45.18924290141377
+          },
+          "magnitude_max": {
+            "value": 6.900000095367432
+          },
+          "magnitude_min": {
+            "value": 2.0
+          },
+          "nb_significatifs": {
+            "doc_count": 382
+          },
+          "moving_avg_magnitude": {
+            "value": 3.6842659163285263
+          },
+          "cumul_seismes": {
+            "value": 25816.0
+          }
+        },
+        {
+          "key_as_string": "2025-10-06",
+          "key": 1759708800000,
+          "doc_count": 708,
+          "nb_seismes": {
+            "value": 708
+          },
+          "magnitude_moyenne": {
+            "value": 3.7080367261407066
+          },
+          "repartition_mag_type": {
+            "doc_count_error_upper_bound": 0,
+            "sum_other_doc_count": 1,
+            "buckets": [
+              {
+                "key": "mb",
+                "doc_count": 376
+              },
+              {
+                "key": "ml",
+                "doc_count": 199
+              },
+              {
+                "key": "md",
+                "doc_count": 105
+              },
+              {
+                "key": "mww",
+                "doc_count": 24
+              },
+              {
+                "key": "mwr",
+                "doc_count": 3
+              }
+            ]
+          },
+          "profondeur_moyenne": {
+            "value": 49.28128603254419
+          },
+          "magnitude_max": {
+            "value": 7.599999904632568
+          },
+          "magnitude_min": {
+            "value": 2.0
+          },
+          "nb_significatifs": {
+            "doc_count": 400
+          },
+          "moving_avg_magnitude": {
+            "value": 3.7364599463680004
+          },
+          "cumul_seismes": {
+            "value": 26524.0
+          }
+        },
+        {
+          "key_as_string": "2025-10-13",
+          "key": 1760313600000,
+          "doc_count": 631,
+          "nb_seismes": {
+            "value": 631
+          },
+          "magnitude_moyenne": {
+            "value": 3.5426624365351658
+          },
+          "repartition_mag_type": {
+            "doc_count_error_upper_bound": 0,
+            "sum_other_doc_count": 2,
+            "buckets": [
+              {
+                "key": "mb",
+                "doc_count": 305
+              },
+              {
+                "key": "ml",
+                "doc_count": 223
+              },
+              {
+                "key": "md",
+                "doc_count": 72
+              },
+              {
+                "key": "mww",
+                "doc_count": 25
+              },
+              {
+                "key": "mwr",
+                "doc_count": 4
+              }
+            ]
+          },
+          "profondeur_moyenne": {
+            "value": 52.515297816715034
+          },
+          "magnitude_max": {
+            "value": 6.400000095367432
+          },
+          "magnitude_min": {
+            "value": 2.0
+          },
+          "nb_significatifs": {
+            "doc_count": 333
+          },
+          "moving_avg_magnitude": {
+            "value": 3.6746311763139317
+          },
+          "cumul_seismes": {
+            "value": 27155.0
+          }
+        },
+        {
+          "key_as_string": "2025-10-20",
+          "key": 1760918400000,
+          "doc_count": 521,
+          "nb_seismes": {
+            "value": 521
+          },
+          "magnitude_moyenne": {
+            "value": 3.5621497017865904
+          },
+          "repartition_mag_type": {
+            "doc_count_error_upper_bound": 0,
+            "sum_other_doc_count": 3,
+            "buckets": [
+              {
+                "key": "mb",
+                "doc_count": 245
+              },
+              {
+                "key": "ml",
+                "doc_count": 163
+              },
+              {
+                "key": "md",
+                "doc_count": 78
+              },
+              {
+                "key": "mww",
+                "doc_count": 26
+              },
+              {
+                "key": "mwr",
+                "doc_count": 6
+              }
+            ]
+          },
+          "profondeur_moyenne": {
+            "value": 60.363678706556044
+          },
+          "magnitude_max": {
+            "value": 6.199999809265137
+          },
+          "magnitude_min": {
+            "value": 2.0
+          },
+          "nb_significatifs": {
+            "doc_count": 273
+          },
+          "moving_avg_magnitude": {
+            "value": 3.6442817597787065
+          },
+          "cumul_seismes": {
+            "value": 27676.0
+          }
+        },
+        {
+          "key_as_string": "2025-10-27",
+          "key": 1761523200000,
+          "doc_count": 574,
+          "nb_seismes": {
+            "value": 574
+          },
+          "magnitude_moyenne": {
+            "value": 3.4956794325067606
+          },
+          "repartition_mag_type": {
+            "doc_count_error_upper_bound": 0,
+            "sum_other_doc_count": 6,
+            "buckets": [
+              {
+                "key": "mb",
+                "doc_count": 267
+              },
+              {
+                "key": "ml",
+                "doc_count": 204
+              },
+              {
+                "key": "md",
+                "doc_count": 69
+              },
+              {
+                "key": "mww",
+                "doc_count": 21
+              },
+              {
+                "key": "mwr",
+                "doc_count": 7
+              }
+            ]
+          },
+          "profondeur_moyenne": {
+            "value": 47.37985232844949
+          },
+          "magnitude_max": {
+            "value": 6.5
+          },
+          "magnitude_min": {
+            "value": 2.0
+          },
+          "nb_significatifs": {
+            "doc_count": 290
+          },
+          "moving_avg_magnitude": {
+            "value": 3.604282954820821
+          },
+          "cumul_seismes": {
+            "value": 28250.0
+          }
+        },
+        {
+          "key_as_string": "2025-11-03",
+          "key": 1762128000000,
+          "doc_count": 685,
+          "nb_seismes": {
+            "value": 685
+          },
+          "magnitude_moyenne": {
+            "value": 3.776248180083115
+          },
+          "repartition_mag_type": {
+            "doc_count_error_upper_bound": 0,
+            "sum_other_doc_count": 3,
+            "buckets": [
+              {
+                "key": "mb",
+                "doc_count": 387
+              },
+              {
+                "key": "ml",
+                "doc_count": 200
+              },
+              {
+                "key": "md",
+                "doc_count": 52
+              },
+              {
+                "key": "mww",
+                "doc_count": 40
+              },
+              {
+                "key": "mwr",
+                "doc_count": 3
+              }
+            ]
+          },
+          "profondeur_moyenne": {
+            "value": 52.71882470810283
+          },
+          "magnitude_max": {
+            "value": 6.800000190734863
+          },
+          "magnitude_min": {
+            "value": 2.0
+          },
+          "nb_significatifs": {
+            "doc_count": 426
+          },
+          "moving_avg_magnitude": {
+            "value": 3.5334971902761723
+          },
+          "cumul_seismes": {
+            "value": 28935.0
+          }
+        },
+        {
+          "key_as_string": "2025-11-10",
+          "key": 1762732800000,
+          "doc_count": 588,
+          "nb_seismes": {
+            "value": 588
+          },
+          "magnitude_moyenne": {
+            "value": 3.466437830811455
+          },
+          "repartition_mag_type": {
+            "doc_count_error_upper_bound": 0,
+            "sum_other_doc_count": 2,
+            "buckets": [
+              {
+                "key": "mb",
+                "doc_count": 269
+              },
+              {
+                "key": "ml",
+                "doc_count": 244
+              },
+              {
+                "key": "md",
+                "doc_count": 43
+              },
+              {
+                "key": "mww",
+                "doc_count": 24
+              },
+              {
+                "key": "mwr",
+                "doc_count": 6
+              }
+            ]
+          },
+          "profondeur_moyenne": {
+            "value": 53.83001993751141
+          },
+          "magnitude_max": {
+            "value": 6.0
+          },
+          "magnitude_min": {
+            "value": 2.0
+          },
+          "nb_significatifs": {
+            "doc_count": 288
+          },
+          "moving_avg_magnitude": {
+            "value": 3.6113591047921556
+          },
+          "cumul_seismes": {
+            "value": 29523.0
+          }
+        },
+        {
+          "key_as_string": "2025-11-17",
+          "key": 1763337600000,
+          "doc_count": 734,
+          "nb_seismes": {
+            "value": 734
+          },
+          "magnitude_moyenne": {
+            "value": 3.208396533204684
+          },
+          "repartition_mag_type": {
+            "doc_count_error_upper_bound": 0,
+            "sum_other_doc_count": 4,
+            "buckets": [
+              {
+                "key": "ml",
+                "doc_count": 400
+              },
+              {
+                "key": "mb",
+                "doc_count": 239
+              },
+              {
+                "key": "md",
+                "doc_count": 60
+              },
+              {
+                "key": "mww",
+                "doc_count": 25
+              },
+              {
+                "key": "mwr",
+                "doc_count": 6
+              }
+            ]
+          },
+          "profondeur_moyenne": {
+            "value": 51.527167332026224
+          },
+          "magnitude_max": {
+            "value": 5.800000190734863
+          },
+          "magnitude_min": {
+            "value": 2.0
+          },
+          "nb_significatifs": {
+            "doc_count": 267
+          },
+          "moving_avg_magnitude": {
+            "value": 3.5794551478004437
+          },
+          "cumul_seismes": {
+            "value": 30257.0
+          }
+        },
+        {
+          "key_as_string": "2025-11-24",
+          "key": 1763942400000,
+          "doc_count": 760,
+          "nb_seismes": {
+            "value": 760
+          },
+          "magnitude_moyenne": {
+            "value": 3.1913962191657017
+          },
+          "repartition_mag_type": {
+            "doc_count_error_upper_bound": 0,
+            "sum_other_doc_count": 10,
+            "buckets": [
+              {
+                "key": "ml",
+                "doc_count": 411
+              },
+              {
+                "key": "mb",
+                "doc_count": 229
+              },
+              {
+                "key": "md",
+                "doc_count": 72
+              },
+              {
+                "key": "mww",
+                "doc_count": 28
+              },
+              {
+                "key": "mw",
+                "doc_count": 10
+              }
+            ]
+          },
+          "profondeur_moyenne": {
+            "value": 56.67759966339524
+          },
+          "magnitude_max": {
+            "value": 6.400000095367432
+          },
+          "magnitude_min": {
+            "value": 2.0
+          },
+          "nb_significatifs": {
+            "doc_count": 261
+          },
+          "moving_avg_magnitude": {
+            "value": 3.483694181366418
+          },
+          "cumul_seismes": {
+            "value": 31017.0
+          }
+        },
+        {
+          "key_as_string": "2025-12-01",
+          "key": 1764547200000,
+          "doc_count": 1154,
+          "nb_seismes": {
+            "value": 1154
+          },
+          "magnitude_moyenne": {
+            "value": 3.176498639934811
+          },
+          "repartition_mag_type": {
+            "doc_count_error_upper_bound": 0,
+            "sum_other_doc_count": 4,
+            "buckets": [
+              {
+                "key": "ml",
+                "doc_count": 743
+              },
+              {
+                "key": "mb",
+                "doc_count": 275
+              },
+              {
+                "key": "md",
+                "doc_count": 89
+              },
+              {
+                "key": "mwr",
+                "doc_count": 23
+              },
+              {
+                "key": "mww",
+                "doc_count": 20
+              }
+            ]
+          },
+          "profondeur_moyenne": {
+            "value": 34.106512708244026
+          },
+          "magnitude_max": {
+            "value": 7.0
+          },
+          "magnitude_min": {
+            "value": 2.0
+          },
+          "nb_significatifs": {
+            "doc_count": 317
+          },
+          "moving_avg_magnitude": {
+            "value": 3.2887435277272803
+          },
+          "cumul_seismes": {
+            "value": 32171.0
+          }
+        },
+        {
+          "key_as_string": "2025-12-08",
+          "key": 1765152000000,
+          "doc_count": 2219,
+          "nb_seismes": {
+            "value": 2219
+          },
+          "magnitude_moyenne": {
+            "value": 2.638885092230303
+          },
+          "repartition_mag_type": {
+            "doc_count_error_upper_bound": 0,
+            "sum_other_doc_count": 6,
+            "buckets": [
+              {
+                "key": "ml",
+                "doc_count": 1805
+              },
+              {
+                "key": "mb",
+                "doc_count": 271
+              },
+              {
+                "key": "md",
+                "doc_count": 99
+              },
+              {
+                "key": "mww",
+                "doc_count": 27
+              },
+              {
+                "key": "mwr",
+                "doc_count": 11
+              }
+            ]
+          },
+          "profondeur_moyenne": {
+            "value": 21.069888040262228
+          },
+          "magnitude_max": {
+            "value": 7.599999904632568
+          },
+          "magnitude_min": {
+            "value": 2.0
+          },
+          "nb_significatifs": {
+            "doc_count": 304
+          },
+          "moving_avg_magnitude": {
+            "value": 3.192097130768399
+          },
+          "cumul_seismes": {
+            "value": 34390.0
+          }
+        },
+        {
+          "key_as_string": "2025-12-15",
+          "key": 1765756800000,
+          "doc_count": 1313,
+          "nb_seismes": {
+            "value": 1313
+          },
+          "magnitude_moyenne": {
+            "value": 2.8059385903264764
+          },
+          "repartition_mag_type": {
+            "doc_count_error_upper_bound": 0,
+            "sum_other_doc_count": 6,
+            "buckets": [
+              {
+                "key": "ml",
+                "doc_count": 914
+              },
+              {
+                "key": "mb",
+                "doc_count": 248
+              },
+              {
+                "key": "md",
+                "doc_count": 104
+              },
+              {
+                "key": "mww",
+                "doc_count": 33
+              },
+              {
+                "key": "mwr",
+                "doc_count": 8
+              }
+            ]
+          },
+          "profondeur_moyenne": {
+            "value": 31.11670190068806
+          },
+          "magnitude_max": {
+            "value": 5.900000095367432
+          },
+          "magnitude_min": {
+            "value": 2.0
+          },
+          "nb_significatifs": {
+            "doc_count": 282
+          },
+          "moving_avg_magnitude": {
+            "value": 3.002259983776939
+          },
+          "cumul_seismes": {
+            "value": 35703.0
+          }
+        },
+        {
+          "key_as_string": "2025-12-22",
+          "key": 1766361600000,
+          "doc_count": 687,
+          "nb_seismes": {
+            "value": 687
+          },
+          "magnitude_moyenne": {
+            "value": 3.2429839828996507
+          },
+          "repartition_mag_type": {
+            "doc_count_error_upper_bound": 0,
+            "sum_other_doc_count": 5,
+            "buckets": [
+              {
+                "key": "ml",
+                "doc_count": 337
+              },
+              {
+                "key": "mb",
+                "doc_count": 242
+              },
+              {
+                "key": "md",
+                "doc_count": 74
+              },
+              {
+                "key": "mww",
+                "doc_count": 19
+              },
+              {
+                "key": "mwr",
+                "doc_count": 10
+              }
+            ]
+          },
+          "profondeur_moyenne": {
+            "value": 59.2336634567124
+          },
+          "magnitude_max": {
+            "value": 6.599999904632568
+          },
+          "magnitude_min": {
+            "value": 2.0
+          },
+          "nb_significatifs": {
+            "doc_count": 260
+          },
+          "moving_avg_magnitude": {
+            "value": 2.8737741074971965
+          },
+          "cumul_seismes": {
+            "value": 36390.0
+          }
+        },
+        {
+          "key_as_string": "2025-12-29",
+          "key": 1766966400000,
+          "doc_count": 691,
+          "nb_seismes": {
+            "value": 691
+          },
+          "magnitude_moyenne": {
+            "value": 3.2139617289199496
+          },
+          "repartition_mag_type": {
+            "doc_count_error_upper_bound": 0,
+            "sum_other_doc_count": 3,
+            "buckets": [
+              {
+                "key": "ml",
+                "doc_count": 350
+              },
+              {
+                "key": "mb",
+                "doc_count": 215
+              },
+              {
+                "key": "md",
+                "doc_count": 99
+              },
+              {
+                "key": "mww",
+                "doc_count": 18
+              },
+              {
+                "key": "mwr",
+                "doc_count": 6
+              }
+            ]
+          },
+          "profondeur_moyenne": {
+            "value": 49.27833376829438
+          },
+          "magnitude_max": {
+            "value": 6.5
+          },
+          "magnitude_min": {
+            "value": 2.0
+          },
+          "nb_significatifs": {
+            "doc_count": 235
+          },
+          "moving_avg_magnitude": {
+            "value": 2.895935888485477
+          },
+          "cumul_seismes": {
+            "value": 37081.0
+          }
+        },
+        {
+          "key_as_string": "2026-01-05",
+          "key": 1767571200000,
+          "doc_count": 702,
+          "nb_seismes": {
+            "value": 702
+          },
+          "magnitude_moyenne": {
+            "value": 3.2111039793389473
+          },
+          "repartition_mag_type": {
+            "doc_count_error_upper_bound": 0,
+            "sum_other_doc_count": 6,
+            "buckets": [
+              {
+                "key": "ml",
+                "doc_count": 350
+              },
+              {
+                "key": "mb",
+                "doc_count": 217
+              },
+              {
+                "key": "md",
+                "doc_count": 96
+              },
+              {
+                "key": "mww",
+                "doc_count": 28
+              },
+              {
+                "key": "mb_lg",
+                "doc_count": 5
+              }
+            ]
+          },
+          "profondeur_moyenne": {
+            "value": 51.729275270956876
+          },
+          "magnitude_max": {
+            "value": 6.400000095367432
+          },
+          "magnitude_min": {
+            "value": 2.0
+          },
+          "nb_significatifs": {
+            "doc_count": 249
+          },
+          "moving_avg_magnitude": {
+            "value": 3.0876281007153588
+          },
+          "cumul_seismes": {
+            "value": 37783.0
+          }
+        },
+        {
+          "key_as_string": "2026-01-12",
+          "key": 1768176000000,
+          "doc_count": 700,
+          "nb_seismes": {
+            "value": 700
+          },
+          "magnitude_moyenne": {
+            "value": 3.2556202268600463
+          },
+          "repartition_mag_type": {
+            "doc_count_error_upper_bound": 0,
+            "sum_other_doc_count": 7,
+            "buckets": [
+              {
+                "key": "ml",
+                "doc_count": 359
+              },
+              {
+                "key": "mb",
+                "doc_count": 232
+              },
+              {
+                "key": "md",
+                "doc_count": 68
+              },
+              {
+                "key": "mww",
+                "doc_count": 27
+              },
+              {
+                "key": "mwr",
+                "doc_count": 7
+              }
+            ]
+          },
+          "profondeur_moyenne": {
+            "value": 49.65123429798654
+          },
+          "magnitude_max": {
+            "value": 6.199999809265137
+          },
+          "magnitude_min": {
+            "value": 2.0
+          },
+          "nb_significatifs": {
+            "doc_count": 266
+          },
+          "moving_avg_magnitude": {
+            "value": 3.2226832303861825
+          },
+          "cumul_seismes": {
+            "value": 38483.0
+          }
+        },
+        {
+          "key_as_string": "2026-01-19",
+          "key": 1768780800000,
+          "doc_count": 730,
+          "nb_seismes": {
+            "value": 730
+          },
+          "magnitude_moyenne": {
+            "value": 3.2704085882395915
+          },
+          "repartition_mag_type": {
+            "doc_count_error_upper_bound": 0,
+            "sum_other_doc_count": 9,
+            "buckets": [
+              {
+                "key": "ml",
+                "doc_count": 369
+              },
+              {
+                "key": "mb",
+                "doc_count": 241
+              },
+              {
+                "key": "md",
+                "doc_count": 76
+              },
+              {
+                "key": "mww",
+                "doc_count": 24
+              },
+              {
+                "key": "mw",
+                "doc_count": 11
+              }
+            ]
+          },
+          "profondeur_moyenne": {
+            "value": 43.96249431203285
+          },
+          "magnitude_max": {
+            "value": 6.199999809265137
+          },
+          "magnitude_min": {
+            "value": 2.0
+          },
+          "nb_significatifs": {
+            "doc_count": 270
+          },
+          "moving_avg_magnitude": {
+            "value": 3.2268953117063144
+          },
+          "cumul_seismes": {
+            "value": 39213.0
+          }
+        },
+        {
+          "key_as_string": "2026-01-26",
+          "key": 1769385600000,
+          "doc_count": 837,
+          "nb_seismes": {
+            "value": 837
+          },
+          "magnitude_moyenne": {
+            "value": 3.2555316545630015
+          },
+          "repartition_mag_type": {
+            "doc_count_error_upper_bound": 0,
+            "sum_other_doc_count": 4,
+            "buckets": [
+              {
+                "key": "ml",
+                "doc_count": 449
+              },
+              {
+                "key": "mb",
+                "doc_count": 289
+              },
+              {
+                "key": "md",
+                "doc_count": 62
+              },
+              {
+                "key": "mww",
+                "doc_count": 26
+              },
+              {
+                "key": "mwr",
+                "doc_count": 7
+              }
+            ]
+          },
+          "profondeur_moyenne": {
+            "value": 46.43674749800025
+          },
+          "magnitude_max": {
+            "value": 6.0
+          },
+          "magnitude_min": {
+            "value": 2.0
+          },
+          "nb_significatifs": {
+            "doc_count": 317
+          },
+          "moving_avg_magnitude": {
+            "value": 3.2457109314795285
+          },
+          "cumul_seismes": {
+            "value": 40050.0
+          }
+        },
+        {
+          "key_as_string": "2026-02-02",
+          "key": 1769990400000,
+          "doc_count": 724,
+          "nb_seismes": {
+            "value": 724
+          },
+          "magnitude_moyenne": {
+            "value": 3.0478867338507216
+          },
+          "repartition_mag_type": {
+            "doc_count_error_upper_bound": 0,
+            "sum_other_doc_count": 5,
+            "buckets": [
+              {
+                "key": "ml",
+                "doc_count": 373
+              },
+              {
+                "key": "mb",
+                "doc_count": 172
+              },
+              {
+                "key": "md",
+                "doc_count": 148
+              },
+              {
+                "key": "mww",
+                "doc_count": 20
+              },
+              {
+                "key": "mw",
+                "doc_count": 6
+              }
+            ]
+          },
+          "profondeur_moyenne": {
+            "value": 46.557994352180245
+          },
+          "magnitude_max": {
+            "value": 6.099999904632568
+          },
+          "magnitude_min": {
+            "value": 2.0
+          },
+          "nb_significatifs": {
+            "doc_count": 189
+          },
+          "moving_avg_magnitude": {
+            "value": 3.2605201565542132
+          },
+          "cumul_seismes": {
+            "value": 40774.0
+          }
+        },
+        {
+          "key_as_string": "2026-02-09",
+          "key": 1770595200000,
+          "doc_count": 698,
+          "nb_seismes": {
+            "value": 698
+          },
+          "magnitude_moyenne": {
+            "value": 3.0869054421995976
+          },
+          "repartition_mag_type": {
+            "doc_count_error_upper_bound": 0,
+            "sum_other_doc_count": 0,
+            "buckets": [
+              {
+                "key": "ml",
+                "doc_count": 382
+              },
+              {
+                "key": "mb",
+                "doc_count": 173
+              },
+              {
+                "key": "md",
+                "doc_count": 119
+              },
+              {
+                "key": "mww",
+                "doc_count": 21
+              },
+              {
+                "key": "mwr",
+                "doc_count": 3
+              }
+            ]
+          },
+          "profondeur_moyenne": {
+            "value": 47.178870897334505
+          },
+          "magnitude_max": {
+            "value": 6.400000095367432
+          },
+          "magnitude_min": {
+            "value": 2.0
+          },
+          "nb_significatifs": {
+            "doc_count": 196
+          },
+          "moving_avg_magnitude": {
+            "value": 3.191275658884438
+          },
+          "cumul_seismes": {
+            "value": 41472.0
+          }
+        },
+        {
+          "key_as_string": "2026-02-16",
+          "key": 1771200000000,
+          "doc_count": 595,
+          "nb_seismes": {
+            "value": 595
+          },
+          "magnitude_moyenne": {
+            "value": 3.0493902074188743
+          },
+          "repartition_mag_type": {
+            "doc_count_error_upper_bound": 0,
+            "sum_other_doc_count": 4,
+            "buckets": [
+              {
+                "key": "ml",
+                "doc_count": 365
+              },
+              {
+                "key": "mb",
+                "doc_count": 132
+              },
+              {
+                "key": "md",
+                "doc_count": 69
+              },
+              {
+                "key": "mww",
+                "doc_count": 22
+              },
+              {
+                "key": "mb_lg",
+                "doc_count": 3
+              }
+            ]
+          },
+          "profondeur_moyenne": {
+            "value": 43.28069394714191
+          },
+          "magnitude_max": {
+            "value": 7.099999904632568
+          },
+          "magnitude_min": {
+            "value": 2.0
+          },
+          "nb_significatifs": {
+            "doc_count": 156
+          },
+          "moving_avg_magnitude": {
+            "value": 3.1301079435377734
+          },
+          "cumul_seismes": {
+            "value": 42067.0
+          }
+        },
+        {
+          "key_as_string": "2026-02-23",
+          "key": 1771804800000,
+          "doc_count": 568,
+          "nb_seismes": {
+            "value": 568
+          },
+          "magnitude_moyenne": {
+            "value": 3.0562323911089293
+          },
+          "repartition_mag_type": {
+            "doc_count_error_upper_bound": 0,
+            "sum_other_doc_count": 3,
+            "buckets": [
+              {
+                "key": "ml",
+                "doc_count": 406
+              },
+              {
+                "key": "mb",
+                "doc_count": 100
+              },
+              {
+                "key": "md",
+                "doc_count": 41
+              },
+              {
+                "key": "mww",
+                "doc_count": 16
+              },
+              {
+                "key": "mb_lg",
+                "doc_count": 2
+              }
+            ]
+          },
+          "profondeur_moyenne": {
+            "value": 35.36811991152025
+          },
+          "magnitude_max": {
+            "value": 6.099999904632568
+          },
+          "magnitude_min": {
+            "value": 2.0
+          },
+          "nb_significatifs": {
+            "doc_count": 110
+          },
+          "moving_avg_magnitude": {
+            "value": 3.0613941278230645
+          },
+          "cumul_seismes": {
+            "value": 42635.0
+          }
+        }
+      ]
+    },
+    "repartition_mois": {
+      "buckets": [
+        {
+          "key_as_string": "2025-03",
+          "key": 1740787200000,
+          "doc_count": 2901,
+          "count_significatifs": {
+            "doc_count": 459
+          },
+          "magnitude_moyenne_mois": {
+            "value": 3.242178360703319
+          },
+          "mag_type_repartition": {
+            "doc_count_error_upper_bound": 0,
+            "sum_other_doc_count": 0,
+            "buckets": [
+              {
+                "key": "ml",
+                "doc_count": 1369
+              },
+              {
+                "key": "mb",
+                "doc_count": 931
+              },
+              {
+                "key": "md",
+                "doc_count": 445
+              },
+              {
+                "key": "mww",
+                "doc_count": 98
+              },
+              {
+                "key": "mwr",
+                "doc_count": 30
+              },
+              {
+                "key": "mb_lg",
+                "doc_count": 20
+              },
+              {
+                "key": "mw",
+                "doc_count": 8
+              }
+            ]
+          }
+        },
+        {
+          "key_as_string": "2025-04",
+          "key": 1743465600000,
+          "doc_count": 3107,
+          "count_significatifs": {
+            "doc_count": 600
+          },
+          "magnitude_moyenne_mois": {
+            "value": 3.3787641315779426
+          },
+          "mag_type_repartition": {
+            "doc_count_error_upper_bound": 0,
+            "sum_other_doc_count": 0,
+            "buckets": [
+              {
+                "key": "ml",
+                "doc_count": 1383
+              },
+              {
+                "key": "mb",
+                "doc_count": 1211
+              },
+              {
+                "key": "md",
+                "doc_count": 345
+              },
+              {
+                "key": "mww",
+                "doc_count": 108
+              },
+              {
+                "key": "mwr",
+                "doc_count": 44
+              },
+              {
+                "key": "mw",
+                "doc_count": 9
+              },
+              {
+                "key": "mb_lg",
+                "doc_count": 7
+              }
+            ]
+          }
+        },
+        {
+          "key_as_string": "2025-05",
+          "key": 1746057600000,
+          "doc_count": 2978,
+          "count_significatifs": {
+            "doc_count": 595
+          },
+          "magnitude_moyenne_mois": {
+            "value": 3.361568165273775
+          },
+          "mag_type_repartition": {
+            "doc_count_error_upper_bound": 0,
+            "sum_other_doc_count": 0,
+            "buckets": [
+              {
+                "key": "ml",
+                "doc_count": 1328
+              },
+              {
+                "key": "mb",
+                "doc_count": 1118
+              },
+              {
+                "key": "md",
+                "doc_count": 367
+              },
+              {
+                "key": "mww",
+                "doc_count": 106
+              },
+              {
+                "key": "mwr",
+                "doc_count": 37
+              },
+              {
+                "key": "mw",
+                "doc_count": 11
+              },
+              {
+                "key": "mb_lg",
+                "doc_count": 10
+              },
+              {
+                "key": "mwb",
+                "doc_count": 1
+              }
+            ]
+          }
+        },
+        {
+          "key_as_string": "2025-06",
+          "key": 1748736000000,
+          "doc_count": 3021,
+          "count_significatifs": {
+            "doc_count": 553
+          },
+          "magnitude_moyenne_mois": {
+            "value": 3.285471694748041
+          },
+          "mag_type_repartition": {
+            "doc_count_error_upper_bound": 0,
+            "sum_other_doc_count": 0,
+            "buckets": [
+              {
+                "key": "ml",
+                "doc_count": 1385
+              },
+              {
+                "key": "mb",
+                "doc_count": 1048
+              },
+              {
+                "key": "md",
+                "doc_count": 424
+              },
+              {
+                "key": "mww",
+                "doc_count": 99
+              },
+              {
+                "key": "mwr",
+                "doc_count": 41
+              },
+              {
+                "key": "mb_lg",
+                "doc_count": 15
+              },
+              {
+                "key": "mw",
+                "doc_count": 9
+              }
+            ]
+          }
+        },
+        {
+          "key_as_string": "2025-07",
+          "key": 1751328000000,
+          "doc_count": 6127,
+          "count_significatifs": {
+            "doc_count": 1322
+          },
+          "magnitude_moyenne_mois": {
+            "value": 3.4033501466530387
+          },
+          "mag_type_repartition": {
+            "doc_count_error_upper_bound": 0,
+            "sum_other_doc_count": 0,
+            "buckets": [
+              {
+                "key": "ml",
+                "doc_count": 2982
+              },
+              {
+                "key": "mb",
+                "doc_count": 2529
+              },
+              {
+                "key": "md",
+                "doc_count": 378
+              },
+              {
+                "key": "mww",
+                "doc_count": 171
+              },
+              {
+                "key": "mwr",
+                "doc_count": 30
+              },
+              {
+                "key": "mb_lg",
+                "doc_count": 21
+              },
+              {
+                "key": "mw",
+                "doc_count": 10
+              },
+              {
+                "key": "mwb",
+                "doc_count": 5
+              },
+              {
+                "key": "ms_vx",
+                "doc_count": 1
+              }
+            ]
+          }
+        },
+        {
+          "key_as_string": "2025-08",
+          "key": 1754006400000,
+          "doc_count": 4261,
+          "count_significatifs": {
+            "doc_count": 984
+          },
+          "magnitude_moyenne_mois": {
+            "value": 3.5303023991744804
+          },
+          "mag_type_repartition": {
+            "doc_count_error_upper_bound": 0,
+            "sum_other_doc_count": 0,
+            "buckets": [
+              {
+                "key": "mb",
+                "doc_count": 2056
+              },
+              {
+                "key": "ml",
+                "doc_count": 1631
+              },
+              {
+                "key": "md",
+                "doc_count": 349
+              },
+              {
+                "key": "mww",
+                "doc_count": 161
+              },
+              {
+                "key": "mwr",
+                "doc_count": 28
+              },
+              {
+                "key": "mb_lg",
+                "doc_count": 18
+              },
+              {
+                "key": "mw",
+                "doc_count": 18
+              }
+            ]
+          }
+        },
+        {
+          "key_as_string": "2025-09",
+          "key": 1756684800000,
+          "doc_count": 2936,
+          "count_significatifs": {
+            "doc_count": 799
+          },
+          "magnitude_moyenne_mois": {
+            "value": 3.636253404763479
+          },
+          "mag_type_repartition": {
+            "doc_count_error_upper_bound": 0,
+            "sum_other_doc_count": 0,
+            "buckets": [
+              {
+                "key": "mb",
+                "doc_count": 1495
+              },
+              {
+                "key": "ml",
+                "doc_count": 983
+              },
+              {
+                "key": "md",
+                "doc_count": 299
+              },
+              {
+                "key": "mww",
+                "doc_count": 114
+              },
+              {
+                "key": "mwr",
+                "doc_count": 24
+              },
+              {
+                "key": "mw",
+                "doc_count": 15
+              },
+              {
+                "key": "mb_lg",
+                "doc_count": 6
+              }
+            ]
+          }
+        },
+        {
+          "key_as_string": "2025-10",
+          "key": 1759276800000,
+          "doc_count": 2757,
+          "count_significatifs": {
+            "doc_count": 756
+          },
+          "magnitude_moyenne_mois": {
+            "value": 3.6180776163508677
+          },
+          "mag_type_repartition": {
+            "doc_count_error_upper_bound": 0,
+            "sum_other_doc_count": 0,
+            "buckets": [
+              {
+                "key": "mb",
+                "doc_count": 1386
+              },
+              {
+                "key": "ml",
+                "doc_count": 863
+              },
+              {
+                "key": "md",
+                "doc_count": 353
+              },
+              {
+                "key": "mww",
+                "doc_count": 118
+              },
+              {
+                "key": "mwr",
+                "doc_count": 23
+              },
+              {
+                "key": "mb_lg",
+                "doc_count": 11
+              },
+              {
+                "key": "mw",
+                "doc_count": 3
+              }
+            ]
+          }
+        },
+        {
+          "key_as_string": "2025-11",
+          "key": 1761955200000,
+          "doc_count": 2929,
+          "count_significatifs": {
+            "doc_count": 622
+          },
+          "magnitude_moyenne_mois": {
+            "value": 3.401205062866211
+          },
+          "mag_type_repartition": {
+            "doc_count_error_upper_bound": 0,
+            "sum_other_doc_count": 0,
+            "buckets": [
+              {
+                "key": "ml",
+                "doc_count": 1319
+              },
+              {
+                "key": "mb",
+                "doc_count": 1197
+              },
+              {
+                "key": "md",
+                "doc_count": 244
+              },
+              {
+                "key": "mww",
+                "doc_count": 123
+              },
+              {
+                "key": "mwr",
+                "doc_count": 24
+              },
+              {
+                "key": "mw",
+                "doc_count": 15
+              },
+              {
+                "key": "mb_lg",
+                "doc_count": 7
+              }
+            ]
+          }
+        },
+        {
+          "key_as_string": "2025-12",
+          "key": 1764547200000,
+          "doc_count": 5626,
+          "count_significatifs": {
+            "doc_count": 559
+          },
+          "magnitude_moyenne_mois": {
+            "value": 2.8856741584071983
+          },
+          "mag_type_repartition": {
+            "doc_count_error_upper_bound": 0,
+            "sum_other_doc_count": 0,
+            "buckets": [
+              {
+                "key": "ml",
+                "doc_count": 3917
+              },
+              {
+                "key": "mb",
+                "doc_count": 1114
+              },
+              {
+                "key": "md",
+                "doc_count": 412
+              },
+              {
+                "key": "mww",
+                "doc_count": 106
+              },
+              {
+                "key": "mwr",
+                "doc_count": 54
+              },
+              {
+                "key": "mw",
+                "doc_count": 14
+              },
+              {
+                "key": "mb_lg",
+                "doc_count": 8
+              },
+              {
+                "key": "mh",
+                "doc_count": 1
+              }
+            ]
+          }
+        },
+        {
+          "key_as_string": "2026-01",
+          "key": 1767225600000,
+          "doc_count": 3324,
+          "count_significatifs": {
+            "doc_count": 608
+          },
+          "magnitude_moyenne_mois": {
+            "value": 3.251135671325252
+          },
+          "mag_type_repartition": {
+            "doc_count_error_upper_bound": 0,
+            "sum_other_doc_count": 0,
+            "buckets": [
+              {
+                "key": "ml",
+                "doc_count": 1711
+              },
+              {
+                "key": "mb",
+                "doc_count": 1090
+              },
+              {
+                "key": "md",
+                "doc_count": 349
+              },
+              {
+                "key": "mww",
+                "doc_count": 114
+              },
+              {
+                "key": "mwr",
+                "doc_count": 28
+              },
+              {
+                "key": "mw",
+                "doc_count": 19
+              },
+              {
+                "key": "mb_lg",
+                "doc_count": 12
+              },
+              {
+                "key": "mh",
+                "doc_count": 1
+              }
+            ]
+          }
+        },
+        {
+          "key_as_string": "2026-02",
+          "key": 1769904000000,
+          "doc_count": 2668,
+          "count_significatifs": {
+            "doc_count": 401
+          },
+          "magnitude_moyenne_mois": {
+            "value": 3.062154110046341
+          },
+          "mag_type_repartition": {
+            "doc_count_error_upper_bound": 0,
+            "sum_other_doc_count": 0,
+            "buckets": [
+              {
+                "key": "ml",
+                "doc_count": 1574
+              },
+              {
+                "key": "mb",
+                "doc_count": 603
+              },
+              {
+                "key": "md",
+                "doc_count": 383
+              },
+              {
+                "key": "mww",
+                "doc_count": 81
+              },
+              {
+                "key": "mwr",
+                "doc_count": 13
+              },
+              {
+                "key": "mw",
+                "doc_count": 8
+              },
+              {
+                "key": "mb_lg",
+                "doc_count": 6
+              }
+            ]
+          }
+        }
+      ]
+    },
+    "stats_globales_magnitude": {
+      "count": 42635,
+      "min": 2.0,
+      "max": 8.800000190734863,
+      "avg": 3.3202556351529373,
+      "sum": 141559.09900474548,
+      "sum_of_squares": 520214.1149868325,
+      "variance": 1.1774766930726799,
+      "variance_population": 1.1774766930726799,
+      "variance_sampling": 1.1775043113279005,
+      "std_deviation": 1.0851159813921643,
+      "std_deviation_population": 1.0851159813921643,
+      "std_deviation_sampling": 1.0851287072637514,
+      "std_deviation_bounds": {
+        "upper": 5.490487597937266,
+        "lower": 1.1500236723686088,
+        "upper_population": 5.490487597937266,
+        "lower_population": 1.1500236723686088,
+        "upper_sampling": 5.49051304968044,
+        "lower_sampling": 1.1499982206254344
+      }
+    }
+  }
+}

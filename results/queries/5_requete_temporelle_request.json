@@ -1,0 +1,101 @@
+{
+  "size": 0,
+  "aggs": {
+    "timeline_hebdo": {
+      "date_histogram": {
+        "field": "time",
+        "calendar_interval": "week",
+        "format": "yyyy-MM-dd",
+        "min_doc_count": 0
+      },
+      "aggs": {
+        "magnitude_moyenne": {
+          "avg": {
+            "field": "magnitude"
+          }
+        },
+        "magnitude_max": {
+          "max": {
+            "field": "magnitude"
+          }
+        },
+        "magnitude_min": {
+          "min": {
+            "field": "magnitude"
+          }
+        },
+        "profondeur_moyenne": {
+          "avg": {
+            "field": "depth"
+          }
+        },
+        "nb_seismes": {
+          "value_count": {
+            "field": "id"
+          }
+        },
+        "nb_significatifs": {
+          "filter": {
+            "range": {
+              "magnitude": {
+                "gte": 4.0
+              }
+            }
+          }
+        },
+        "repartition_mag_type": {
+          "terms": {
+            "field": "mag_type",
+            "size": 5
+          }
+        },
+        "moving_avg_magnitude": {
+          "moving_fn": {
+            "buckets_path": "magnitude_moyenne",
+            "window": 3,
+            "script": "MovingFunctions.unweightedAvg(values)"
+          }
+        },
+        "cumul_seismes": {
+          "cumulative_sum": {
+            "buckets_path": "_count"
+          }
+        }
+      }
+    },
+    "stats_globales_magnitude": {
+      "extended_stats": {
+        "field": "magnitude"
+      }
+    },
+    "repartition_mois": {
+      "date_histogram": {
+        "field": "time",
+        "calendar_interval": "month",
+        "format": "yyyy-MM"
+      },
+      "aggs": {
+        "mag_type_repartition": {
+          "terms": {
+            "field": "mag_type",
+            "size": 10
+          }
+        },
+        "count_significatifs": {
+          "filter": {
+            "range": {
+              "magnitude": {
+                "gte": 4.5
+              }
+            }
+          }
+        },
+        "magnitude_moyenne_mois": {
+          "avg": {
+            "field": "magnitude"
+          }
+        }
+      }
+    }
+  }
+}

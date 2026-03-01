@@ -1,0 +1,510 @@
+{
+  "took": 285,
+  "timed_out": false,
+  "_shards": {
+    "total": 1,
+    "successful": 1,
+    "skipped": 0,
+    "failed": 0
+  },
+  "hits": {
+    "total": {
+      "value": 10000,
+      "relation": "gte"
+    },
+    "max_score": null,
+    "hits": []
+  },
+  "aggregations": {
+    "magnitude_globale_percentiles": {
+      "values": {
+        "10.0": 2.073636249789814,
+        "25.0": 2.2761065945602534,
+        "50.0": 3.041165476672651,
+        "75.0": 4.352999888125404,
+        "90.0": 4.691535865537557,
+        "95.0": 4.960202163990817,
+        "99.0": 5.54302106944031
+      }
+    },
+    "par_tranche_profondeur": {
+      "buckets": [
+        {
+          "key": "superficiel (0-10 km)",
+          "from": 0.0,
+          "to": 10.0,
+          "doc_count": 10413,
+          "mag_max": {
+            "value": 7.599999904632568
+          },
+          "mag_moyenne": {
+            "value": 2.478066714870292
+          },
+          "alertes_tsunami": {
+            "doc_count": 39
+          }
+        },
+        {
+          "key": "peu profond (10-70 km)",
+          "from": 10.0,
+          "to": 70.0,
+          "doc_count": 24906,
+          "mag_max": {
+            "value": 8.800000190734863
+          },
+          "mag_moyenne": {
+            "value": 3.5667371253435807
+          },
+          "alertes_tsunami": {
+            "doc_count": 89
+          }
+        },
+        {
+          "key": "intermediaire (70-300 km)",
+          "from": 70.0,
+          "to": 300.0,
+          "doc_count": 5985,
+          "mag_max": {
+            "value": 6.699999809265137
+          },
+          "mag_moyenne": {
+            "value": 3.6193333844493205
+          },
+          "alertes_tsunami": {
+            "doc_count": 22
+          }
+        },
+        {
+          "key": "profond (300+ km)",
+          "from": 300.0,
+          "doc_count": 1065,
+          "mag_max": {
+            "value": 7.099999904632568
+          },
+          "mag_moyenne": {
+            "value": 4.376901409659587
+          },
+          "alertes_tsunami": {
+            "doc_count": 3
+          }
+        }
+      ]
+    },
+    "par_mag_type": {
+      "doc_count_error_upper_bound": 0,
+      "sum_other_doc_count": 0,
+      "buckets": [
+        {
+          "key": "ml",
+          "doc_count": 20445,
+          "profondeur_moyenne": {
+            "value": 26.46228437934141
+          },
+          "stats_magnitude": {
+            "count": 20445,
+            "min": 2.0,
+            "max": 5.699999809265137,
+            "avg": 2.4562614904344446,
+            "sum": 50218.26617193222,
+            "sum_of_squares": 127229.2826136424,
+            "variance": 0.18978181947363681,
+            "variance_population": 0.18978181947363681,
+            "variance_sampling": 0.18979110248182862,
+            "std_deviation": 0.43563955223743955,
+            "std_deviation_population": 0.43563955223743955,
+            "std_deviation_sampling": 0.43565020656695275,
+            "std_deviation_bounds": {
+              "upper": 3.3275405949093235,
+              "lower": 1.5849823859595655,
+              "upper_population": 3.3275405949093235,
+              "lower_population": 1.5849823859595655,
+              "upper_sampling": 3.32756190356835,
+              "lower_sampling": 1.5849610773005391
+            }
+          },
+          "percentiles_magnitude": {
+            "values": {
+              "25.0": 2.104063346747316,
+              "50.0": 2.3296003209360383,
+              "75.0": 2.717880552787117,
+              "90.0": 3.095642066423376,
+              "99.0": 3.7137979234965837
+            }
+          },
+          "nb_regions_distinctes": {
+            "value": 9837
+          }
+        },
+        {
+          "key": "mb",
+          "doc_count": 15778,
+          "profondeur_moyenne": {
+            "value": 76.83264094161238
+          },
+          "stats_magnitude": {
+            "count": 15778,
+            "min": 3.200000047683716,
+            "max": 6.300000190734863,
+            "avg": 4.433489669349986,
+            "sum": 69951.60000300407,
+            "sum_of_squares": 311665.1600942996,
+            "variance": 0.09731677820247114,
+            "variance_population": 0.09731677820247114,
+            "variance_sampling": 0.09732294647135638,
+            "std_deviation": 0.311956372274187,
+            "std_deviation_population": 0.311956372274187,
+            "std_deviation_sampling": 0.31196625854626714,
+            "std_deviation_bounds": {
+              "upper": 5.05740241389836,
+              "lower": 3.809576924801612,
+              "upper_population": 5.05740241389836,
+              "lower_population": 3.809576924801612,
+              "upper_sampling": 5.05742218644252,
+              "lower_sampling": 3.809557152257452
+            }
+          },
+          "percentiles_magnitude": {
+            "values": {
+              "25.0": 4.199999809265137,
+              "50.0": 4.399686700597531,
+              "75.0": 4.586444028719975,
+              "90.0": 4.863229375763247,
+              "99.0": 5.2694074814407905
+            }
+          },
+          "nb_regions_distinctes": {
+            "value": 10266
+          }
+        },
+        {
+          "key": "md",
+          "doc_count": 4348,
+          "profondeur_moyenne": {
+            "value": 20.12888913913977
+          },
+          "stats_magnitude": {
+            "count": 4348,
+            "min": 2.0,
+            "max": 4.670000076293945,
+            "avg": 2.6128173867495867,
+            "sum": 11360.529997587204,
+            "sum_of_squares": 30875.046715288947,
+            "variance": 0.2741620089472994,
+            "variance_population": 0.2741620089472994,
+            "variance_sampling": 0.27422507819251385,
+            "std_deviation": 0.5236048213560485,
+            "std_deviation_population": 0.5236048213560485,
+            "std_deviation_sampling": 0.5236650438901893,
+            "std_deviation_bounds": {
+              "upper": 3.6600270294616837,
+              "lower": 1.5656077440374898,
+              "upper_population": 3.6600270294616837,
+              "lower_population": 1.5656077440374898,
+              "upper_sampling": 3.6601474745299654,
+              "lower_sampling": 1.5654872989692081
+            }
+          },
+          "percentiles_magnitude": {
+            "values": {
+              "25.0": 2.195158956244478,
+              "50.0": 2.4299929735485137,
+              "75.0": 2.9564912134611023,
+              "90.0": 3.4371414695609155,
+              "99.0": 3.928613055092947
+            }
+          },
+          "nb_regions_distinctes": {
+            "value": 2714
+          }
+        },
+        {
+          "key": "mww",
+          "doc_count": 1399,
+          "profondeur_moyenne": {
+            "value": 51.261778635327694
+          },
+          "stats_magnitude": {
+            "count": 1399,
+            "min": 4.400000095367432,
+            "max": 8.800000190734863,
+            "avg": 5.342744816022741,
+            "sum": 7474.499997615814,
+            "sum_of_squares": 40264.7699688721,
+            "variance": 0.23618574285076474,
+            "variance_population": 0.23618574285076474,
+            "variance_sampling": 0.2363546883034477,
+            "std_deviation": 0.48598944726276183,
+            "std_deviation_population": 0.48598944726276183,
+            "std_deviation_sampling": 0.48616323215916657,
+            "std_deviation_bounds": {
+              "upper": 6.3147237105482645,
+              "lower": 4.370765921497217,
+              "upper_population": 6.3147237105482645,
+              "lower_population": 4.370765921497217,
+              "upper_sampling": 6.315071280341074,
+              "lower_sampling": 4.370418351704408
+            }
+          },
+          "percentiles_magnitude": {
+            "values": {
+              "25.0": 5.0,
+              "50.0": 5.199999809265137,
+              "75.0": 5.599999904632568,
+              "90.0": 6.0,
+              "99.0": 7.0
+            }
+          },
+          "nb_regions_distinctes": {
+            "value": 1120
+          }
+        },
+        {
+          "key": "mwr",
+          "doc_count": 376,
+          "profondeur_moyenne": {
+            "value": 27.60203987898979
+          },
+          "stats_magnitude": {
+            "count": 376,
+            "min": 3.0,
+            "max": 5.199999809265137,
+            "avg": 4.267553191869817,
+            "sum": 1604.6000001430511,
+            "sum_of_squares": 6891.480000705725,
+            "variance": 0.11639401175781383,
+            "variance_population": 0.11639401175781383,
+            "variance_sampling": 0.116704395789168,
+            "std_deviation": 0.34116566614742144,
+            "std_deviation_population": 0.34116566614742144,
+            "std_deviation_sampling": 0.3416202508475866,
+            "std_deviation_bounds": {
+              "upper": 4.94988452416466,
+              "lower": 3.5852218595749745,
+              "upper_population": 4.94988452416466,
+              "lower_population": 3.5852218595749745,
+              "upper_sampling": 4.95079369356499,
+              "lower_sampling": 3.5843126901746443
+            }
+          },
+          "percentiles_magnitude": {
+            "values": {
+              "25.0": 4.099999904632568,
+              "50.0": 4.300000190734863,
+              "75.0": 4.5,
+              "90.0": 4.6499998569488525,
+              "99.0": 4.925000071525574
+            }
+          },
+          "nb_regions_distinctes": {
+            "value": 360
+          }
+        },
+        {
+          "key": "mb_lg",
+          "doc_count": 141,
+          "profondeur_moyenne": {
+            "value": 7.263184420605923
+          },
+          "stats_magnitude": {
+            "count": 141,
+            "min": 2.0,
+            "max": 3.700000047683716,
+            "avg": 2.687943257338612,
+            "sum": 378.99999928474426,
+            "sum_of_squares": 1033.6599960231788,
+            "variance": 0.10588300293909067,
+            "variance_population": 0.10588300293909067,
+            "variance_sampling": 0.10663931010294131,
+            "std_deviation": 0.3253966855072293,
+            "std_deviation_population": 0.3253966855072293,
+            "std_deviation_sampling": 0.32655674867156137,
+            "std_deviation_bounds": {
+              "upper": 3.3387366283530704,
+              "lower": 2.0371498863241535,
+              "upper_population": 3.3387366283530704,
+              "lower_population": 2.0371498863241535,
+              "upper_sampling": 3.341056754681735,
+              "lower_sampling": 2.034829759995489
+            }
+          },
+          "percentiles_magnitude": {
+            "values": {
+              "25.0": 2.5,
+              "50.0": 2.5999999046325684,
+              "75.0": 2.9000000953674316,
+              "90.0": 3.0999999046325684,
+              "99.0": 3.5
+            }
+          },
+          "nb_regions_distinctes": {
+            "value": 139
+          }
+        },
+        {
+          "key": "mw",
+          "doc_count": 139,
+          "profondeur_moyenne": {
+            "value": 7.9221582892987366
+          },
+          "stats_magnitude": {
+            "count": 139,
+            "min": 3.0799999237060547,
+            "max": 5.699999809265137,
+            "avg": 3.7870707563359103,
+            "sum": 526.4028351306915,
+            "sum_of_squares": 2018.9155983820515,
+            "variance": 0.18266773673594275,
+            "variance_population": 0.18266773673594275,
+            "variance_sampling": 0.18399141598765248,
+            "std_deviation": 0.42739646317668883,
+            "std_deviation_population": 0.42739646317668883,
+            "std_deviation_sampling": 0.4289422058828584,
+            "std_deviation_bounds": {
+              "upper": 4.641863682689288,
+              "lower": 2.9322778299825325,
+              "upper_population": 4.641863682689288,
+              "lower_population": 2.9322778299825325,
+              "upper_sampling": 4.644955168101627,
+              "lower_sampling": 2.9291863445701933
+            }
+          },
+          "percentiles_magnitude": {
+            "values": {
+              "25.0": 3.4850000143051147,
+              "50.0": 3.700000047683716,
+              "75.0": 3.9900835752487183,
+              "90.0": 4.3,
+              "99.0": 5.100771274566652
+            }
+          },
+          "nb_regions_distinctes": {
+            "value": 115
+          }
+        },
+        {
+          "key": "mwb",
+          "doc_count": 6,
+          "profondeur_moyenne": {
+            "value": 17.625666618347168
+          },
+          "stats_magnitude": {
+            "count": 6,
+            "min": 5.199999809265137,
+            "max": 6.099999904632568,
+            "avg": 5.7833333015441895,
+            "sum": 34.69999980926514,
+            "sum_of_squares": 201.18999801635755,
+            "variance": 0.08472225930957696,
+            "variance_population": 0.08472225930957696,
+            "variance_sampling": 0.10166671117149235,
+            "std_deviation": 0.29107088365134864,
+            "std_deviation_population": 0.29107088365134864,
+            "std_deviation_sampling": 0.3188521776176107,
+            "std_deviation_bounds": {
+              "upper": 6.365475068846886,
+              "lower": 5.2011915342414925,
+              "upper_population": 6.365475068846886,
+              "lower_population": 5.2011915342414925,
+              "upper_sampling": 6.4210376567794105,
+              "lower_sampling": 5.145628946308968
+            }
+          },
+          "percentiles_magnitude": {
+            "values": {
+              "25.0": 5.724999904632568,
+              "50.0": 5.8500001430511475,
+              "75.0": 5.975000023841858,
+              "90.0": 6.049999952316284,
+              "99.0": 6.09499990940094
+            }
+          },
+          "nb_regions_distinctes": {
+            "value": 6
+          }
+        },
+        {
+          "key": "mh",
+          "doc_count": 2,
+          "profondeur_moyenne": {
+            "value": 8.869999885559082
+          },
+          "stats_magnitude": {
+            "count": 2,
+            "min": 2.200000047683716,
+            "max": 2.4000000953674316,
+            "avg": 2.3000000715255737,
+            "sum": 4.6000001430511475,
+            "sum_of_squares": 10.600000667572033,
+            "variance": 0.01000000476837215,
+            "variance_population": 0.01000000476837215,
+            "variance_sampling": 0.0200000095367443,
+            "std_deviation": 0.10000002384185791,
+            "std_deviation_population": 0.10000002384185791,
+            "std_deviation_sampling": 0.1414213899547883,
+            "std_deviation_bounds": {
+              "upper": 2.5000001192092896,
+              "lower": 2.100000023841858,
+              "upper_population": 2.5000001192092896,
+              "lower_population": 2.100000023841858,
+              "upper_sampling": 2.5828428514351502,
+              "lower_sampling": 2.017157291615997
+            }
+          },
+          "percentiles_magnitude": {
+            "values": {
+              "25.0": 2.2500000596046448,
+              "50.0": 2.3000000715255737,
+              "75.0": 2.3500000834465027,
+              "90.0": 2.38000009059906,
+              "99.0": 2.3980000948905946
+            }
+          },
+          "nb_regions_distinctes": {
+            "value": 2
+          }
+        },
+        {
+          "key": "ms_vx",
+          "doc_count": 1,
+          "profondeur_moyenne": {
+            "value": 0.0
+          },
+          "stats_magnitude": {
+            "count": 1,
+            "min": 4.900000095367432,
+            "max": 4.900000095367432,
+            "avg": 4.900000095367432,
+            "sum": 4.900000095367432,
+            "sum_of_squares": 24.01000093460084,
+            "variance": 0.0,
+            "variance_population": 0.0,
+            "variance_sampling": "NaN",
+            "std_deviation": 0.0,
+            "std_deviation_population": 0.0,
+            "std_deviation_sampling": "NaN",
+            "std_deviation_bounds": {
+              "upper": 4.900000095367432,
+              "lower": 4.900000095367432,
+              "upper_population": 4.900000095367432,
+              "lower_population": 4.900000095367432,
+              "upper_sampling": "NaN",
+              "lower_sampling": "NaN"
+            }
+          },
+          "percentiles_magnitude": {
+            "values": {
+              "25.0": 4.900000095367432,
+              "50.0": 4.900000095367432,
+              "75.0": 4.900000095367432,
+              "90.0": 4.900000095367432,
+              "99.0": 4.900000095367432
+            }
+          },
+          "nb_regions_distinctes": {
+            "value": 1
+          }
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,394 @@
+{
+  "took": 69,
+  "timed_out": false,
+  "_shards": {
+    "total": 1,
+    "successful": 1,
+    "skipped": 0,
+    "failed": 0
+  },
+  "hits": {
+    "total": {
+      "value": 65,
+      "relation": "eq"
+    },
+    "max_score": null,
+    "hits": [
+      {
+        "_index": "earthquakes",
+        "_id": "us7000qtzq",
+        "_score": 19.123383,
+        "_source": {
+          "title": "M 2.7 - off the coast of Northern California",
+          "time": "2025-09-05T01:18:10.114000Z",
+          "depth": 10,
+          "tsunami": 0,
+          "magnitude": 2.7,
+          "place": "off the coast of Northern California"
+        },
+        "highlight": {
+          "place": [
+            "off the coast of Northern <em>California</em>"
+          ],
+          "title": [
+            "M 2.7 - off the coast of Northern <em>California</em>"
+          ]
+        },
+        "sort": [
+          19.123383,
+          2.7
+        ]
+      },
+      {
+        "_index": "earthquakes",
+        "_id": "us6000qygg",
+        "_score": 17.56977,
+        "_source": {
+          "title": "M 3.8 - 163 km W of Ferndale, California",
+          "time": "2025-08-06T04:39:17.263000Z",
+          "depth": 10,
+          "tsunami": 0,
+          "magnitude": 3.8,
+          "place": "163 km W of Ferndale, California"
+        },
+        "highlight": {
+          "place": [
+            "163 km W of Ferndale, <em>California</em>"
+          ],
+          "title": [
+            "M 3.8 - 163 km W of Ferndale, <em>California</em>"
+          ]
+        },
+        "sort": [
+          17.56977,
+          3.8
+        ]
+      },
+      {
+        "_index": "earthquakes",
+        "_id": "us7000pn0d",
+        "_score": 17.56977,
+        "_source": {
+          "title": "M 3.3 - 235 km W of Ferndale, California",
+          "time": "2025-03-27T08:17:38.635000Z",
+          "depth": 10,
+          "tsunami": 0,
+          "magnitude": 3.3,
+          "place": "235 km W of Ferndale, California"
+        },
+        "highlight": {
+          "place": [
+            "235 km W of Ferndale, <em>California</em>"
+          ],
+          "title": [
+            "M 3.3 - 235 km W of Ferndale, <em>California</em>"
+          ]
+        },
+        "sort": [
+          17.56977,
+          3.3
+        ]
+      },
+      {
+        "_index": "earthquakes",
+        "_id": "us6000qgrk",
+        "_score": 17.56977,
+        "_source": {
+          "title": "M 3.2 - 155 km W of Ferndale, California",
+          "time": "2025-05-29T20:11:00.607000Z",
+          "depth": 10,
+          "tsunami": 0,
+          "magnitude": 3.2,
+          "place": "155 km W of Ferndale, California"
+        },
+        "highlight": {
+          "place": [
+            "155 km W of Ferndale, <em>California</em>"
+          ],
+          "title": [
+            "M 3.2 - 155 km W of Ferndale, <em>California</em>"
+          ]
+        },
+        "sort": [
+          17.56977,
+          3.2
+        ]
+      },
+      {
+        "_index": "earthquakes",
+        "_id": "us6000rnws",
+        "_score": 17.56977,
+        "_source": {
+          "title": "M 3.2 - 175 km W of Ferndale, California",
+          "time": "2025-11-18T09:42:12.754000Z",
+          "depth": 10,
+          "tsunami": 0,
+          "magnitude": 3.2,
+          "place": "175 km W of Ferndale, California"
+        },
+        "highlight": {
+          "place": [
+            "175 km W of Ferndale, <em>California</em>"
+          ],
+          "title": [
+            "M 3.2 - 175 km W of Ferndale, <em>California</em>"
+          ]
+        },
+        "sort": [
+          17.56977,
+          3.2
+        ]
+      },
+      {
+        "_index": "earthquakes",
+        "_id": "us6000rned",
+        "_score": 17.56977,
+        "_source": {
+          "title": "M 3.2 - 249 km W of Ferndale, California",
+          "time": "2025-11-15T02:17:47.524000Z",
+          "depth": 10,
+          "tsunami": 0,
+          "magnitude": 3.2,
+          "place": "249 km W of Ferndale, California"
+        },
+        "highlight": {
+          "place": [
+            "249 km W of Ferndale, <em>California</em>"
+          ],
+          "title": [
+            "M 3.2 - 249 km W of Ferndale, <em>California</em>"
+          ]
+        },
+        "sort": [
+          17.56977,
+          3.2
+        ]
+      },
+      {
+        "_index": "earthquakes",
+        "_id": "us6000rgvc",
+        "_score": 17.56977,
+        "_source": {
+          "title": "M 3.1 - 234 km W of Ferndale, California",
+          "time": "2025-10-13T16:33:15.732000Z",
+          "depth": 10,
+          "tsunami": 0,
+          "magnitude": 3.1,
+          "place": "234 km W of Ferndale, California"
+        },
+        "highlight": {
+          "place": [
+            "234 km W of Ferndale, <em>California</em>"
+          ],
+          "title": [
+            "M 3.1 - 234 km W of Ferndale, <em>California</em>"
+          ]
+        },
+        "sort": [
+          17.56977,
+          3.1
+        ]
+      },
+      {
+        "_index": "earthquakes",
+        "_id": "us7000qcsx",
+        "_score": 17.56977,
+        "_source": {
+          "title": "M 3.1 - 152 km W of Ferndale, California",
+          "time": "2025-07-15T15:23:05.918000Z",
+          "depth": 10,
+          "tsunami": 0,
+          "magnitude": 3.1,
+          "place": "152 km W of Ferndale, California"
+        },
+        "highlight": {
+          "place": [
+            "152 km W of Ferndale, <em>California</em>"
+          ],
+          "title": [
+            "M 3.1 - 152 km W of Ferndale, <em>California</em>"
+          ]
+        },
+        "sort": [
+          17.56977,
+          3.1
+        ]
+      },
+      {
+        "_index": "earthquakes",
+        "_id": "us6000ru7t",
+        "_score": 17.56977,
+        "_source": {
+          "title": "M 3.0 - 15 km NW of Fillmore, California",
+          "time": "2025-12-11T18:27:31.797000Z",
+          "depth": 12.013,
+          "tsunami": 0,
+          "magnitude": 3,
+          "place": "15 km NW of Fillmore, California"
+        },
+        "highlight": {
+          "place": [
+            "15 km NW of Fillmore, <em>California</em>"
+          ],
+          "title": [
+            "M 3.0 - 15 km NW of Fillmore, <em>California</em>"
+          ]
+        },
+        "sort": [
+          17.56977,
+          3.0
+        ]
+      },
+      {
+        "_index": "earthquakes",
+        "_id": "us7000rrk1",
+        "_score": 17.56977,
+        "_source": {
+          "title": "M 3.0 - 130 km W of Ferndale, California",
+          "time": "2026-01-23T11:17:51.589000Z",
+          "depth": 10,
+          "tsunami": 0,
+          "magnitude": 3,
+          "place": "130 km W of Ferndale, California"
+        },
+        "highlight": {
+          "place": [
+            "130 km W of Ferndale, <em>California</em>"
+          ],
+          "title": [
+            "M 3.0 - 130 km W of Ferndale, <em>California</em>"
+          ]
+        },
+        "sort": [
+          17.56977,
+          3.0
+        ]
+      },
+      {
+        "_index": "earthquakes",
+        "_id": "us7000plxh",
+        "_score": 17.56977,
+        "_source": {
+          "title": "M 2.9 - 237 km W of Ferndale, California",
+          "time": "2025-03-22T22:33:22.042000Z",
+          "depth": 10,
+          "tsunami": 0,
+          "magnitude": 2.9,
+          "place": "237 km W of Ferndale, California"
+        },
+        "highlight": {
+          "place": [
+            "237 km W of Ferndale, <em>California</em>"
+          ],
+          "title": [
+            "M 2.9 - 237 km W of Ferndale, <em>California</em>"
+          ]
+        },
+        "sort": [
+          17.56977,
+          2.9
+        ]
+      },
+      {
+        "_index": "earthquakes",
+        "_id": "us6000qlf5",
+        "_score": 17.56977,
+        "_source": {
+          "title": "M 2.9 - 250 km W of Ferndale, California",
+          "time": "2025-06-20T13:33:19.343000Z",
+          "depth": 10,
+          "tsunami": 0,
+          "magnitude": 2.9,
+          "place": "250 km W of Ferndale, California"
+        },
+        "highlight": {
+          "place": [
+            "250 km W of Ferndale, <em>California</em>"
+          ],
+          "title": [
+            "M 2.9 - 250 km W of Ferndale, <em>California</em>"
+          ]
+        },
+        "sort": [
+          17.56977,
+          2.9
+        ]
+      },
+      {
+        "_index": "earthquakes",
+        "_id": "us6000qlf4",
+        "_score": 17.56977,
+        "_source": {
+          "title": "M 2.9 - 253 km W of Ferndale, California",
+          "time": "2025-06-20T13:28:35.458000Z",
+          "depth": 10,
+          "tsunami": 0,
+          "magnitude": 2.9,
+          "place": "253 km W of Ferndale, California"
+        },
+        "highlight": {
+          "place": [
+            "253 km W of Ferndale, <em>California</em>"
+          ],
+          "title": [
+            "M 2.9 - 253 km W of Ferndale, <em>California</em>"
+          ]
+        },
+        "sort": [
+          17.56977,
+          2.9
+        ]
+      },
+      {
+        "_index": "earthquakes",
+        "_id": "us6000q4b9",
+        "_score": 17.56977,
+        "_source": {
+          "title": "M 2.9 - 238 km W of Ferndale, California",
+          "time": "2025-04-05T22:47:37.345000Z",
+          "depth": 10,
+          "tsunami": 0,
+          "magnitude": 2.9,
+          "place": "238 km W of Ferndale, California"
+        },
+        "highlight": {
+          "place": [
+            "238 km W of Ferndale, <em>California</em>"
+          ],
+          "title": [
+            "M 2.9 - 238 km W of Ferndale, <em>California</em>"
+          ]
+        },
+        "sort": [
+          17.56977,
+          2.9
+        ]
+      },
+      {
+        "_index": "earthquakes",
+        "_id": "us7000reyk",
+        "_score": 17.56977,
+        "_source": {
+          "title": "M 2.9 - 162 km W of Ferndale, California",
+          "time": "2025-11-21T04:42:56.159000Z",
+          "depth": 10,
+          "tsunami": 0,
+          "magnitude": 2.9,
+          "place": "162 km W of Ferndale, California"
+        },
+        "highlight": {
+          "place": [
+            "162 km W of Ferndale, <em>California</em>"
+          ],
+          "title": [
+            "M 2.9 - 162 km W of Ferndale, <em>California</em>"
+          ]
+        },
+        "sort": [
+          17.56977,
+          2.9
+        ]
+      }
+    ]
+  }
+}

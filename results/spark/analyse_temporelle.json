@@ -1,0 +1,2522 @@
+[
+  {
+    "date": "2025-03-05",
+    "nb_seismes": 95,
+    "mag_moyenne": 3.25,
+    "mag_max": 5.5,
+    "moyenne_mobile_3j": 95.0
+  },
+  {
+    "date": "2025-03-06",
+    "nb_seismes": 73,
+    "mag_moyenne": 3.22,
+    "mag_max": 6.0,
+    "moyenne_mobile_3j": 84.0
+  },
+  {
+    "date": "2025-03-07",
+    "nb_seismes": 77,
+    "mag_moyenne": 3.27,
+    "mag_max": 5.400000095367432,
+    "moyenne_mobile_3j": 81.7
+  },
+  {
+    "date": "2025-03-08",
+    "nb_seismes": 90,
+    "mag_moyenne": 3.43,
+    "mag_max": 5.699999809265137,
+    "moyenne_mobile_3j": 80.0
+  },
+  {
+    "date": "2025-03-09",
+    "nb_seismes": 121,
+    "mag_moyenne": 3.35,
+    "mag_max": 5.400000095367432,
+    "moyenne_mobile_3j": 96.0
+  },
+  {
+    "date": "2025-03-10",
+    "nb_seismes": 89,
+    "mag_moyenne": 3.5,
+    "mag_max": 6.5,
+    "moyenne_mobile_3j": 100.0
+  },
+  {
+    "date": "2025-03-11",
+    "nb_seismes": 79,
+    "mag_moyenne": 3.41,
+    "mag_max": 5.599999904632568,
+    "moyenne_mobile_3j": 96.3
+  },
+  {
+    "date": "2025-03-12",
+    "nb_seismes": 114,
+    "mag_moyenne": 3.0,
+    "mag_max": 6.0,
+    "moyenne_mobile_3j": 94.0
+  },
+  {
+    "date": "2025-03-13",
+    "nb_seismes": 95,
+    "mag_moyenne": 3.02,
+    "mag_max": 5.199999809265137,
+    "moyenne_mobile_3j": 96.0
+  },
+  {
+    "date": "2025-03-14",
+    "nb_seismes": 93,
+    "mag_moyenne": 3.33,
+    "mag_max": 5.900000095367432,
+    "moyenne_mobile_3j": 100.7
+  },
+  {
+    "date": "2025-03-15",
+    "nb_seismes": 99,
+    "mag_moyenne": 3.28,
+    "mag_max": 5.599999904632568,
+    "moyenne_mobile_3j": 95.7
+  },
+  {
+    "date": "2025-03-16",
+    "nb_seismes": 87,
+    "mag_moyenne": 3.39,
+    "mag_max": 5.400000095367432,
+    "moyenne_mobile_3j": 93.0
+  },
+  {
+    "date": "2025-03-17",
+    "nb_seismes": 118,
+    "mag_moyenne": 3.32,
+    "mag_max": 5.800000190734863,
+    "moyenne_mobile_3j": 101.3
+  },
+  {
+    "date": "2025-03-18",
+    "nb_seismes": 114,
+    "mag_moyenne": 3.22,
+    "mag_max": 5.599999904632568,
+    "moyenne_mobile_3j": 106.3
+  },
+  {
+    "date": "2025-03-19",
+    "nb_seismes": 94,
+    "mag_moyenne": 3.45,
+    "mag_max": 5.099999904632568,
+    "moyenne_mobile_3j": 108.7
+  },
+  {
+    "date": "2025-03-20",
+    "nb_seismes": 215,
+    "mag_moyenne": 3.13,
+    "mag_max": 5.699999809265137,
+    "moyenne_mobile_3j": 141.0
+  },
+  {
+    "date": "2025-03-21",
+    "nb_seismes": 137,
+    "mag_moyenne": 3.27,
+    "mag_max": 6.199999809265137,
+    "moyenne_mobile_3j": 148.7
+  },
+  {
+    "date": "2025-03-22",
+    "nb_seismes": 169,
+    "mag_moyenne": 2.9,
+    "mag_max": 5.599999904632568,
+    "moyenne_mobile_3j": 173.7
+  },
+  {
+    "date": "2025-03-23",
+    "nb_seismes": 114,
+    "mag_moyenne": 2.95,
+    "mag_max": 5.099999904632568,
+    "moyenne_mobile_3j": 140.0
+  },
+  {
+    "date": "2025-03-24",
+    "nb_seismes": 102,
+    "mag_moyenne": 3.2,
+    "mag_max": 5.099999904632568,
+    "moyenne_mobile_3j": 128.3
+  },
+  {
+    "date": "2025-03-25",
+    "nb_seismes": 120,
+    "mag_moyenne": 3.22,
+    "mag_max": 6.699999809265137,
+    "moyenne_mobile_3j": 112.0
+  },
+  {
+    "date": "2025-03-26",
+    "nb_seismes": 98,
+    "mag_moyenne": 3.14,
+    "mag_max": 5.300000190734863,
+    "moyenne_mobile_3j": 106.7
+  },
+  {
+    "date": "2025-03-27",
+    "nb_seismes": 91,
+    "mag_moyenne": 3.13,
+    "mag_max": 5.699999809265137,
+    "moyenne_mobile_3j": 103.0
+  },
+  {
+    "date": "2025-03-28",
+    "nb_seismes": 107,
+    "mag_moyenne": 3.66,
+    "mag_max": 7.699999809265137,
+    "moyenne_mobile_3j": 98.7
+  },
+  {
+    "date": "2025-03-29",
+    "nb_seismes": 84,
+    "mag_moyenne": 3.25,
+    "mag_max": 5.199999809265137,
+    "moyenne_mobile_3j": 94.0
+  },
+  {
+    "date": "2025-03-30",
+    "nb_seismes": 115,
+    "mag_moyenne": 3.39,
+    "mag_max": 7.0,
+    "moyenne_mobile_3j": 102.0
+  },
+  {
+    "date": "2025-03-31",
+    "nb_seismes": 111,
+    "mag_moyenne": 3.33,
+    "mag_max": 5.599999904632568,
+    "moyenne_mobile_3j": 103.3
+  },
+  {
+    "date": "2025-04-01",
+    "nb_seismes": 109,
+    "mag_moyenne": 3.38,
+    "mag_max": 5.699999809265137,
+    "moyenne_mobile_3j": 111.7
+  },
+  {
+    "date": "2025-04-02",
+    "nb_seismes": 101,
+    "mag_moyenne": 3.44,
+    "mag_max": 6.300000190734863,
+    "moyenne_mobile_3j": 107.0
+  },
+  {
+    "date": "2025-04-03",
+    "nb_seismes": 80,
+    "mag_moyenne": 3.43,
+    "mag_max": 6.900000095367432,
+    "moyenne_mobile_3j": 96.7
+  },
+  {
+    "date": "2025-04-04",
+    "nb_seismes": 150,
+    "mag_moyenne": 3.79,
+    "mag_max": 6.900000095367432,
+    "moyenne_mobile_3j": 110.3
+  },
+  {
+    "date": "2025-04-05",
+    "nb_seismes": 186,
+    "mag_moyenne": 3.78,
+    "mag_max": 5.599999904632568,
+    "moyenne_mobile_3j": 138.7
+  },
+  {
+    "date": "2025-04-06",
+    "nb_seismes": 108,
+    "mag_moyenne": 3.51,
+    "mag_max": 5.0,
+    "moyenne_mobile_3j": 148.0
+  },
+  {
+    "date": "2025-04-07",
+    "nb_seismes": 104,
+    "mag_moyenne": 3.29,
+    "mag_max": 5.800000190734863,
+    "moyenne_mobile_3j": 132.7
+  },
+  {
+    "date": "2025-04-08",
+    "nb_seismes": 86,
+    "mag_moyenne": 3.65,
+    "mag_max": 5.300000190734863,
+    "moyenne_mobile_3j": 99.3
+  },
+  {
+    "date": "2025-04-09",
+    "nb_seismes": 92,
+    "mag_moyenne": 3.38,
+    "mag_max": 5.400000095367432,
+    "moyenne_mobile_3j": 94.0
+  },
+  {
+    "date": "2025-04-10",
+    "nb_seismes": 104,
+    "mag_moyenne": 3.33,
+    "mag_max": 5.400000095367432,
+    "moyenne_mobile_3j": 94.0
+  },
+  {
+    "date": "2025-04-11",
+    "nb_seismes": 99,
+    "mag_moyenne": 3.11,
+    "mag_max": 5.099999904632568,
+    "moyenne_mobile_3j": 98.3
+  },
+  {
+    "date": "2025-04-12",
+    "nb_seismes": 79,
+    "mag_moyenne": 3.28,
+    "mag_max": 6.099999904632568,
+    "moyenne_mobile_3j": 94.0
+  },
+  {
+    "date": "2025-04-13",
+    "nb_seismes": 126,
+    "mag_moyenne": 3.36,
+    "mag_max": 6.5,
+    "moyenne_mobile_3j": 101.3
+  },
+  {
+    "date": "2025-04-14",
+    "nb_seismes": 114,
+    "mag_moyenne": 3.13,
+    "mag_max": 5.210000038146973,
+    "moyenne_mobile_3j": 106.3
+  },
+  {
+    "date": "2025-04-15",
+    "nb_seismes": 99,
+    "mag_moyenne": 3.3,
+    "mag_max": 5.599999904632568,
+    "moyenne_mobile_3j": 113.0
+  },
+  {
+    "date": "2025-04-16",
+    "nb_seismes": 115,
+    "mag_moyenne": 3.32,
+    "mag_max": 6.599999904632568,
+    "moyenne_mobile_3j": 109.3
+  },
+  {
+    "date": "2025-04-17",
+    "nb_seismes": 93,
+    "mag_moyenne": 3.4,
+    "mag_max": 5.5,
+    "moyenne_mobile_3j": 102.3
+  },
+  {
+    "date": "2025-04-18",
+    "nb_seismes": 105,
+    "mag_moyenne": 3.54,
+    "mag_max": 5.599999904632568,
+    "moyenne_mobile_3j": 104.3
+  },
+  {
+    "date": "2025-04-19",
+    "nb_seismes": 97,
+    "mag_moyenne": 3.4,
+    "mag_max": 5.900000095367432,
+    "moyenne_mobile_3j": 98.3
+  },
+  {
+    "date": "2025-04-20",
+    "nb_seismes": 88,
+    "mag_moyenne": 3.25,
+    "mag_max": 5.400000095367432,
+    "moyenne_mobile_3j": 96.7
+  },
+  {
+    "date": "2025-04-21",
+    "nb_seismes": 74,
+    "mag_moyenne": 3.36,
+    "mag_max": 5.199999809265137,
+    "moyenne_mobile_3j": 86.3
+  },
+  {
+    "date": "2025-04-22",
+    "nb_seismes": 90,
+    "mag_moyenne": 3.46,
+    "mag_max": 6.199999809265137,
+    "moyenne_mobile_3j": 84.0
+  },
+  {
+    "date": "2025-04-23",
+    "nb_seismes": 108,
+    "mag_moyenne": 3.15,
+    "mag_max": 6.199999809265137,
+    "moyenne_mobile_3j": 90.7
+  },
+  {
+    "date": "2025-04-24",
+    "nb_seismes": 86,
+    "mag_moyenne": 2.9,
+    "mag_max": 5.699999809265137,
+    "moyenne_mobile_3j": 94.7
+  },
+  {
+    "date": "2025-04-25",
+    "nb_seismes": 92,
+    "mag_moyenne": 3.21,
+    "mag_max": 6.300000190734863,
+    "moyenne_mobile_3j": 95.3
+  },
+  {
+    "date": "2025-04-26",
+    "nb_seismes": 121,
+    "mag_moyenne": 3.28,
+    "mag_max": 5.099999904632568,
+    "moyenne_mobile_3j": 99.7
+  },
+  {
+    "date": "2025-04-27",
+    "nb_seismes": 117,
+    "mag_moyenne": 3.27,
+    "mag_max": 5.900000095367432,
+    "moyenne_mobile_3j": 110.0
+  },
+  {
+    "date": "2025-04-28",
+    "nb_seismes": 75,
+    "mag_moyenne": 3.38,
+    "mag_max": 5.0,
+    "moyenne_mobile_3j": 104.3
+  },
+  {
+    "date": "2025-04-29",
+    "nb_seismes": 99,
+    "mag_moyenne": 3.54,
+    "mag_max": 6.800000190734863,
+    "moyenne_mobile_3j": 97.0
+  },
+  {
+    "date": "2025-04-30",
+    "nb_seismes": 110,
+    "mag_moyenne": 3.24,
+    "mag_max": 5.400000095367432,
+    "moyenne_mobile_3j": 94.7
+  },
+  {
+    "date": "2025-05-01",
+    "nb_seismes": 95,
+    "mag_moyenne": 3.3,
+    "mag_max": 5.400000095367432,
+    "moyenne_mobile_3j": 101.3
+  },
+  {
+    "date": "2025-05-02",
+    "nb_seismes": 131,
+    "mag_moyenne": 3.93,
+    "mag_max": 7.400000095367432,
+    "moyenne_mobile_3j": 112.0
+  },
+  {
+    "date": "2025-05-03",
+    "nb_seismes": 99,
+    "mag_moyenne": 3.73,
+    "mag_max": 5.900000095367432,
+    "moyenne_mobile_3j": 108.3
+  },
+  {
+    "date": "2025-05-04",
+    "nb_seismes": 116,
+    "mag_moyenne": 3.7,
+    "mag_max": 5.630000114440918,
+    "moyenne_mobile_3j": 115.3
+  },
+  {
+    "date": "2025-05-05",
+    "nb_seismes": 92,
+    "mag_moyenne": 3.45,
+    "mag_max": 6.0,
+    "moyenne_mobile_3j": 102.3
+  },
+  {
+    "date": "2025-05-06",
+    "nb_seismes": 90,
+    "mag_moyenne": 3.18,
+    "mag_max": 5.699999809265137,
+    "moyenne_mobile_3j": 99.3
+  },
+  {
+    "date": "2025-05-07",
+    "nb_seismes": 98,
+    "mag_moyenne": 3.39,
+    "mag_max": 5.300000190734863,
+    "moyenne_mobile_3j": 93.3
+  },
+  {
+    "date": "2025-05-08",
+    "nb_seismes": 98,
+    "mag_moyenne": 3.25,
+    "mag_max": 5.699999809265137,
+    "moyenne_mobile_3j": 95.3
+  },
+  {
+    "date": "2025-05-09",
+    "nb_seismes": 92,
+    "mag_moyenne": 3.26,
+    "mag_max": 5.300000190734863,
+    "moyenne_mobile_3j": 96.0
+  },
+  {
+    "date": "2025-05-10",
+    "nb_seismes": 107,
+    "mag_moyenne": 3.23,
+    "mag_max": 5.099999904632568,
+    "moyenne_mobile_3j": 99.0
+  },
+  {
+    "date": "2025-05-11",
+    "nb_seismes": 105,
+    "mag_moyenne": 3.43,
+    "mag_max": 5.900000095367432,
+    "moyenne_mobile_3j": 101.3
+  },
+  {
+    "date": "2025-05-12",
+    "nb_seismes": 96,
+    "mag_moyenne": 3.46,
+    "mag_max": 5.300000190734863,
+    "moyenne_mobile_3j": 102.7
+  },
+  {
+    "date": "2025-05-13",
+    "nb_seismes": 86,
+    "mag_moyenne": 3.33,
+    "mag_max": 6.0,
+    "moyenne_mobile_3j": 95.7
+  },
+  {
+    "date": "2025-05-14",
+    "nb_seismes": 91,
+    "mag_moyenne": 3.09,
+    "mag_max": 6.400000095367432,
+    "moyenne_mobile_3j": 91.0
+  },
+  {
+    "date": "2025-05-15",
+    "nb_seismes": 92,
+    "mag_moyenne": 3.17,
+    "mag_max": 5.900000095367432,
+    "moyenne_mobile_3j": 89.7
+  },
+  {
+    "date": "2025-05-16",
+    "nb_seismes": 86,
+    "mag_moyenne": 3.19,
+    "mag_max": 4.900000095367432,
+    "moyenne_mobile_3j": 89.7
+  },
+  {
+    "date": "2025-05-17",
+    "nb_seismes": 99,
+    "mag_moyenne": 3.16,
+    "mag_max": 5.900000095367432,
+    "moyenne_mobile_3j": 92.3
+  },
+  {
+    "date": "2025-05-18",
+    "nb_seismes": 87,
+    "mag_moyenne": 3.34,
+    "mag_max": 4.900000095367432,
+    "moyenne_mobile_3j": 90.7
+  },
+  {
+    "date": "2025-05-19",
+    "nb_seismes": 93,
+    "mag_moyenne": 3.42,
+    "mag_max": 5.400000095367432,
+    "moyenne_mobile_3j": 93.0
+  },
+  {
+    "date": "2025-05-20",
+    "nb_seismes": 84,
+    "mag_moyenne": 3.34,
+    "mag_max": 6.5,
+    "moyenne_mobile_3j": 88.0
+  },
+  {
+    "date": "2025-05-21",
+    "nb_seismes": 73,
+    "mag_moyenne": 3.44,
+    "mag_max": 5.199999809265137,
+    "moyenne_mobile_3j": 83.3
+  },
+  {
+    "date": "2025-05-22",
+    "nb_seismes": 97,
+    "mag_moyenne": 3.38,
+    "mag_max": 6.199999809265137,
+    "moyenne_mobile_3j": 84.7
+  },
+  {
+    "date": "2025-05-23",
+    "nb_seismes": 106,
+    "mag_moyenne": 3.21,
+    "mag_max": 6.099999904632568,
+    "moyenne_mobile_3j": 92.0
+  },
+  {
+    "date": "2025-05-24",
+    "nb_seismes": 79,
+    "mag_moyenne": 3.2,
+    "mag_max": 5.199999809265137,
+    "moyenne_mobile_3j": 94.0
+  },
+  {
+    "date": "2025-05-25",
+    "nb_seismes": 78,
+    "mag_moyenne": 3.05,
+    "mag_max": 6.0,
+    "moyenne_mobile_3j": 87.7
+  },
+  {
+    "date": "2025-05-26",
+    "nb_seismes": 95,
+    "mag_moyenne": 3.33,
+    "mag_max": 5.699999809265137,
+    "moyenne_mobile_3j": 84.0
+  },
+  {
+    "date": "2025-05-27",
+    "nb_seismes": 109,
+    "mag_moyenne": 3.39,
+    "mag_max": 5.800000190734863,
+    "moyenne_mobile_3j": 94.0
+  },
+  {
+    "date": "2025-05-28",
+    "nb_seismes": 88,
+    "mag_moyenne": 3.56,
+    "mag_max": 5.900000095367432,
+    "moyenne_mobile_3j": 97.3
+  },
+  {
+    "date": "2025-05-29",
+    "nb_seismes": 85,
+    "mag_moyenne": 3.43,
+    "mag_max": 5.400000095367432,
+    "moyenne_mobile_3j": 94.0
+  },
+  {
+    "date": "2025-05-30",
+    "nb_seismes": 117,
+    "mag_moyenne": 3.21,
+    "mag_max": 6.199999809265137,
+    "moyenne_mobile_3j": 96.7
+  },
+  {
+    "date": "2025-05-31",
+    "nb_seismes": 114,
+    "mag_moyenne": 3.34,
+    "mag_max": 6.199999809265137,
+    "moyenne_mobile_3j": 105.3
+  },
+  {
+    "date": "2025-06-01",
+    "nb_seismes": 92,
+    "mag_moyenne": 3.25,
+    "mag_max": 5.800000190734863,
+    "moyenne_mobile_3j": 107.7
+  },
+  {
+    "date": "2025-06-02",
+    "nb_seismes": 104,
+    "mag_moyenne": 3.11,
+    "mag_max": 5.800000190734863,
+    "moyenne_mobile_3j": 103.3
+  },
+  {
+    "date": "2025-06-03",
+    "nb_seismes": 130,
+    "mag_moyenne": 3.06,
+    "mag_max": 5.099999904632568,
+    "moyenne_mobile_3j": 108.7
+  },
+  {
+    "date": "2025-06-04",
+    "nb_seismes": 88,
+    "mag_moyenne": 3.05,
+    "mag_max": 5.199999809265137,
+    "moyenne_mobile_3j": 107.3
+  },
+  {
+    "date": "2025-06-05",
+    "nb_seismes": 111,
+    "mag_moyenne": 2.94,
+    "mag_max": 5.599999904632568,
+    "moyenne_mobile_3j": 109.7
+  },
+  {
+    "date": "2025-06-06",
+    "nb_seismes": 115,
+    "mag_moyenne": 3.18,
+    "mag_max": 6.400000095367432,
+    "moyenne_mobile_3j": 104.7
+  },
+  {
+    "date": "2025-06-07",
+    "nb_seismes": 107,
+    "mag_moyenne": 3.31,
+    "mag_max": 6.199999809265137,
+    "moyenne_mobile_3j": 111.0
+  },
+  {
+    "date": "2025-06-08",
+    "nb_seismes": 116,
+    "mag_moyenne": 3.37,
+    "mag_max": 6.300000190734863,
+    "moyenne_mobile_3j": 112.7
+  },
+  {
+    "date": "2025-06-09",
+    "nb_seismes": 88,
+    "mag_moyenne": 3.04,
+    "mag_max": 5.099999904632568,
+    "moyenne_mobile_3j": 103.7
+  },
+  {
+    "date": "2025-06-10",
+    "nb_seismes": 103,
+    "mag_moyenne": 3.35,
+    "mag_max": 5.599999904632568,
+    "moyenne_mobile_3j": 102.3
+  },
+  {
+    "date": "2025-06-11",
+    "nb_seismes": 61,
+    "mag_moyenne": 3.12,
+    "mag_max": 5.900000095367432,
+    "moyenne_mobile_3j": 84.0
+  },
+  {
+    "date": "2025-06-12",
+    "nb_seismes": 104,
+    "mag_moyenne": 3.22,
+    "mag_max": 5.699999809265137,
+    "moyenne_mobile_3j": 89.3
+  },
+  {
+    "date": "2025-06-13",
+    "nb_seismes": 103,
+    "mag_moyenne": 3.3,
+    "mag_max": 6.0,
+    "moyenne_mobile_3j": 89.3
+  },
+  {
+    "date": "2025-06-14",
+    "nb_seismes": 88,
+    "mag_moyenne": 3.14,
+    "mag_max": 5.699999809265137,
+    "moyenne_mobile_3j": 98.3
+  },
+  {
+    "date": "2025-06-15",
+    "nb_seismes": 81,
+    "mag_moyenne": 3.36,
+    "mag_max": 5.599999904632568,
+    "moyenne_mobile_3j": 90.7
+  },
+  {
+    "date": "2025-06-16",
+    "nb_seismes": 96,
+    "mag_moyenne": 3.35,
+    "mag_max": 5.0,
+    "moyenne_mobile_3j": 88.3
+  },
+  {
+    "date": "2025-06-17",
+    "nb_seismes": 102,
+    "mag_moyenne": 3.49,
+    "mag_max": 5.300000190734863,
+    "moyenne_mobile_3j": 93.0
+  },
+  {
+    "date": "2025-06-18",
+    "nb_seismes": 84,
+    "mag_moyenne": 3.25,
+    "mag_max": 5.900000095367432,
+    "moyenne_mobile_3j": 94.0
+  },
+  {
+    "date": "2025-06-19",
+    "nb_seismes": 99,
+    "mag_moyenne": 3.64,
+    "mag_max": 5.5,
+    "moyenne_mobile_3j": 95.0
+  },
+  {
+    "date": "2025-06-20",
+    "nb_seismes": 92,
+    "mag_moyenne": 3.25,
+    "mag_max": 5.099999904632568,
+    "moyenne_mobile_3j": 91.7
+  },
+  {
+    "date": "2025-06-21",
+    "nb_seismes": 102,
+    "mag_moyenne": 3.28,
+    "mag_max": 6.0,
+    "moyenne_mobile_3j": 97.7
+  },
+  {
+    "date": "2025-06-22",
+    "nb_seismes": 115,
+    "mag_moyenne": 3.39,
+    "mag_max": 5.300000190734863,
+    "moyenne_mobile_3j": 103.0
+  },
+  {
+    "date": "2025-06-23",
+    "nb_seismes": 87,
+    "mag_moyenne": 3.58,
+    "mag_max": 5.400000095367432,
+    "moyenne_mobile_3j": 101.3
+  },
+  {
+    "date": "2025-06-24",
+    "nb_seismes": 163,
+    "mag_moyenne": 3.48,
+    "mag_max": 6.199999809265137,
+    "moyenne_mobile_3j": 121.7
+  },
+  {
+    "date": "2025-06-25",
+    "nb_seismes": 104,
+    "mag_moyenne": 3.41,
+    "mag_max": 6.199999809265137,
+    "moyenne_mobile_3j": 118.0
+  },
+  {
+    "date": "2025-06-26",
+    "nb_seismes": 84,
+    "mag_moyenne": 3.26,
+    "mag_max": 5.0,
+    "moyenne_mobile_3j": 117.0
+  },
+  {
+    "date": "2025-06-27",
+    "nb_seismes": 89,
+    "mag_moyenne": 3.15,
+    "mag_max": 6.0,
+    "moyenne_mobile_3j": 92.3
+  },
+  {
+    "date": "2025-06-28",
+    "nb_seismes": 115,
+    "mag_moyenne": 3.35,
+    "mag_max": 6.599999904632568,
+    "moyenne_mobile_3j": 96.0
+  },
+  {
+    "date": "2025-06-29",
+    "nb_seismes": 101,
+    "mag_moyenne": 3.43,
+    "mag_max": 5.400000095367432,
+    "moyenne_mobile_3j": 101.7
+  },
+  {
+    "date": "2025-06-30",
+    "nb_seismes": 97,
+    "mag_moyenne": 3.32,
+    "mag_max": 5.199999809265137,
+    "moyenne_mobile_3j": 104.3
+  },
+  {
+    "date": "2025-07-01",
+    "nb_seismes": 96,
+    "mag_moyenne": 3.41,
+    "mag_max": 5.099999904632568,
+    "moyenne_mobile_3j": 98.0
+  },
+  {
+    "date": "2025-07-02",
+    "nb_seismes": 128,
+    "mag_moyenne": 3.56,
+    "mag_max": 5.599999904632568,
+    "moyenne_mobile_3j": 107.0
+  },
+  {
+    "date": "2025-07-03",
+    "nb_seismes": 104,
+    "mag_moyenne": 3.46,
+    "mag_max": 5.5,
+    "moyenne_mobile_3j": 109.3
+  },
+  {
+    "date": "2025-07-04",
+    "nb_seismes": 109,
+    "mag_moyenne": 3.42,
+    "mag_max": 5.599999904632568,
+    "moyenne_mobile_3j": 113.7
+  },
+  {
+    "date": "2025-07-05",
+    "nb_seismes": 105,
+    "mag_moyenne": 3.08,
+    "mag_max": 5.5,
+    "moyenne_mobile_3j": 106.0
+  },
+  {
+    "date": "2025-07-06",
+    "nb_seismes": 85,
+    "mag_moyenne": 3.45,
+    "mag_max": 5.5,
+    "moyenne_mobile_3j": 99.7
+  },
+  {
+    "date": "2025-07-07",
+    "nb_seismes": 92,
+    "mag_moyenne": 3.53,
+    "mag_max": 6.199999809265137,
+    "moyenne_mobile_3j": 94.0
+  },
+  {
+    "date": "2025-07-08",
+    "nb_seismes": 86,
+    "mag_moyenne": 3.55,
+    "mag_max": 5.699999809265137,
+    "moyenne_mobile_3j": 87.7
+  },
+  {
+    "date": "2025-07-09",
+    "nb_seismes": 87,
+    "mag_moyenne": 3.21,
+    "mag_max": 5.300000190734863,
+    "moyenne_mobile_3j": 88.3
+  },
+  {
+    "date": "2025-07-10",
+    "nb_seismes": 110,
+    "mag_moyenne": 3.34,
+    "mag_max": 5.199999809265137,
+    "moyenne_mobile_3j": 94.3
+  },
+  {
+    "date": "2025-07-11",
+    "nb_seismes": 100,
+    "mag_moyenne": 3.4,
+    "mag_max": 5.099999904632568,
+    "moyenne_mobile_3j": 99.0
+  },
+  {
+    "date": "2025-07-12",
+    "nb_seismes": 88,
+    "mag_moyenne": 3.34,
+    "mag_max": 5.300000190734863,
+    "moyenne_mobile_3j": 99.3
+  },
+  {
+    "date": "2025-07-13",
+    "nb_seismes": 94,
+    "mag_moyenne": 3.43,
+    "mag_max": 5.300000190734863,
+    "moyenne_mobile_3j": 94.0
+  },
+  {
+    "date": "2025-07-14",
+    "nb_seismes": 88,
+    "mag_moyenne": 3.59,
+    "mag_max": 6.699999809265137,
+    "moyenne_mobile_3j": 90.0
+  },
+  {
+    "date": "2025-07-15",
+    "nb_seismes": 94,
+    "mag_moyenne": 3.44,
+    "mag_max": 5.800000190734863,
+    "moyenne_mobile_3j": 92.0
+  },
+  {
+    "date": "2025-07-16",
+    "nb_seismes": 264,
+    "mag_moyenne": 3.19,
+    "mag_max": 7.300000190734863,
+    "moyenne_mobile_3j": 148.7
+  },
+  {
+    "date": "2025-07-17",
+    "nb_seismes": 669,
+    "mag_moyenne": 2.65,
+    "mag_max": 5.599999904632568,
+    "moyenne_mobile_3j": 342.3
+  },
+  {
+    "date": "2025-07-18",
+    "nb_seismes": 410,
+    "mag_moyenne": 2.69,
+    "mag_max": 5.300000190734863,
+    "moyenne_mobile_3j": 447.7
+  },
+  {
+    "date": "2025-07-19",
+    "nb_seismes": 280,
+    "mag_moyenne": 2.73,
+    "mag_max": 5.599999904632568,
+    "moyenne_mobile_3j": 453.0
+  },
+  {
+    "date": "2025-07-20",
+    "nb_seismes": 361,
+    "mag_moyenne": 3.59,
+    "mag_max": 7.400000095367432,
+    "moyenne_mobile_3j": 350.3
+  },
+  {
+    "date": "2025-07-21",
+    "nb_seismes": 270,
+    "mag_moyenne": 3.51,
+    "mag_max": 5.800000190734863,
+    "moyenne_mobile_3j": 303.7
+  },
+  {
+    "date": "2025-07-22",
+    "nb_seismes": 230,
+    "mag_moyenne": 3.44,
+    "mag_max": 6.0,
+    "moyenne_mobile_3j": 287.0
+  },
+  {
+    "date": "2025-07-23",
+    "nb_seismes": 153,
+    "mag_moyenne": 3.16,
+    "mag_max": 6.300000190734863,
+    "moyenne_mobile_3j": 217.7
+  },
+  {
+    "date": "2025-07-24",
+    "nb_seismes": 139,
+    "mag_moyenne": 3.33,
+    "mag_max": 6.599999904632568,
+    "moyenne_mobile_3j": 174.0
+  },
+  {
+    "date": "2025-07-25",
+    "nb_seismes": 158,
+    "mag_moyenne": 3.19,
+    "mag_max": 6.199999809265137,
+    "moyenne_mobile_3j": 150.0
+  },
+  {
+    "date": "2025-07-26",
+    "nb_seismes": 138,
+    "mag_moyenne": 3.07,
+    "mag_max": 6.199999809265137,
+    "moyenne_mobile_3j": 145.0
+  },
+  {
+    "date": "2025-07-27",
+    "nb_seismes": 142,
+    "mag_moyenne": 3.05,
+    "mag_max": 5.599999904632568,
+    "moyenne_mobile_3j": 146.0
+  },
+  {
+    "date": "2025-07-28",
+    "nb_seismes": 140,
+    "mag_moyenne": 3.4,
+    "mag_max": 7.0,
+    "moyenne_mobile_3j": 140.0
+  },
+  {
+    "date": "2025-07-29",
+    "nb_seismes": 197,
+    "mag_moyenne": 3.86,
+    "mag_max": 8.800000190734863,
+    "moyenne_mobile_3j": 159.7
+  },
+  {
+    "date": "2025-07-30",
+    "nb_seismes": 727,
+    "mag_moyenne": 4.43,
+    "mag_max": 6.900000095367432,
+    "moyenne_mobile_3j": 354.7
+  },
+  {
+    "date": "2025-07-31",
+    "nb_seismes": 383,
+    "mag_moyenne": 4.1,
+    "mag_max": 6.199999809265137,
+    "moyenne_mobile_3j": 435.7
+  },
+  {
+    "date": "2025-08-01",
+    "nb_seismes": 307,
+    "mag_moyenne": 4.05,
+    "mag_max": 6.099999904632568,
+    "moyenne_mobile_3j": 472.3
+  },
+  {
+    "date": "2025-08-02",
+    "nb_seismes": 221,
+    "mag_moyenne": 3.78,
+    "mag_max": 6.0,
+    "moyenne_mobile_3j": 303.7
+  },
+  {
+    "date": "2025-08-03",
+    "nb_seismes": 191,
+    "mag_moyenne": 3.87,
+    "mag_max": 6.800000190734863,
+    "moyenne_mobile_3j": 239.7
+  },
+  {
+    "date": "2025-08-04",
+    "nb_seismes": 188,
+    "mag_moyenne": 3.57,
+    "mag_max": 6.199999809265137,
+    "moyenne_mobile_3j": 200.0
+  },
+  {
+    "date": "2025-08-05",
+    "nb_seismes": 202,
+    "mag_moyenne": 3.5,
+    "mag_max": 5.699999809265137,
+    "moyenne_mobile_3j": 193.7
+  },
+  {
+    "date": "2025-08-06",
+    "nb_seismes": 161,
+    "mag_moyenne": 3.65,
+    "mag_max": 5.800000190734863,
+    "moyenne_mobile_3j": 183.7
+  },
+  {
+    "date": "2025-08-07",
+    "nb_seismes": 151,
+    "mag_moyenne": 3.47,
+    "mag_max": 5.900000095367432,
+    "moyenne_mobile_3j": 171.3
+  },
+  {
+    "date": "2025-08-08",
+    "nb_seismes": 142,
+    "mag_moyenne": 3.49,
+    "mag_max": 5.0,
+    "moyenne_mobile_3j": 151.3
+  },
+  {
+    "date": "2025-08-09",
+    "nb_seismes": 151,
+    "mag_moyenne": 3.55,
+    "mag_max": 6.0,
+    "moyenne_mobile_3j": 148.0
+  },
+  {
+    "date": "2025-08-10",
+    "nb_seismes": 161,
+    "mag_moyenne": 3.51,
+    "mag_max": 6.099999904632568,
+    "moyenne_mobile_3j": 151.3
+  },
+  {
+    "date": "2025-08-11",
+    "nb_seismes": 161,
+    "mag_moyenne": 3.47,
+    "mag_max": 5.800000190734863,
+    "moyenne_mobile_3j": 157.7
+  },
+  {
+    "date": "2025-08-12",
+    "nb_seismes": 142,
+    "mag_moyenne": 3.58,
+    "mag_max": 6.300000190734863,
+    "moyenne_mobile_3j": 154.7
+  },
+  {
+    "date": "2025-08-13",
+    "nb_seismes": 127,
+    "mag_moyenne": 3.42,
+    "mag_max": 5.300000190734863,
+    "moyenne_mobile_3j": 143.3
+  },
+  {
+    "date": "2025-08-14",
+    "nb_seismes": 130,
+    "mag_moyenne": 3.29,
+    "mag_max": 6.300000190734863,
+    "moyenne_mobile_3j": 133.0
+  },
+  {
+    "date": "2025-08-15",
+    "nb_seismes": 121,
+    "mag_moyenne": 3.32,
+    "mag_max": 5.699999809265137,
+    "moyenne_mobile_3j": 126.0
+  },
+  {
+    "date": "2025-08-16",
+    "nb_seismes": 101,
+    "mag_moyenne": 3.57,
+    "mag_max": 5.800000190734863,
+    "moyenne_mobile_3j": 117.3
+  },
+  {
+    "date": "2025-08-17",
+    "nb_seismes": 83,
+    "mag_moyenne": 3.69,
+    "mag_max": 5.5,
+    "moyenne_mobile_3j": 101.7
+  },
+  {
+    "date": "2025-08-18",
+    "nb_seismes": 103,
+    "mag_moyenne": 3.55,
+    "mag_max": 5.599999904632568,
+    "moyenne_mobile_3j": 95.7
+  },
+  {
+    "date": "2025-08-19",
+    "nb_seismes": 98,
+    "mag_moyenne": 3.52,
+    "mag_max": 5.400000095367432,
+    "moyenne_mobile_3j": 94.7
+  },
+  {
+    "date": "2025-08-20",
+    "nb_seismes": 114,
+    "mag_moyenne": 3.24,
+    "mag_max": 5.099999904632568,
+    "moyenne_mobile_3j": 105.0
+  },
+  {
+    "date": "2025-08-21",
+    "nb_seismes": 118,
+    "mag_moyenne": 3.31,
+    "mag_max": 5.800000190734863,
+    "moyenne_mobile_3j": 110.0
+  },
+  {
+    "date": "2025-08-22",
+    "nb_seismes": 120,
+    "mag_moyenne": 3.65,
+    "mag_max": 7.5,
+    "moyenne_mobile_3j": 117.3
+  },
+  {
+    "date": "2025-08-23",
+    "nb_seismes": 127,
+    "mag_moyenne": 3.39,
+    "mag_max": 6.0,
+    "moyenne_mobile_3j": 121.7
+  },
+  {
+    "date": "2025-08-24",
+    "nb_seismes": 102,
+    "mag_moyenne": 3.59,
+    "mag_max": 5.400000095367432,
+    "moyenne_mobile_3j": 116.3
+  },
+  {
+    "date": "2025-08-25",
+    "nb_seismes": 90,
+    "mag_moyenne": 3.17,
+    "mag_max": 6.099999904632568,
+    "moyenne_mobile_3j": 106.3
+  },
+  {
+    "date": "2025-08-26",
+    "nb_seismes": 89,
+    "mag_moyenne": 3.46,
+    "mag_max": 5.599999904632568,
+    "moyenne_mobile_3j": 93.7
+  },
+  {
+    "date": "2025-08-27",
+    "nb_seismes": 104,
+    "mag_moyenne": 3.33,
+    "mag_max": 6.0,
+    "moyenne_mobile_3j": 94.3
+  },
+  {
+    "date": "2025-08-28",
+    "nb_seismes": 102,
+    "mag_moyenne": 3.28,
+    "mag_max": 5.900000095367432,
+    "moyenne_mobile_3j": 98.3
+  },
+  {
+    "date": "2025-08-29",
+    "nb_seismes": 87,
+    "mag_moyenne": 3.46,
+    "mag_max": 5.5,
+    "moyenne_mobile_3j": 97.7
+  },
+  {
+    "date": "2025-08-30",
+    "nb_seismes": 109,
+    "mag_moyenne": 3.2,
+    "mag_max": 5.5,
+    "moyenne_mobile_3j": 99.3
+  },
+  {
+    "date": "2025-08-31",
+    "nb_seismes": 158,
+    "mag_moyenne": 3.25,
+    "mag_max": 6.0,
+    "moyenne_mobile_3j": 118.0
+  },
+  {
+    "date": "2025-09-01",
+    "nb_seismes": 139,
+    "mag_moyenne": 3.26,
+    "mag_max": 5.599999904632568,
+    "moyenne_mobile_3j": 135.3
+  },
+  {
+    "date": "2025-09-02",
+    "nb_seismes": 140,
+    "mag_moyenne": 3.4,
+    "mag_max": 5.300000190734863,
+    "moyenne_mobile_3j": 145.7
+  },
+  {
+    "date": "2025-09-03",
+    "nb_seismes": 110,
+    "mag_moyenne": 3.56,
+    "mag_max": 5.900000095367432,
+    "moyenne_mobile_3j": 129.7
+  },
+  {
+    "date": "2025-09-04",
+    "nb_seismes": 109,
+    "mag_moyenne": 3.57,
+    "mag_max": 5.900000095367432,
+    "moyenne_mobile_3j": 119.7
+  },
+  {
+    "date": "2025-09-05",
+    "nb_seismes": 82,
+    "mag_moyenne": 3.69,
+    "mag_max": 5.400000095367432,
+    "moyenne_mobile_3j": 100.3
+  },
+  {
+    "date": "2025-09-06",
+    "nb_seismes": 65,
+    "mag_moyenne": 3.65,
+    "mag_max": 5.400000095367432,
+    "moyenne_mobile_3j": 85.3
+  },
+  {
+    "date": "2025-09-07",
+    "nb_seismes": 89,
+    "mag_moyenne": 3.59,
+    "mag_max": 5.099999904632568,
+    "moyenne_mobile_3j": 78.7
+  },
+  {
+    "date": "2025-09-08",
+    "nb_seismes": 99,
+    "mag_moyenne": 3.4,
+    "mag_max": 6.400000095367432,
+    "moyenne_mobile_3j": 84.3
+  },
+  {
+    "date": "2025-09-09",
+    "nb_seismes": 118,
+    "mag_moyenne": 3.44,
+    "mag_max": 5.699999809265137,
+    "moyenne_mobile_3j": 102.0
+  },
+  {
+    "date": "2025-09-10",
+    "nb_seismes": 72,
+    "mag_moyenne": 3.4,
+    "mag_max": 5.199999809265137,
+    "moyenne_mobile_3j": 96.3
+  },
+  {
+    "date": "2025-09-11",
+    "nb_seismes": 97,
+    "mag_moyenne": 3.58,
+    "mag_max": 5.300000190734863,
+    "moyenne_mobile_3j": 95.7
+  },
+  {
+    "date": "2025-09-12",
+    "nb_seismes": 102,
+    "mag_moyenne": 3.59,
+    "mag_max": 5.599999904632568,
+    "moyenne_mobile_3j": 90.3
+  },
+  {
+    "date": "2025-09-13",
+    "nb_seismes": 95,
+    "mag_moyenne": 3.7,
+    "mag_max": 7.400000095367432,
+    "moyenne_mobile_3j": 98.0
+  },
+  {
+    "date": "2025-09-14",
+    "nb_seismes": 73,
+    "mag_moyenne": 3.55,
+    "mag_max": 5.5,
+    "moyenne_mobile_3j": 90.0
+  },
+  {
+    "date": "2025-09-15",
+    "nb_seismes": 66,
+    "mag_moyenne": 3.79,
+    "mag_max": 6.0,
+    "moyenne_mobile_3j": 78.0
+  },
+  {
+    "date": "2025-09-16",
+    "nb_seismes": 64,
+    "mag_moyenne": 3.32,
+    "mag_max": 6.0,
+    "moyenne_mobile_3j": 67.7
+  },
+  {
+    "date": "2025-09-17",
+    "nb_seismes": 75,
+    "mag_moyenne": 3.51,
+    "mag_max": 5.400000095367432,
+    "moyenne_mobile_3j": 68.3
+  },
+  {
+    "date": "2025-09-18",
+    "nb_seismes": 144,
+    "mag_moyenne": 4.12,
+    "mag_max": 7.800000190734863,
+    "moyenne_mobile_3j": 94.3
+  },
+  {
+    "date": "2025-09-19",
+    "nb_seismes": 199,
+    "mag_moyenne": 4.08,
+    "mag_max": 6.0,
+    "moyenne_mobile_3j": 139.3
+  },
+  {
+    "date": "2025-09-20",
+    "nb_seismes": 99,
+    "mag_moyenne": 4.0,
+    "mag_max": 5.199999809265137,
+    "moyenne_mobile_3j": 147.3
+  },
+  {
+    "date": "2025-09-21",
+    "nb_seismes": 91,
+    "mag_moyenne": 3.82,
+    "mag_max": 5.599999904632568,
+    "moyenne_mobile_3j": 129.7
+  },
+  {
+    "date": "2025-09-22",
+    "nb_seismes": 98,
+    "mag_moyenne": 3.97,
+    "mag_max": 5.599999904632568,
+    "moyenne_mobile_3j": 96.0
+  },
+  {
+    "date": "2025-09-23",
+    "nb_seismes": 75,
+    "mag_moyenne": 3.78,
+    "mag_max": 5.599999904632568,
+    "moyenne_mobile_3j": 88.0
+  },
+  {
+    "date": "2025-09-24",
+    "nb_seismes": 95,
+    "mag_moyenne": 3.36,
+    "mag_max": 6.199999809265137,
+    "moyenne_mobile_3j": 89.3
+  },
+  {
+    "date": "2025-09-25",
+    "nb_seismes": 104,
+    "mag_moyenne": 3.76,
+    "mag_max": 6.300000190734863,
+    "moyenne_mobile_3j": 91.3
+  },
+  {
+    "date": "2025-09-26",
+    "nb_seismes": 82,
+    "mag_moyenne": 3.7,
+    "mag_max": 5.900000095367432,
+    "moyenne_mobile_3j": 93.7
+  },
+  {
+    "date": "2025-09-27",
+    "nb_seismes": 84,
+    "mag_moyenne": 3.57,
+    "mag_max": 5.5,
+    "moyenne_mobile_3j": 90.0
+  },
+  {
+    "date": "2025-09-28",
+    "nb_seismes": 98,
+    "mag_moyenne": 3.32,
+    "mag_max": 5.5,
+    "moyenne_mobile_3j": 88.0
+  },
+  {
+    "date": "2025-09-29",
+    "nb_seismes": 72,
+    "mag_moyenne": 3.37,
+    "mag_max": 5.5,
+    "moyenne_mobile_3j": 84.7
+  },
+  {
+    "date": "2025-09-30",
+    "nb_seismes": 100,
+    "mag_moyenne": 3.68,
+    "mag_max": 6.900000095367432,
+    "moyenne_mobile_3j": 90.0
+  },
+  {
+    "date": "2025-10-01",
+    "nb_seismes": 82,
+    "mag_moyenne": 3.61,
+    "mag_max": 5.599999904632568,
+    "moyenne_mobile_3j": 84.7
+  },
+  {
+    "date": "2025-10-02",
+    "nb_seismes": 89,
+    "mag_moyenne": 3.58,
+    "mag_max": 5.699999809265137,
+    "moyenne_mobile_3j": 90.3
+  },
+  {
+    "date": "2025-10-03",
+    "nb_seismes": 116,
+    "mag_moyenne": 3.93,
+    "mag_max": 6.099999904632568,
+    "moyenne_mobile_3j": 95.7
+  },
+  {
+    "date": "2025-10-04",
+    "nb_seismes": 96,
+    "mag_moyenne": 3.68,
+    "mag_max": 5.900000095367432,
+    "moyenne_mobile_3j": 100.3
+  },
+  {
+    "date": "2025-10-05",
+    "nb_seismes": 102,
+    "mag_moyenne": 3.77,
+    "mag_max": 5.199999809265137,
+    "moyenne_mobile_3j": 104.7
+  },
+  {
+    "date": "2025-10-06",
+    "nb_seismes": 85,
+    "mag_moyenne": 3.63,
+    "mag_max": 5.599999904632568,
+    "moyenne_mobile_3j": 94.3
+  },
+  {
+    "date": "2025-10-07",
+    "nb_seismes": 107,
+    "mag_moyenne": 3.38,
+    "mag_max": 6.599999904632568,
+    "moyenne_mobile_3j": 98.0
+  },
+  {
+    "date": "2025-10-08",
+    "nb_seismes": 88,
+    "mag_moyenne": 3.4,
+    "mag_max": 5.599999904632568,
+    "moyenne_mobile_3j": 93.3
+  },
+  {
+    "date": "2025-10-09",
+    "nb_seismes": 77,
+    "mag_moyenne": 3.31,
+    "mag_max": 6.099999904632568,
+    "moyenne_mobile_3j": 90.7
+  },
+  {
+    "date": "2025-10-10",
+    "nb_seismes": 149,
+    "mag_moyenne": 4.38,
+    "mag_max": 7.599999904632568,
+    "moyenne_mobile_3j": 104.7
+  },
+  {
+    "date": "2025-10-11",
+    "nb_seismes": 121,
+    "mag_moyenne": 3.78,
+    "mag_max": 6.0,
+    "moyenne_mobile_3j": 115.7
+  },
+  {
+    "date": "2025-10-12",
+    "nb_seismes": 81,
+    "mag_moyenne": 3.61,
+    "mag_max": 5.800000190734863,
+    "moyenne_mobile_3j": 117.0
+  },
+  {
+    "date": "2025-10-13",
+    "nb_seismes": 77,
+    "mag_moyenne": 3.38,
+    "mag_max": 5.900000095367432,
+    "moyenne_mobile_3j": 93.0
+  },
+  {
+    "date": "2025-10-14",
+    "nb_seismes": 104,
+    "mag_moyenne": 3.68,
+    "mag_max": 5.5,
+    "moyenne_mobile_3j": 87.3
+  },
+  {
+    "date": "2025-10-15",
+    "nb_seismes": 81,
+    "mag_moyenne": 3.65,
+    "mag_max": 5.599999904632568,
+    "moyenne_mobile_3j": 87.3
+  },
+  {
+    "date": "2025-10-16",
+    "nb_seismes": 102,
+    "mag_moyenne": 3.53,
+    "mag_max": 6.400000095367432,
+    "moyenne_mobile_3j": 95.7
+  },
+  {
+    "date": "2025-10-17",
+    "nb_seismes": 86,
+    "mag_moyenne": 3.59,
+    "mag_max": 5.5,
+    "moyenne_mobile_3j": 89.7
+  },
+  {
+    "date": "2025-10-18",
+    "nb_seismes": 90,
+    "mag_moyenne": 3.4,
+    "mag_max": 5.400000095367432,
+    "moyenne_mobile_3j": 92.7
+  },
+  {
+    "date": "2025-10-19",
+    "nb_seismes": 91,
+    "mag_moyenne": 3.54,
+    "mag_max": 5.300000190734863,
+    "moyenne_mobile_3j": 89.0
+  },
+  {
+    "date": "2025-10-20",
+    "nb_seismes": 61,
+    "mag_moyenne": 3.73,
+    "mag_max": 5.800000190734863,
+    "moyenne_mobile_3j": 80.7
+  },
+  {
+    "date": "2025-10-21",
+    "nb_seismes": 89,
+    "mag_moyenne": 3.58,
+    "mag_max": 5.199999809265137,
+    "moyenne_mobile_3j": 80.3
+  },
+  {
+    "date": "2025-10-22",
+    "nb_seismes": 60,
+    "mag_moyenne": 3.26,
+    "mag_max": 5.900000095367432,
+    "moyenne_mobile_3j": 70.0
+  },
+  {
+    "date": "2025-10-23",
+    "nb_seismes": 62,
+    "mag_moyenne": 3.4,
+    "mag_max": 5.599999904632568,
+    "moyenne_mobile_3j": 70.3
+  },
+  {
+    "date": "2025-10-24",
+    "nb_seismes": 87,
+    "mag_moyenne": 3.75,
+    "mag_max": 5.699999809265137,
+    "moyenne_mobile_3j": 69.7
+  },
+  {
+    "date": "2025-10-25",
+    "nb_seismes": 81,
+    "mag_moyenne": 3.52,
+    "mag_max": 6.0,
+    "moyenne_mobile_3j": 76.7
+  },
+  {
+    "date": "2025-10-26",
+    "nb_seismes": 81,
+    "mag_moyenne": 3.61,
+    "mag_max": 6.199999809265137,
+    "moyenne_mobile_3j": 83.0
+  },
+  {
+    "date": "2025-10-27",
+    "nb_seismes": 82,
+    "mag_moyenne": 3.61,
+    "mag_max": 6.5,
+    "moyenne_mobile_3j": 81.3
+  },
+  {
+    "date": "2025-10-28",
+    "nb_seismes": 80,
+    "mag_moyenne": 3.64,
+    "mag_max": 6.400000095367432,
+    "moyenne_mobile_3j": 81.0
+  },
+  {
+    "date": "2025-10-29",
+    "nb_seismes": 78,
+    "mag_moyenne": 3.58,
+    "mag_max": 5.5,
+    "moyenne_mobile_3j": 80.0
+  },
+  {
+    "date": "2025-10-30",
+    "nb_seismes": 70,
+    "mag_moyenne": 3.36,
+    "mag_max": 5.5,
+    "moyenne_mobile_3j": 76.0
+  },
+  {
+    "date": "2025-10-31",
+    "nb_seismes": 102,
+    "mag_moyenne": 3.41,
+    "mag_max": 5.900000095367432,
+    "moyenne_mobile_3j": 83.3
+  },
+  {
+    "date": "2025-11-01",
+    "nb_seismes": 84,
+    "mag_moyenne": 3.43,
+    "mag_max": 5.199999809265137,
+    "moyenne_mobile_3j": 85.3
+  },
+  {
+    "date": "2025-11-02",
+    "nb_seismes": 78,
+    "mag_moyenne": 3.44,
+    "mag_max": 6.199999809265137,
+    "moyenne_mobile_3j": 88.0
+  },
+  {
+    "date": "2025-11-03",
+    "nb_seismes": 124,
+    "mag_moyenne": 3.89,
+    "mag_max": 6.099999904632568,
+    "moyenne_mobile_3j": 95.3
+  },
+  {
+    "date": "2025-11-04",
+    "nb_seismes": 90,
+    "mag_moyenne": 4.2,
+    "mag_max": 6.0,
+    "moyenne_mobile_3j": 97.3
+  },
+  {
+    "date": "2025-11-05",
+    "nb_seismes": 88,
+    "mag_moyenne": 3.41,
+    "mag_max": 5.599999904632568,
+    "moyenne_mobile_3j": 100.7
+  },
+  {
+    "date": "2025-11-06",
+    "nb_seismes": 72,
+    "mag_moyenne": 3.35,
+    "mag_max": 4.900000095367432,
+    "moyenne_mobile_3j": 83.3
+  },
+  {
+    "date": "2025-11-07",
+    "nb_seismes": 83,
+    "mag_moyenne": 3.67,
+    "mag_max": 5.599999904632568,
+    "moyenne_mobile_3j": 81.0
+  },
+  {
+    "date": "2025-11-08",
+    "nb_seismes": 87,
+    "mag_moyenne": 3.84,
+    "mag_max": 5.599999904632568,
+    "moyenne_mobile_3j": 80.7
+  },
+  {
+    "date": "2025-11-09",
+    "nb_seismes": 141,
+    "mag_moyenne": 3.88,
+    "mag_max": 6.800000190734863,
+    "moyenne_mobile_3j": 103.7
+  },
+  {
+    "date": "2025-11-10",
+    "nb_seismes": 83,
+    "mag_moyenne": 3.71,
+    "mag_max": 6.0,
+    "moyenne_mobile_3j": 103.7
+  },
+  {
+    "date": "2025-11-11",
+    "nb_seismes": 71,
+    "mag_moyenne": 3.51,
+    "mag_max": 5.099999904632568,
+    "moyenne_mobile_3j": 98.3
+  },
+  {
+    "date": "2025-11-12",
+    "nb_seismes": 72,
+    "mag_moyenne": 3.79,
+    "mag_max": 5.699999809265137,
+    "moyenne_mobile_3j": 75.3
+  },
+  {
+    "date": "2025-11-13",
+    "nb_seismes": 151,
+    "mag_moyenne": 3.06,
+    "mag_max": 5.699999809265137,
+    "moyenne_mobile_3j": 98.0
+  },
+  {
+    "date": "2025-11-14",
+    "nb_seismes": 68,
+    "mag_moyenne": 3.6,
+    "mag_max": 5.699999809265137,
+    "moyenne_mobile_3j": 97.0
+  },
+  {
+    "date": "2025-11-15",
+    "nb_seismes": 81,
+    "mag_moyenne": 3.39,
+    "mag_max": 5.300000190734863,
+    "moyenne_mobile_3j": 100.0
+  },
+  {
+    "date": "2025-11-16",
+    "nb_seismes": 62,
+    "mag_moyenne": 3.66,
+    "mag_max": 5.199999809265137,
+    "moyenne_mobile_3j": 70.3
+  },
+  {
+    "date": "2025-11-17",
+    "nb_seismes": 78,
+    "mag_moyenne": 3.08,
+    "mag_max": 5.300000190734863,
+    "moyenne_mobile_3j": 73.7
+  },
+  {
+    "date": "2025-11-18",
+    "nb_seismes": 88,
+    "mag_moyenne": 3.18,
+    "mag_max": 5.5,
+    "moyenne_mobile_3j": 76.0
+  },
+  {
+    "date": "2025-11-19",
+    "nb_seismes": 125,
+    "mag_moyenne": 3.18,
+    "mag_max": 5.0,
+    "moyenne_mobile_3j": 97.0
+  },
+  {
+    "date": "2025-11-20",
+    "nb_seismes": 122,
+    "mag_moyenne": 3.22,
+    "mag_max": 5.800000190734863,
+    "moyenne_mobile_3j": 111.7
+  },
+  {
+    "date": "2025-11-21",
+    "nb_seismes": 104,
+    "mag_moyenne": 3.14,
+    "mag_max": 5.599999904632568,
+    "moyenne_mobile_3j": 117.0
+  },
+  {
+    "date": "2025-11-22",
+    "nb_seismes": 112,
+    "mag_moyenne": 3.2,
+    "mag_max": 5.099999904632568,
+    "moyenne_mobile_3j": 112.7
+  },
+  {
+    "date": "2025-11-23",
+    "nb_seismes": 105,
+    "mag_moyenne": 3.42,
+    "mag_max": 5.5,
+    "moyenne_mobile_3j": 107.0
+  },
+  {
+    "date": "2025-11-24",
+    "nb_seismes": 116,
+    "mag_moyenne": 3.15,
+    "mag_max": 5.300000190734863,
+    "moyenne_mobile_3j": 111.0
+  },
+  {
+    "date": "2025-11-25",
+    "nb_seismes": 95,
+    "mag_moyenne": 3.3,
+    "mag_max": 5.400000095367432,
+    "moyenne_mobile_3j": 105.3
+  },
+  {
+    "date": "2025-11-26",
+    "nb_seismes": 135,
+    "mag_moyenne": 3.17,
+    "mag_max": 5.199999809265137,
+    "moyenne_mobile_3j": 115.3
+  },
+  {
+    "date": "2025-11-27",
+    "nb_seismes": 113,
+    "mag_moyenne": 3.24,
+    "mag_max": 6.400000095367432,
+    "moyenne_mobile_3j": 114.3
+  },
+  {
+    "date": "2025-11-28",
+    "nb_seismes": 119,
+    "mag_moyenne": 3.12,
+    "mag_max": 5.800000190734863,
+    "moyenne_mobile_3j": 122.3
+  },
+  {
+    "date": "2025-11-29",
+    "nb_seismes": 93,
+    "mag_moyenne": 3.34,
+    "mag_max": 5.900000095367432,
+    "moyenne_mobile_3j": 108.3
+  },
+  {
+    "date": "2025-11-30",
+    "nb_seismes": 89,
+    "mag_moyenne": 3.04,
+    "mag_max": 5.300000190734863,
+    "moyenne_mobile_3j": 100.3
+  },
+  {
+    "date": "2025-12-01",
+    "nb_seismes": 110,
+    "mag_moyenne": 3.22,
+    "mag_max": 5.199999809265137,
+    "moyenne_mobile_3j": 97.3
+  },
+  {
+    "date": "2025-12-02",
+    "nb_seismes": 105,
+    "mag_moyenne": 3.44,
+    "mag_max": 5.599999904632568,
+    "moyenne_mobile_3j": 101.3
+  },
+  {
+    "date": "2025-12-03",
+    "nb_seismes": 88,
+    "mag_moyenne": 3.17,
+    "mag_max": 5.0,
+    "moyenne_mobile_3j": 101.0
+  },
+  {
+    "date": "2025-12-04",
+    "nb_seismes": 87,
+    "mag_moyenne": 3.35,
+    "mag_max": 5.800000190734863,
+    "moyenne_mobile_3j": 93.3
+  },
+  {
+    "date": "2025-12-05",
+    "nb_seismes": 85,
+    "mag_moyenne": 3.26,
+    "mag_max": 5.5,
+    "moyenne_mobile_3j": 86.7
+  },
+  {
+    "date": "2025-12-06",
+    "nb_seismes": 184,
+    "mag_moyenne": 3.46,
+    "mag_max": 7.0,
+    "moyenne_mobile_3j": 118.7
+  },
+  {
+    "date": "2025-12-07",
+    "nb_seismes": 495,
+    "mag_moyenne": 2.96,
+    "mag_max": 5.599999904632568,
+    "moyenne_mobile_3j": 254.7
+  },
+  {
+    "date": "2025-12-08",
+    "nb_seismes": 530,
+    "mag_moyenne": 2.7,
+    "mag_max": 7.599999904632568,
+    "moyenne_mobile_3j": 403.0
+  },
+  {
+    "date": "2025-12-09",
+    "nb_seismes": 421,
+    "mag_moyenne": 2.62,
+    "mag_max": 5.300000190734863,
+    "moyenne_mobile_3j": 482.0
+  },
+  {
+    "date": "2025-12-10",
+    "nb_seismes": 359,
+    "mag_moyenne": 2.5,
+    "mag_max": 5.699999809265137,
+    "moyenne_mobile_3j": 436.7
+  },
+  {
+    "date": "2025-12-11",
+    "nb_seismes": 276,
+    "mag_moyenne": 2.54,
+    "mag_max": 5.099999904632568,
+    "moyenne_mobile_3j": 352.0
+  },
+  {
+    "date": "2025-12-12",
+    "nb_seismes": 256,
+    "mag_moyenne": 2.71,
+    "mag_max": 6.699999809265137,
+    "moyenne_mobile_3j": 297.0
+  },
+  {
+    "date": "2025-12-13",
+    "nb_seismes": 197,
+    "mag_moyenne": 2.69,
+    "mag_max": 5.5,
+    "moyenne_mobile_3j": 243.0
+  },
+  {
+    "date": "2025-12-14",
+    "nb_seismes": 180,
+    "mag_moyenne": 2.77,
+    "mag_max": 5.400000095367432,
+    "moyenne_mobile_3j": 211.0
+  },
+  {
+    "date": "2025-12-15",
+    "nb_seismes": 205,
+    "mag_moyenne": 2.76,
+    "mag_max": 5.699999809265137,
+    "moyenne_mobile_3j": 194.0
+  },
+  {
+    "date": "2025-12-16",
+    "nb_seismes": 223,
+    "mag_moyenne": 2.75,
+    "mag_max": 5.199999809265137,
+    "moyenne_mobile_3j": 202.7
+  },
+  {
+    "date": "2025-12-17",
+    "nb_seismes": 217,
+    "mag_moyenne": 2.68,
+    "mag_max": 5.599999904632568,
+    "moyenne_mobile_3j": 215.0
+  },
+  {
+    "date": "2025-12-18",
+    "nb_seismes": 175,
+    "mag_moyenne": 2.83,
+    "mag_max": 5.900000095367432,
+    "moyenne_mobile_3j": 205.0
+  },
+  {
+    "date": "2025-12-19",
+    "nb_seismes": 180,
+    "mag_moyenne": 2.79,
+    "mag_max": 5.699999809265137,
+    "moyenne_mobile_3j": 190.7
+  },
+  {
+    "date": "2025-12-20",
+    "nb_seismes": 145,
+    "mag_moyenne": 2.87,
+    "mag_max": 5.599999904632568,
+    "moyenne_mobile_3j": 166.7
+  },
+  {
+    "date": "2025-12-21",
+    "nb_seismes": 168,
+    "mag_moyenne": 3.04,
+    "mag_max": 5.599999904632568,
+    "moyenne_mobile_3j": 164.3
+  },
+  {
+    "date": "2025-12-22",
+    "nb_seismes": 125,
+    "mag_moyenne": 2.96,
+    "mag_max": 6.5,
+    "moyenne_mobile_3j": 146.0
+  },
+  {
+    "date": "2025-12-23",
+    "nb_seismes": 89,
+    "mag_moyenne": 3.18,
+    "mag_max": 5.599999904632568,
+    "moyenne_mobile_3j": 127.3
+  },
+  {
+    "date": "2025-12-24",
+    "nb_seismes": 123,
+    "mag_moyenne": 3.22,
+    "mag_max": 6.0,
+    "moyenne_mobile_3j": 112.3
+  },
+  {
+    "date": "2025-12-25",
+    "nb_seismes": 96,
+    "mag_moyenne": 3.3,
+    "mag_max": 5.599999904632568,
+    "moyenne_mobile_3j": 102.7
+  },
+  {
+    "date": "2025-12-26",
+    "nb_seismes": 96,
+    "mag_moyenne": 3.45,
+    "mag_max": 5.599999904632568,
+    "moyenne_mobile_3j": 105.0
+  },
+  {
+    "date": "2025-12-27",
+    "nb_seismes": 83,
+    "mag_moyenne": 3.52,
+    "mag_max": 6.599999904632568,
+    "moyenne_mobile_3j": 91.7
+  },
+  {
+    "date": "2025-12-28",
+    "nb_seismes": 75,
+    "mag_moyenne": 3.17,
+    "mag_max": 6.199999809265137,
+    "moyenne_mobile_3j": 84.7
+  },
+  {
+    "date": "2025-12-29",
+    "nb_seismes": 71,
+    "mag_moyenne": 3.22,
+    "mag_max": 5.099999904632568,
+    "moyenne_mobile_3j": 76.3
+  },
+  {
+    "date": "2025-12-30",
+    "nb_seismes": 88,
+    "mag_moyenne": 3.15,
+    "mag_max": 5.5,
+    "moyenne_mobile_3j": 78.0
+  },
+  {
+    "date": "2025-12-31",
+    "nb_seismes": 94,
+    "mag_moyenne": 3.15,
+    "mag_max": 6.0,
+    "moyenne_mobile_3j": 84.3
+  },
+  {
+    "date": "2026-01-01",
+    "nb_seismes": 151,
+    "mag_moyenne": 3.19,
+    "mag_max": 6.0,
+    "moyenne_mobile_3j": 111.0
+  },
+  {
+    "date": "2026-01-02",
+    "nb_seismes": 110,
+    "mag_moyenne": 3.18,
+    "mag_max": 6.5,
+    "moyenne_mobile_3j": 118.3
+  },
+  {
+    "date": "2026-01-03",
+    "nb_seismes": 85,
+    "mag_moyenne": 3.33,
+    "mag_max": 5.900000095367432,
+    "moyenne_mobile_3j": 115.3
+  },
+  {
+    "date": "2026-01-04",
+    "nb_seismes": 92,
+    "mag_moyenne": 3.32,
+    "mag_max": 5.699999809265137,
+    "moyenne_mobile_3j": 95.7
+  },
+  {
+    "date": "2026-01-05",
+    "nb_seismes": 133,
+    "mag_moyenne": 2.78,
+    "mag_max": 5.199999809265137,
+    "moyenne_mobile_3j": 103.3
+  },
+  {
+    "date": "2026-01-06",
+    "nb_seismes": 140,
+    "mag_moyenne": 3.18,
+    "mag_max": 5.699999809265137,
+    "moyenne_mobile_3j": 121.7
+  },
+  {
+    "date": "2026-01-07",
+    "nb_seismes": 103,
+    "mag_moyenne": 3.33,
+    "mag_max": 6.400000095367432,
+    "moyenne_mobile_3j": 125.3
+  },
+  {
+    "date": "2026-01-08",
+    "nb_seismes": 79,
+    "mag_moyenne": 3.28,
+    "mag_max": 5.5,
+    "moyenne_mobile_3j": 107.3
+  },
+  {
+    "date": "2026-01-09",
+    "nb_seismes": 77,
+    "mag_moyenne": 3.46,
+    "mag_max": 5.599999904632568,
+    "moyenne_mobile_3j": 86.3
+  },
+  {
+    "date": "2026-01-10",
+    "nb_seismes": 89,
+    "mag_moyenne": 3.4,
+    "mag_max": 6.400000095367432,
+    "moyenne_mobile_3j": 81.7
+  },
+  {
+    "date": "2026-01-11",
+    "nb_seismes": 81,
+    "mag_moyenne": 3.31,
+    "mag_max": 5.099999904632568,
+    "moyenne_mobile_3j": 82.3
+  },
+  {
+    "date": "2026-01-12",
+    "nb_seismes": 91,
+    "mag_moyenne": 3.61,
+    "mag_max": 5.599999904632568,
+    "moyenne_mobile_3j": 87.0
+  },
+  {
+    "date": "2026-01-13",
+    "nb_seismes": 114,
+    "mag_moyenne": 3.44,
+    "mag_max": 6.199999809265137,
+    "moyenne_mobile_3j": 95.3
+  },
+  {
+    "date": "2026-01-14",
+    "nb_seismes": 74,
+    "mag_moyenne": 3.3,
+    "mag_max": 5.5,
+    "moyenne_mobile_3j": 93.0
+  },
+  {
+    "date": "2026-01-15",
+    "nb_seismes": 140,
+    "mag_moyenne": 2.84,
+    "mag_max": 5.900000095367432,
+    "moyenne_mobile_3j": 109.3
+  },
+  {
+    "date": "2026-01-16",
+    "nb_seismes": 98,
+    "mag_moyenne": 3.46,
+    "mag_max": 6.0,
+    "moyenne_mobile_3j": 104.0
+  },
+  {
+    "date": "2026-01-17",
+    "nb_seismes": 97,
+    "mag_moyenne": 2.98,
+    "mag_max": 5.400000095367432,
+    "moyenne_mobile_3j": 111.7
+  },
+  {
+    "date": "2026-01-18",
+    "nb_seismes": 86,
+    "mag_moyenne": 3.35,
+    "mag_max": 5.300000190734863,
+    "moyenne_mobile_3j": 93.7
+  },
+  {
+    "date": "2026-01-19",
+    "nb_seismes": 91,
+    "mag_moyenne": 3.6,
+    "mag_max": 6.0,
+    "moyenne_mobile_3j": 91.3
+  },
+  {
+    "date": "2026-01-20",
+    "nb_seismes": 144,
+    "mag_moyenne": 3.38,
+    "mag_max": 5.900000095367432,
+    "moyenne_mobile_3j": 107.0
+  },
+  {
+    "date": "2026-01-21",
+    "nb_seismes": 141,
+    "mag_moyenne": 3.24,
+    "mag_max": 6.099999904632568,
+    "moyenne_mobile_3j": 125.3
+  },
+  {
+    "date": "2026-01-22",
+    "nb_seismes": 78,
+    "mag_moyenne": 3.34,
+    "mag_max": 6.199999809265137,
+    "moyenne_mobile_3j": 121.0
+  },
+  {
+    "date": "2026-01-23",
+    "nb_seismes": 102,
+    "mag_moyenne": 3.08,
+    "mag_max": 5.099999904632568,
+    "moyenne_mobile_3j": 107.0
+  },
+  {
+    "date": "2026-01-24",
+    "nb_seismes": 84,
+    "mag_moyenne": 3.12,
+    "mag_max": 5.300000190734863,
+    "moyenne_mobile_3j": 88.0
+  },
+  {
+    "date": "2026-01-25",
+    "nb_seismes": 90,
+    "mag_moyenne": 3.11,
+    "mag_max": 5.099999904632568,
+    "moyenne_mobile_3j": 92.0
+  },
+  {
+    "date": "2026-01-26",
+    "nb_seismes": 137,
+    "mag_moyenne": 3.36,
+    "mag_max": 5.800000190734863,
+    "moyenne_mobile_3j": 103.7
+  },
+  {
+    "date": "2026-01-27",
+    "nb_seismes": 129,
+    "mag_moyenne": 3.28,
+    "mag_max": 5.699999809265137,
+    "moyenne_mobile_3j": 118.7
+  },
+  {
+    "date": "2026-01-28",
+    "nb_seismes": 168,
+    "mag_moyenne": 3.39,
+    "mag_max": 5.900000095367432,
+    "moyenne_mobile_3j": 144.7
+  },
+  {
+    "date": "2026-01-29",
+    "nb_seismes": 100,
+    "mag_moyenne": 3.08,
+    "mag_max": 6.0,
+    "moyenne_mobile_3j": 132.3
+  },
+  {
+    "date": "2026-01-30",
+    "nb_seismes": 142,
+    "mag_moyenne": 2.94,
+    "mag_max": 5.400000095367432,
+    "moyenne_mobile_3j": 136.7
+  },
+  {
+    "date": "2026-01-31",
+    "nb_seismes": 78,
+    "mag_moyenne": 3.67,
+    "mag_max": 5.800000190734863,
+    "moyenne_mobile_3j": 106.7
+  },
+  {
+    "date": "2026-02-01",
+    "nb_seismes": 83,
+    "mag_moyenne": 3.11,
+    "mag_max": 5.300000190734863,
+    "moyenne_mobile_3j": 101.0
+  },
+  {
+    "date": "2026-02-02",
+    "nb_seismes": 125,
+    "mag_moyenne": 2.88,
+    "mag_max": 5.300000190734863,
+    "moyenne_mobile_3j": 95.3
+  },
+  {
+    "date": "2026-02-03",
+    "nb_seismes": 106,
+    "mag_moyenne": 2.98,
+    "mag_max": 5.800000190734863,
+    "moyenne_mobile_3j": 104.7
+  },
+  {
+    "date": "2026-02-04",
+    "nb_seismes": 91,
+    "mag_moyenne": 3.15,
+    "mag_max": 6.099999904632568,
+    "moyenne_mobile_3j": 107.3
+  },
+  {
+    "date": "2026-02-05",
+    "nb_seismes": 99,
+    "mag_moyenne": 3.08,
+    "mag_max": 5.800000190734863,
+    "moyenne_mobile_3j": 98.7
+  },
+  {
+    "date": "2026-02-06",
+    "nb_seismes": 104,
+    "mag_moyenne": 3.04,
+    "mag_max": 5.900000095367432,
+    "moyenne_mobile_3j": 98.0
+  },
+  {
+    "date": "2026-02-07",
+    "nb_seismes": 91,
+    "mag_moyenne": 2.86,
+    "mag_max": 5.199999809265137,
+    "moyenne_mobile_3j": 98.0
+  },
+  {
+    "date": "2026-02-08",
+    "nb_seismes": 108,
+    "mag_moyenne": 3.35,
+    "mag_max": 5.699999809265137,
+    "moyenne_mobile_3j": 101.0
+  },
+  {
+    "date": "2026-02-09",
+    "nb_seismes": 87,
+    "mag_moyenne": 3.2,
+    "mag_max": 5.300000190734863,
+    "moyenne_mobile_3j": 95.3
+  },
+  {
+    "date": "2026-02-10",
+    "nb_seismes": 107,
+    "mag_moyenne": 3.0,
+    "mag_max": 6.199999809265137,
+    "moyenne_mobile_3j": 100.7
+  },
+  {
+    "date": "2026-02-11",
+    "nb_seismes": 119,
+    "mag_moyenne": 3.06,
+    "mag_max": 5.599999904632568,
+    "moyenne_mobile_3j": 104.3
+  },
+  {
+    "date": "2026-02-12",
+    "nb_seismes": 109,
+    "mag_moyenne": 2.87,
+    "mag_max": 6.199999809265137,
+    "moyenne_mobile_3j": 111.7
+  },
+  {
+    "date": "2026-02-13",
+    "nb_seismes": 132,
+    "mag_moyenne": 3.03,
+    "mag_max": 5.599999904632568,
+    "moyenne_mobile_3j": 120.0
+  },
+  {
+    "date": "2026-02-14",
+    "nb_seismes": 72,
+    "mag_moyenne": 3.45,
+    "mag_max": 6.400000095367432,
+    "moyenne_mobile_3j": 104.3
+  },
+  {
+    "date": "2026-02-15",
+    "nb_seismes": 72,
+    "mag_moyenne": 3.17,
+    "mag_max": 6.0,
+    "moyenne_mobile_3j": 92.0
+  },
+  {
+    "date": "2026-02-16",
+    "nb_seismes": 92,
+    "mag_moyenne": 3.08,
+    "mag_max": 6.0,
+    "moyenne_mobile_3j": 78.7
+  },
+  {
+    "date": "2026-02-17",
+    "nb_seismes": 101,
+    "mag_moyenne": 2.91,
+    "mag_max": 5.5,
+    "moyenne_mobile_3j": 88.3
+  },
+  {
+    "date": "2026-02-18",
+    "nb_seismes": 55,
+    "mag_moyenne": 3.06,
+    "mag_max": 5.199999809265137,
+    "moyenne_mobile_3j": 82.7
+  },
+  {
+    "date": "2026-02-19",
+    "nb_seismes": 91,
+    "mag_moyenne": 3.22,
+    "mag_max": 5.5,
+    "moyenne_mobile_3j": 82.3
+  },
+  {
+    "date": "2026-02-20",
+    "nb_seismes": 86,
+    "mag_moyenne": 2.93,
+    "mag_max": 5.800000190734863,
+    "moyenne_mobile_3j": 77.3
+  },
+  {
+    "date": "2026-02-21",
+    "nb_seismes": 104,
+    "mag_moyenne": 2.92,
+    "mag_max": 5.900000095367432,
+    "moyenne_mobile_3j": 93.7
+  },
+  {
+    "date": "2026-02-22",
+    "nb_seismes": 66,
+    "mag_moyenne": 3.34,
+    "mag_max": 7.099999904632568,
+    "moyenne_mobile_3j": 85.3
+  },
+  {
+    "date": "2026-02-23",
+    "nb_seismes": 214,
+    "mag_moyenne": 3.08,
+    "mag_max": 6.099999904632568,
+    "moyenne_mobile_3j": 128.0
+  },
+  {
+    "date": "2026-02-24",
+    "nb_seismes": 133,
+    "mag_moyenne": 2.81,
+    "mag_max": 5.5,
+    "moyenne_mobile_3j": 137.7
+  },
+  {
+    "date": "2026-02-25",
+    "nb_seismes": 66,
+    "mag_moyenne": 3.16,
+    "mag_max": 5.5,
+    "moyenne_mobile_3j": 137.7
+  },
+  {
+    "date": "2026-02-26",
+    "nb_seismes": 67,
+    "mag_moyenne": 3.36,
+    "mag_max": 5.699999809265137,
+    "moyenne_mobile_3j": 88.7
+  },
+  {
+    "date": "2026-02-27",
+    "nb_seismes": 88,
+    "mag_moyenne": 3.06,
+    "mag_max": 5.300000190734863,
+    "moyenne_mobile_3j": 73.7
+  }
+]

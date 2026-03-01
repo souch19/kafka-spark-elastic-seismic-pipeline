@@ -1,0 +1,89 @@
+{
+  "size": 20,
+  "query": {
+    "function_score": {
+      "query": {
+        "bool": {
+          "should": [
+            {
+              "match": {
+                "place": {
+                  "query": "California",
+                  "fuzziness": "AUTO",
+                  "operator": "or",
+                  "boost": 2.0
+                }
+              }
+            },
+            {
+              "match": {
+                "place": {
+                  "query": "Alaska",
+                  "fuzziness": "AUTO",
+                  "operator": "or",
+                  "boost": 1.5
+                }
+              }
+            },
+            {
+              "match": {
+                "place": {
+                  "query": "Oklahoma",
+                  "fuzziness": "AUTO"
+                }
+              }
+            },
+            {
+              "match": {
+                "title": {
+                  "query": "seismic earthquake",
+                  "fuzziness": "AUTO",
+                  "boost": 1.2
+                }
+              }
+            }
+          ],
+          "minimum_should_match": 1,
+          "filter": [
+            {
+              "range": {
+                "magnitude": {
+                  "gte": 1.5
+                }
+              }
+            }
+          ]
+        }
+      },
+      "functions": [
+        {
+          "field_value_factor": {
+            "field": "magnitude",
+            "factor": 1.2,
+            "modifier": "sqrt",
+            "missing": 1
+          }
+        }
+      ],
+      "boost_mode": "multiply"
+    }
+  },
+  "highlight": {
+    "fields": {
+      "place": {
+        "number_of_fragments": 1
+      },
+      "title": {
+        "number_of_fragments": 1
+      }
+    }
+  },
+  "_source": [
+    "title",
+    "magnitude",
+    "place",
+    "time",
+    "depth",
+    "mag_type"
+  ]
+}

@@ -1,0 +1,131 @@
+{
+  "settings": {
+    "number_of_shards": 1,
+    "number_of_replicas": 0,
+    "analysis": {
+      "filter": {
+        "ngram_filter": {
+          "type": "ngram",
+          "min_gram": 3,
+          "max_gram": 4
+        },
+        "english_stop": {
+          "type": "stop",
+          "stopwords": "_english_"
+        },
+        "french_stop": {
+          "type": "stop",
+          "stopwords": "_french_"
+        }
+      },
+      "analyzer": {
+        "ngram_analyzer": {
+          "type": "custom",
+          "tokenizer": "standard",
+          "filter": [
+            "lowercase",
+            "ngram_filter"
+          ]
+        },
+        "text_analyzer": {
+          "type": "custom",
+          "tokenizer": "standard",
+          "filter": [
+            "lowercase",
+            "english_stop",
+            "french_stop"
+          ]
+        }
+      }
+    }
+  },
+  "mappings": {
+    "properties": {
+      "id": {
+        "type": "keyword"
+      },
+      "magnitude": {
+        "type": "float"
+      },
+      "place": {
+        "type": "text",
+        "analyzer": "text_analyzer",
+        "fields": {
+          "keyword": {
+            "type": "keyword"
+          },
+          "ngram": {
+            "type": "text",
+            "analyzer": "ngram_analyzer"
+          }
+        }
+      },
+      "time": {
+        "type": "date",
+        "format": "strict_date_optional_time||epoch_millis"
+      },
+      "updated": {
+        "type": "date",
+        "format": "strict_date_optional_time||epoch_millis"
+      },
+      "type": {
+        "type": "keyword"
+      },
+      "title": {
+        "type": "text",
+        "analyzer": "text_analyzer",
+        "fields": {
+          "keyword": {
+            "type": "keyword"
+          },
+          "ngram": {
+            "type": "text",
+            "analyzer": "ngram_analyzer"
+          }
+        }
+      },
+      "status": {
+        "type": "keyword"
+      },
+      "tsunami": {
+        "type": "integer"
+      },
+      "sig": {
+        "type": "integer"
+      },
+      "net": {
+        "type": "keyword"
+      },
+      "nst": {
+        "type": "integer"
+      },
+      "dmin": {
+        "type": "float"
+      },
+      "rms": {
+        "type": "float"
+      },
+      "gap": {
+        "type": "float"
+      },
+      "mag_type": {
+        "type": "keyword"
+      },
+      "longitude": {
+        "type": "float"
+      },
+      "latitude": {
+        "type": "float"
+      },
+      "depth": {
+        "type": "float"
+      },
+      "url": {
+        "type": "keyword"
+      },
+      "location": {
+        "type": "geo_point"
+      }
+    }
+  }
+}

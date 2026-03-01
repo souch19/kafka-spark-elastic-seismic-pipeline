@@ -1,0 +1,29 @@
+=================================================================
+  4_requete_fuzzy
+  Match multi-field avec fuzziness AUTO + function_score
+=================================================================
+Temps d'execution : 415 ms
+Resultats totaux  : 10000
+
+--- Top 10 resultats ---
+   1. [score=34.61] M7.3 | 2025 Sand Point, Alaska Earthquake | 2025-07-16T20:37:41 | prof=38km
+      highlight(place): 2025 Sand Point, <em>Alaska</em> Earthquake
+      highlight(title): M 7.3 - 2025 Sand Point, Alaska <em>Earthquake</em>
+   2. [score=32.96] M8.8 | 2025 Kamchatka Peninsula, Russia Earthquake | 2025-07-29T23:24:52 | prof=35km
+      highlight(title): M 8.8 - 2025 Kamchatka Peninsula, Russia <em>Earthquake</em>
+   3. [score=32.42] M7.4 | 2025 Drake Passage Earthquake | 2025-05-02T12:58:26 | prof=10km
+      highlight(title): M 7.4 - 2025 Drake Passage <em>Earthquake</em>
+   4. [score=31.53] M7 | 2025 Hubbard Glacier Earthquake | 2025-12-06T20:41:49 | prof=10.317km
+      highlight(title): M 7.0 - 2025 Hubbard Glacier <em>Earthquake</em>
+   5. [score=30.83] M7.7 | 2025 Mandalay, Burma (Myanmar) Earthquake | 2025-03-28T06:20:52 | prof=10km
+      highlight(title): M 7.7 - 2025 Mandalay, Burma (Myanmar) <em>Earthquake</em>
+   6. [score=30.63] M7.6 | 2025 Aomori Prefecture, Japan Earthquake | 2025-12-08T14:15:09 | prof=40.72km
+      highlight(title): M 7.6 - 2025 Aomori Prefecture, Japan <em>Earthquake</em>
+   7. [score=30.43] M7.5 | 2025 Southern Drake Passage Earthquake | 2025-08-22T02:16:18 | prof=10km
+      highlight(title): M 7.5 - 2025 Southern Drake Passage <em>Earthquake</em>
+   8. [score=30.22] M7.4 | 2025 Eastern Kamchatka, Russia Earthquake | 2025-07-20T06:49:04 | prof=34km
+      highlight(title): M 7.4 - 2025 Eastern Kamchatka, Russia <em>Earthquake</em>
+   9. [score=29.19] M6 | 2025 Taitung, Taiwan Earthquake | 2025-12-24T09:47:06 | prof=8km
+      highlight(title): M 6.0 - 2025 Taitung, Taiwan <em>Earthquake</em>
+  10. [score=25.01] M3.8 | 163 km W of Ferndale, California | 2025-08-06T04:39:17 | prof=10km
+      highlight(place): 163 km W of Ferndale, <em>California</em>

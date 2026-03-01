@@ -1,0 +1,55 @@
+=================================================================
+  3_requete_ngram
+  N-gram 'Alaska' + stats magnitude
+=================================================================
+Temps d'execution : 61 ms
+Resultats totaux  : 10000
+
+--- Top 10 resultats ---
+   1. [score=-] M7.3 | 2025 Sand Point, Alaska Earthquake | 2025-07-16T20:37:41 | prof=38km
+      highlight(place): 2025 Sand Point, <em>Alaska</em> Earthquake
+   2. [score=-] M6.2 | 88 km SSE of Adak, Alaska | 2025-03-21T14:53:41 | prof=17km
+      highlight(place): 88 km SSE of Adak, <em>Alaska</em>
+   3. [score=-] M6.2 | 91 km SSE of Sand Point, Alaska | 2025-07-20T22:28:00 | prof=40km
+      highlight(place): 91 km SSE of Sand Point, <em>Alaska</em>
+   4. [score=-] M6.1 | 93 km SW of Nikolski, Alaska | 2026-02-23T05:11:48 | prof=14km
+      highlight(place): 93 km SW of Nikolski, <em>Alaska</em>
+   5. [score=-] M6 | 12 km WNW of Susitna, Alaska | 2025-11-27T17:11:29 | prof=69.43339538574219km
+      highlight(place): 12 km WNW of Susitna, <em>Alaska</em>
+   6. [score=-] M5.9 | 87 km SSE of Adak, Alaska | 2025-03-21T14:58:28 | prof=26.674km
+      highlight(place): 87 km SSE of Adak, <em>Alaska</em>
+   7. [score=-] M5.9 | 237 km W of Adak, Alaska | 2025-08-28T11:07:48 | prof=130km
+      highlight(place): 237 km W of Adak, <em>Alaska</em>
+   8. [score=-] M5.9 | 92 km SSW of Nikolski, Alaska | 2025-09-03T20:57:47 | prof=18km
+      highlight(place): 92 km SSW of Nikolski, <em>Alaska</em>
+   9. [score=-] M5.9 | 278 km ESE of Attu Station, Alaska | 2026-01-15T08:52:45 | prof=41.164km
+      highlight(place): 278 km ESE of Attu Station, <em>Alaska</em>
+  10. [score=-] M5.8 | 89 km N of Yakutat, Alaska | 2025-12-08T00:56:50 | prof=10km
+      highlight(place): 89 km N of Yakutat, <em>Alaska</em>
+
+--- Agregations ---
+
+  [mag_distribution] (11 buckets)
+    2.0: 8561 docs
+    2.5: 3789 docs
+    3.0: 1774 docs
+    3.5: 670 docs
+    4.0: 280 docs
+    4.5: 104 docs
+    5.0: 44 docs
+    5.5: 15 docs
+    6.0: 4 docs
+    6.5: 0 docs
+    7.0: 1 docs
+
+  [top_lieux] (10 buckets)
+    Rat Islands, Aleutian Islands, Alaska: 236 docs
+    112 km N of Yakutat, Alaska: 179 docs
+    113 km N of Yakutat, Alaska: 179 docs
+    114 km N of Yakutat, Alaska: 168 docs
+    111 km N of Yakutat, Alaska: 158 docs
+    115 km N of Yakutat, Alaska: 133 docs
+    108 km N of Yakutat, Alaska: 129 docs
+    116 km N of Yakutat, Alaska: 125 docs
+    110 km N of Yakutat, Alaska: 117 docs
+    107 km N of Yakutat, Alaska: 115 docs

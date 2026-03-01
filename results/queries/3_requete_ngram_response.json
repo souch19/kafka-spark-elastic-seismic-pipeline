@@ -1,0 +1,1237 @@
+{
+  "took": 61,
+  "timed_out": false,
+  "_shards": {
+    "total": 1,
+    "successful": 1,
+    "skipped": 0,
+    "failed": 0
+  },
+  "hits": {
+    "total": {
+      "value": 10000,
+      "relation": "gte"
+    },
+    "max_score": null,
+    "hits": [
+      {
+        "_index": "earthquakes",
+        "_id": "us7000qd1y",
+        "_score": null,
+        "_source": {
+          "title": "M 7.3 - 2025 Sand Point, Alaska Earthquake",
+          "time": "2025-07-16T20:37:41.667000Z",
+          "longitude": -160.4689,
+          "depth": 38,
+          "magnitude": 7.3,
+          "latitude": 54.5652,
+          "place": "2025 Sand Point, Alaska Earthquake"
+        },
+        "highlight": {
+          "place": [
+            "2025 Sand Point, <em>Alaska</em> Earthquake"
+          ]
+        },
+        "sort": [
+          7.3
+        ]
+      },
+      {
+        "_index": "earthquakes",
+        "_id": "us7000pllu",
+        "_score": null,
+        "_source": {
+          "title": "M 6.2 - 88 km SSE of Adak, Alaska",
+          "time": "2025-03-21T14:53:41.774000Z",
+          "longitude": -176.0703,
+          "depth": 17,
+          "magnitude": 6.2,
+          "latitude": 51.1558,
+          "place": "88 km SSE of Adak, Alaska"
+        },
+        "highlight": {
+          "place": [
+            "88 km SSE of Adak, <em>Alaska</em>"
+          ]
+        },
+        "sort": [
+          6.2
+        ]
+      },
+      {
+        "_index": "earthquakes",
+        "_id": "us7000qe51",
+        "_score": null,
+        "_source": {
+          "title": "M 6.2 - 91 km SSE of Sand Point, Alaska",
+          "time": "2025-07-20T22:28:00.041000Z",
+          "longitude": -159.8382,
+          "depth": 40,
+          "magnitude": 6.2,
+          "latitude": 54.6051,
+          "place": "91 km SSE of Sand Point, Alaska"
+        },
+        "highlight": {
+          "place": [
+            "91 km SSE of Sand Point, <em>Alaska</em>"
+          ]
+        },
+        "sort": [
+          6.2
+        ]
+      },
+      {
+        "_index": "earthquakes",
+        "_id": "us6000sayv",
+        "_score": null,
+        "_source": {
+          "title": "M 6.1 - 93 km SW of Nikolski, Alaska",
+          "time": "2026-02-23T05:11:48.783000Z",
+          "longitude": -169.8574,
+          "depth": 14,
+          "magnitude": 6.1,
+          "latitude": 52.3572,
+          "place": "93 km SW of Nikolski, Alaska"
+        },
+        "highlight": {
+          "place": [
+            "93 km SW of Nikolski, <em>Alaska</em>"
+          ]
+        },
+        "sort": [
+          6.1
+        ]
+      },
+      {
+        "_index": "earthquakes",
+        "_id": "ak2025xjbvhj",
+        "_score": null,
+        "_source": {
+          "title": "M 6.0 - 12 km WNW of Susitna, Alaska",
+          "time": "2025-11-27T17:11:29.059000Z",
+          "longitude": -150.75079345703125,
+          "depth": 69.43339538574219,
+          "magnitude": 6,
+          "latitude": 61.56951904296875,
+          "place": "12 km WNW of Susitna, Alaska"
+        },
+        "highlight": {
+          "place": [
+            "12 km WNW of Susitna, <em>Alaska</em>"
+          ]
+        },
+        "sort": [
+          6.0
+        ]
+      },
+      {
+        "_index": "earthquakes",
+        "_id": "us7000pllx",
+        "_score": null,
+        "_source": {
+          "title": "M 5.9 - 87 km SSE of Adak, Alaska",
+          "time": "2025-03-21T14:58:28.059000Z",
+          "longitude": -176.1097,
+          "depth": 26.674,
+          "magnitude": 5.9,
+          "latitude": 51.1563,
+          "place": "87 km SSE of Adak, Alaska"
+        },
+        "highlight": {
+          "place": [
+            "87 km SSE of Adak, <em>Alaska</em>"
+          ]
+        },
+        "sort": [
+          5.9
+        ]
+      },
+      {
+        "_index": "earthquakes",
+        "_id": "us7000qrj0",
+        "_score": null,
+        "_source": {
+          "title": "M 5.9 - 237 km W of Adak, Alaska",
+          "time": "2025-08-28T11:07:48.125000Z",
+          "longitude": 179.9386,
+          "depth": 130,
+          "magnitude": 5.9,
+          "latitude": 52.1251,
+          "place": "237 km W of Adak, Alaska"
+        },
+        "highlight": {
+          "place": [
+            "237 km W of Adak, <em>Alaska</em>"
+          ]
+        },
+        "sort": [
+          5.9
+        ]
+      },
+      {
+        "_index": "earthquakes",
+        "_id": "us7000qtm0",
+        "_score": null,
+        "_source": {
+          "title": "M 5.9 - 92 km SSW of Nikolski, Alaska",
+          "time": "2025-09-03T20:57:47.645000Z",
+          "longitude": -169.5044,
+          "depth": 18,
+          "magnitude": 5.9,
+          "latitude": 52.207,
+          "place": "92 km SSW of Nikolski, Alaska"
+        },
+        "highlight": {
+          "place": [
+            "92 km SSW of Nikolski, <em>Alaska</em>"
+          ]
+        },
+        "sort": [
+          5.9
+        ]
+      },
+      {
+        "_index": "earthquakes",
+        "_id": "us7000rptl",
+        "_score": null,
+        "_source": {
+          "title": "M 5.9 - 278 km ESE of Attu Station, Alaska",
+          "time": "2026-01-15T08:52:45.850000Z",
+          "longitude": 176.6969,
+          "depth": 41.164,
+          "magnitude": 5.9,
+          "latitude": 51.5801,
+          "place": "278 km ESE of Attu Station, Alaska"
+        },
+        "highlight": {
+          "place": [
+            "278 km ESE of Attu Station, <em>Alaska</em>"
+          ]
+        },
+        "sort": [
+          5.9
+        ]
+      },
+      {
+        "_index": "earthquakes",
+        "_id": "us6000rt9w",
+        "_score": null,
+        "_source": {
+          "title": "M 5.8 - 89 km N of Yakutat, Alaska",
+          "time": "2025-12-08T00:56:50.321000Z",
+          "longitude": -139.6253,
+          "depth": 10,
+          "magnitude": 5.8,
+          "latitude": 60.3454,
+          "place": "89 km N of Yakutat, Alaska"
+        },
+        "highlight": {
+          "place": [
+            "89 km N of Yakutat, <em>Alaska</em>"
+          ]
+        },
+        "sort": [
+          5.8
+        ]
+      },
+      {
+        "_index": "earthquakes",
+        "_id": "us7000rluk",
+        "_score": null,
+        "_source": {
+          "title": "M 5.7 - 111 km N of Yakutat, Alaska",
+          "time": "2026-01-01T06:46:54.742000Z",
+          "longitude": -140.0494,
+          "depth": 5,
+          "magnitude": 5.7,
+          "latitude": 60.5362,
+          "place": "111 km N of Yakutat, Alaska"
+        },
+        "highlight": {
+          "place": [
+            "111 km N of Yakutat, <em>Alaska</em>"
+          ]
+        },
+        "sort": [
+          5.7
+        ]
+      },
+      {
+        "_index": "earthquakes",
+        "_id": "us7000plu1",
+        "_score": null,
+        "_source": {
+          "title": "M 5.6 - 88 km SSE of Adak, Alaska",
+          "time": "2025-03-22T09:49:21.891000Z",
+          "longitude": -176.1067,
+          "depth": 20,
+          "magnitude": 5.6,
+          "latitude": 51.1545,
+          "place": "88 km SSE of Adak, Alaska"
+        },
+        "highlight": {
+          "place": [
+            "88 km SSE of Adak, <em>Alaska</em>"
+          ]
+        },
+        "sort": [
+          5.6
+        ]
+      },
+      {
+        "_index": "earthquakes",
+        "_id": "us6000pzwb",
+        "_score": null,
+        "_source": {
+          "title": "M 5.6 - 93 km SSE of Adak, Alaska",
+          "time": "2025-03-20T04:28:51.980000Z",
+          "longitude": -176.0641,
+          "depth": 17,
+          "magnitude": 5.6,
+          "latitude": 51.1094,
+          "place": "93 km SSE of Adak, Alaska"
+        },
+        "highlight": {
+          "place": [
+            "93 km SSE of Adak, <em>Alaska</em>"
+          ]
+        },
+        "sort": [
+          5.6
+        ]
+      },
+      {
+        "_index": "earthquakes",
+        "_id": "ak025b7povrc",
+        "_score": null,
+        "_source": {
+          "title": "M 5.6 - 133 km SE of Old Harbor, Alaska",
+          "time": "2025-09-01T11:02:09.766000Z",
+          "longitude": -151.9738,
+          "depth": 12,
+          "magnitude": 5.6,
+          "latitude": 56.2482,
+          "place": "133 km SE of Old Harbor, Alaska"
+        },
+        "highlight": {
+          "place": [
+            "133 km SE of Old Harbor, <em>Alaska</em>"
+          ]
+        },
+        "sort": [
+          5.6
+        ]
+      },
+      {
+        "_index": "earthquakes",
+        "_id": "us7000qd4n",
+        "_score": null,
+        "_source": {
+          "title": "M 5.6 - 96 km SSE of Sand Point, Alaska",
+          "time": "2025-07-17T04:30:37.038000Z",
+          "longitude": -160.1181,
+          "depth": 35,
+          "magnitude": 5.6,
+          "latitude": 54.5012,
+          "place": "96 km SSE of Sand Point, Alaska"
+        },
+        "highlight": {
+          "place": [
+            "96 km SSE of Sand Point, <em>Alaska</em>"
+          ]
+        },
+        "sort": [
+          5.6
+        ]
+      },
+      {
+        "_index": "earthquakes",
+        "_id": "us7000ppga",
+        "_score": null,
+        "_source": {
+          "title": "M 5.5 - 46 km NNW of Attu Station, Alaska",
+          "time": "2025-04-02T16:26:35.709000Z",
+          "longitude": 172.961,
+          "depth": 14.015,
+          "magnitude": 5.5,
+          "latitude": 53.2407,
+          "place": "46 km NNW of Attu Station, Alaska"
+        },
+        "highlight": {
+          "place": [
+            "46 km NNW of Attu Station, <em>Alaska</em>"
+          ]
+        },
+        "sort": [
+          5.5
+        ]
+      },
+      {
+        "_index": "earthquakes",
+        "_id": "us6000sb0h",
+        "_score": null,
+        "_source": {
+          "title": "M 5.5 - 92 km SW of Nikolski, Alaska",
+          "time": "2026-02-23T10:02:08.464000Z",
+          "longitude": -169.9056,
+          "depth": 10,
+          "magnitude": 5.5,
+          "latitude": 52.4087,
+          "place": "92 km SW of Nikolski, Alaska"
+        },
+        "highlight": {
+          "place": [
+            "92 km SW of Nikolski, <em>Alaska</em>"
+          ]
+        },
+        "sort": [
+          5.5
+        ]
+      },
+      {
+        "_index": "earthquakes",
+        "_id": "us7000qxp1",
+        "_score": null,
+        "_source": {
+          "title": "M 5.5 - 122 km SW of Adak, Alaska",
+          "time": "2025-09-21T09:30:27.862000Z",
+          "longitude": -178.0221,
+          "depth": 30,
+          "magnitude": 5.5,
+          "latitude": 51.1987,
+          "place": "122 km SW of Adak, Alaska"
+        },
+        "highlight": {
+          "place": [
+            "122 km SW of Adak, <em>Alaska</em>"
+          ]
+        },
+        "sort": [
+          5.5
+        ]
+      },
+      {
+        "_index": "earthquakes",
+        "_id": "us6000rpxa",
+        "_score": null,
+        "_source": {
+          "title": "M 5.5 - 67 km SSW of Adak, Alaska",
+          "time": "2025-11-23T08:21:44.503000Z",
+          "longitude": -177.0161,
+          "depth": 33,
+          "magnitude": 5.5,
+          "latitude": 51.3114,
+          "place": "67 km SSW of Adak, Alaska"
+        },
+        "highlight": {
+          "place": [
+            "67 km SSW of Adak, <em>Alaska</em>"
+          ]
+        },
+        "sort": [
+          5.5
+        ]
+      },
+      {
+        "_index": "earthquakes",
+        "_id": "us6000rumi",
+        "_score": null,
+        "_source": {
+          "title": "M 5.5 - Rat Islands, Aleutian Islands, Alaska",
+          "time": "2025-12-13T10:51:00.036000Z",
+          "longitude": 178.3529,
+          "depth": 108,
+          "magnitude": 5.5,
+          "latitude": 52.1512,
+          "place": "Rat Islands, Aleutian Islands, Alaska"
+        },
+        "highlight": {
+          "place": [
+            "Rat Islands, Aleutian Islands, <em>Alaska</em>"
+          ]
+        },
+        "sort": [
+          5.5
+        ]
+      },
+      {
+        "_index": "earthquakes",
+        "_id": "us6000pzwx",
+        "_score": null,
+        "_source": {
+          "title": "M 5.4 - 94 km SSE of Adak, Alaska",
+          "time": "2025-03-20T05:13:06.399000Z",
+          "longitude": -176.0968,
+          "depth": 35,
+          "magnitude": 5.4,
+          "latitude": 51.0945,
+          "place": "94 km SSE of Adak, Alaska"
+        },
+        "highlight": {
+          "place": [
+            "94 km SSE of Adak, <em>Alaska</em>"
+          ]
+        },
+        "sort": [
+          5.4
+        ]
+      },
+      {
+        "_index": "earthquakes",
+        "_id": "us7000qug7",
+        "_score": null,
+        "_source": {
+          "title": "M 5.4 - 81 km SSW of Nikolski, Alaska",
+          "time": "2025-09-06T20:40:42.434000Z",
+          "longitude": -169.4988,
+          "depth": 37.69,
+          "magnitude": 5.4,
+          "latitude": 52.3153,
+          "place": "81 km SSW of Nikolski, Alaska"
+        },
+        "highlight": {
+          "place": [
+            "81 km SSW of Nikolski, <em>Alaska</em>"
+          ]
+        },
+        "sort": [
+          5.4
+        ]
+      },
+      {
+        "_index": "earthquakes",
+        "_id": "us7000qd56",
+        "_score": null,
+        "_source": {
+          "title": "M 5.4 - 93 km SSE of Sand Point, Alaska",
+          "time": "2025-07-16T20:42:15.037000Z",
+          "longitude": -159.8086,
+          "depth": 43.905,
+          "magnitude": 5.4,
+          "latitude": 54.5973,
+          "place": "93 km SSE of Sand Point, Alaska"
+        },
+        "highlight": {
+          "place": [
+            "93 km SSE of Sand Point, <em>Alaska</em>"
+          ]
+        },
+        "sort": [
+          5.4
+        ]
+      },
+      {
+        "_index": "earthquakes",
+        "_id": "ak025a7d7cil",
+        "_score": null,
+        "_source": {
+          "title": "M 5.4 Landslide - 44 km NNE of Hobart Bay, Alaska",
+          "time": "2025-08-10T13:26:43.390000Z",
+          "longitude": -133.09,
+          "depth": 0,
+          "magnitude": 5.4,
+          "latitude": 57.84,
+          "place": "44 km NNE of Hobart Bay, Alaska"
+        },
+        "highlight": {
+          "place": [
+            "44 km NNE of Hobart Bay, <em>Alaska</em>"
+          ]
+        },
+        "sort": [
+          5.4
+        ]
+      },
+      {
+        "_index": "earthquakes",
+        "_id": "ak025dxe5mlz",
+        "_score": null,
+        "_source": {
+          "title": "M 5.4 - 48 km ESE of Fox River, Alaska",
+          "time": "2025-10-30T17:33:14.566000Z",
+          "longitude": -150.2328,
+          "depth": 23.6,
+          "magnitude": 5.4,
+          "latitude": 59.6308,
+          "place": "48 km ESE of Fox River, Alaska"
+        },
+        "highlight": {
+          "place": [
+            "48 km ESE of Fox River, <em>Alaska</em>"
+          ]
+        },
+        "sort": [
+          5.4
+        ]
+      },
+      {
+        "_index": "earthquakes",
+        "_id": "us6000qvj2",
+        "_score": null,
+        "_source": {
+          "title": "M 5.3 - 23 km N of Dutch Harbor, Alaska",
+          "time": "2025-07-27T22:47:05.173000Z",
+          "longitude": -166.602,
+          "depth": 83,
+          "magnitude": 5.3,
+          "latitude": 54.0969,
+          "place": "23 km N of Dutch Harbor, Alaska"
+        },
+        "highlight": {
+          "place": [
+            "23 km N of Dutch Harbor, <em>Alaska</em>"
+          ]
+        },
+        "sort": [
+          5.3
+        ]
+      },
+      {
+        "_index": "earthquakes",
+        "_id": "us7000rrv2",
+        "_score": null,
+        "_source": {
+          "title": "M 5.3 - 39 km E of Adak, Alaska",
+          "time": "2026-01-24T21:25:38.988000Z",
+          "longitude": -176.0693,
+          "depth": 61.185,
+          "magnitude": 5.3,
+          "latitude": 51.9223,
+          "place": "39 km E of Adak, Alaska"
+        },
+        "highlight": {
+          "place": [
+            "39 km E of Adak, <em>Alaska</em>"
+          ]
+        },
+        "sort": [
+          5.3
+        ]
+      },
+      {
+        "_index": "earthquakes",
+        "_id": "us6000qv9g",
+        "_score": null,
+        "_source": {
+          "title": "M 5.3 - Rat Islands, Aleutian Islands, Alaska",
+          "time": "2025-07-26T05:03:53.539000Z",
+          "longitude": 178.3992,
+          "depth": 89.851,
+          "magnitude": 5.3,
+          "latitude": 51.6717,
+          "place": "Rat Islands, Aleutian Islands, Alaska"
+        },
+        "highlight": {
+          "place": [
+            "Rat Islands, Aleutian Islands, <em>Alaska</em>"
+          ]
+        },
+        "sort": [
+          5.3
+        ]
+      },
+      {
+        "_index": "earthquakes",
+        "_id": "us7000rlum",
+        "_score": null,
+        "_source": {
+          "title": "M 5.3 - 113 km NNW of Yakutat, Alaska",
+          "time": "2026-01-01T06:54:58.529000Z",
+          "longitude": -140.1891,
+          "depth": 5,
+          "magnitude": 5.3,
+          "latitude": 60.5426,
+          "place": "113 km NNW of Yakutat, Alaska"
+        },
+        "highlight": {
+          "place": [
+            "113 km NNW of Yakutat, <em>Alaska</em>"
+          ]
+        },
+        "sort": [
+          5.3
+        ]
+      },
+      {
+        "_index": "earthquakes",
+        "_id": "us6000pzxa",
+        "_score": null,
+        "_source": {
+          "title": "M 5.2 - 87 km SSE of Adak, Alaska",
+          "time": "2025-03-20T06:07:08.453000Z",
+          "longitude": -176.1211,
+          "depth": 20,
+          "magnitude": 5.2,
+          "latitude": 51.1529,
+          "place": "87 km SSE of Adak, Alaska"
+        },
+        "highlight": {
+          "place": [
+            "87 km SSE of Adak, <em>Alaska</em>"
+          ]
+        },
+        "sort": [
+          5.2
+        ]
+      },
+      {
+        "_index": "earthquakes",
+        "_id": "us6000q6d9",
+        "_score": null,
+        "_source": {
+          "title": "M 5.2 - 148 km WSW of Adak, Alaska",
+          "time": "2025-04-16T03:49:49.517000Z",
+          "longitude": -178.4701,
+          "depth": 35,
+          "magnitude": 5.2,
+          "latitude": 51.1962,
+          "place": "148 km WSW of Adak, Alaska"
+        },
+        "highlight": {
+          "place": [
+            "148 km WSW of Adak, <em>Alaska</em>"
+          ]
+        },
+        "sort": [
+          5.2
+        ]
+      },
+      {
+        "_index": "earthquakes",
+        "_id": "us7000q103",
+        "_score": null,
+        "_source": {
+          "title": "M 5.2 - 132 km SE of Akutan, Alaska",
+          "time": "2025-05-23T02:30:40.264000Z",
+          "longitude": -164.4101,
+          "depth": 10,
+          "magnitude": 5.2,
+          "latitude": 53.2659,
+          "place": "132 km SE of Akutan, Alaska"
+        },
+        "highlight": {
+          "place": [
+            "132 km SE of Akutan, <em>Alaska</em>"
+          ]
+        },
+        "sort": [
+          5.2
+        ]
+      },
+      {
+        "_index": "earthquakes",
+        "_id": "us7000q9an",
+        "_score": null,
+        "_source": {
+          "title": "M 5.2 - 162 km S of Nikolski, Alaska",
+          "time": "2025-06-28T06:08:19.722000Z",
+          "longitude": -168.5835,
+          "depth": 10,
+          "magnitude": 5.2,
+          "latitude": 51.4887,
+          "place": "162 km S of Nikolski, Alaska"
+        },
+        "highlight": {
+          "place": [
+            "162 km S of Nikolski, <em>Alaska</em>"
+          ]
+        },
+        "sort": [
+          5.2
+        ]
+      },
+      {
+        "_index": "earthquakes",
+        "_id": "us7000qd2q",
+        "_score": null,
+        "_source": {
+          "title": "M 5.2 - 102 km SSE of Sand Point, Alaska",
+          "time": "2025-07-16T22:10:49.007000Z",
+          "longitude": -160.1583,
+          "depth": 20.875,
+          "magnitude": 5.2,
+          "latitude": 54.4357,
+          "place": "102 km SSE of Sand Point, Alaska"
+        },
+        "highlight": {
+          "place": [
+            "102 km SSE of Sand Point, <em>Alaska</em>"
+          ]
+        },
+        "sort": [
+          5.2
+        ]
+      },
+      {
+        "_index": "earthquakes",
+        "_id": "us7000qd49",
+        "_score": null,
+        "_source": {
+          "title": "M 5.2 - 85 km SSE of Sand Point, Alaska",
+          "time": "2025-07-17T02:09:43.868000Z",
+          "longitude": -160.0357,
+          "depth": 35,
+          "magnitude": 5.2,
+          "latitude": 54.6162,
+          "place": "85 km SSE of Sand Point, Alaska"
+        },
+        "highlight": {
+          "place": [
+            "85 km SSE of Sand Point, <em>Alaska</em>"
+          ]
+        },
+        "sort": [
+          5.2
+        ]
+      },
+      {
+        "_index": "earthquakes",
+        "_id": "us6000r0sy",
+        "_score": null,
+        "_source": {
+          "title": "M 5.2 - 144 km SSW of Nikolski, Alaska",
+          "time": "2025-08-14T18:00:55.356000Z",
+          "longitude": -170.0196,
+          "depth": 10,
+          "magnitude": 5.2,
+          "latitude": 51.8539,
+          "place": "144 km SSW of Nikolski, Alaska"
+        },
+        "highlight": {
+          "place": [
+            "144 km SSW of Nikolski, <em>Alaska</em>"
+          ]
+        },
+        "sort": [
+          5.2
+        ]
+      },
+      {
+        "_index": "earthquakes",
+        "_id": "us7000qtwh",
+        "_score": null,
+        "_source": {
+          "title": "M 5.2 - 92 km SSW of Nikolski, Alaska",
+          "time": "2025-09-04T19:54:26.248000Z",
+          "longitude": -169.4297,
+          "depth": 35,
+          "magnitude": 5.2,
+          "latitude": 52.1859,
+          "place": "92 km SSW of Nikolski, Alaska"
+        },
+        "highlight": {
+          "place": [
+            "92 km SSW of Nikolski, <em>Alaska</em>"
+          ]
+        },
+        "sort": [
+          5.2
+        ]
+      },
+      {
+        "_index": "earthquakes",
+        "_id": "us7000qtvy",
+        "_score": null,
+        "_source": {
+          "title": "M 5.2 - 94 km SSW of Nikolski, Alaska",
+          "time": "2025-09-04T19:01:14.016000Z",
+          "longitude": -169.4951,
+          "depth": 35,
+          "magnitude": 5.2,
+          "latitude": 52.1866,
+          "place": "94 km SSW of Nikolski, Alaska"
+        },
+        "highlight": {
+          "place": [
+            "94 km SSW of Nikolski, <em>Alaska</em>"
+          ]
+        },
+        "sort": [
+          5.2
+        ]
+      },
+      {
+        "_index": "earthquakes",
+        "_id": "us6000rt1y",
+        "_score": null,
+        "_source": {
+          "title": "M 5.2 - 114 km N of Yakutat, Alaska",
+          "time": "2025-12-07T04:20:37.162000Z",
+          "longitude": -140.0066,
+          "depth": 7.321,
+          "magnitude": 5.2,
+          "latitude": 60.5616,
+          "place": "114 km N of Yakutat, Alaska"
+        },
+        "highlight": {
+          "place": [
+            "114 km N of Yakutat, <em>Alaska</em>"
+          ]
+        },
+        "sort": [
+          5.2
+        ]
+      },
+      {
+        "_index": "earthquakes",
+        "_id": "us6000rsy4",
+        "_score": null,
+        "_source": {
+          "title": "M 5.2 - 93 km NNE of Yakutat, Alaska",
+          "time": "2025-12-06T20:46:10.622000Z",
+          "longitude": -139.4012,
+          "depth": 5,
+          "magnitude": 5.2,
+          "latitude": 60.3673,
+          "place": "93 km NNE of Yakutat, Alaska"
+        },
+        "highlight": {
+          "place": [
+            "93 km NNE of Yakutat, <em>Alaska</em>"
+          ]
+        },
+        "sort": [
+          5.2
+        ]
+      },
+      {
+        "_index": "earthquakes",
+        "_id": "us7000rrfr",
+        "_score": null,
+        "_source": {
+          "title": "M 5.2 - 123 km SSE of Sand Point, Alaska",
+          "time": "2026-01-22T19:38:50.090000Z",
+          "longitude": -159.8366,
+          "depth": 35.767,
+          "magnitude": 5.2,
+          "latitude": 54.2946,
+          "place": "123 km SSE of Sand Point, Alaska"
+        },
+        "highlight": {
+          "place": [
+            "123 km SSE of Sand Point, <em>Alaska</em>"
+          ]
+        },
+        "sort": [
+          5.2
+        ]
+      },
+      {
+        "_index": "earthquakes",
+        "_id": "ak02546kb91j",
+        "_score": null,
+        "_source": {
+          "title": "M 5.1 - 59 km E of Egegik, Alaska",
+          "time": "2025-04-01T04:04:36.944000Z",
+          "longitude": -156.3782,
+          "depth": 12.7,
+          "magnitude": 5.1,
+          "latitude": 58.1204,
+          "place": "59 km E of Egegik, Alaska"
+        },
+        "highlight": {
+          "place": [
+            "59 km E of Egegik, <em>Alaska</em>"
+          ]
+        },
+        "sort": [
+          5.1
+        ]
+      },
+      {
+        "_index": "earthquakes",
+        "_id": "us7000qd41",
+        "_score": null,
+        "_source": {
+          "title": "M 5.1 - 86 km SSE of Sand Point, Alaska",
+          "time": "2025-07-17T01:12:21.887000Z",
+          "longitude": -160.2217,
+          "depth": 36.468,
+          "magnitude": 5.1,
+          "latitude": 54.5747,
+          "place": "86 km SSE of Sand Point, Alaska"
+        },
+        "highlight": {
+          "place": [
+            "86 km SSE of Sand Point, <em>Alaska</em>"
+          ]
+        },
+        "sort": [
+          5.1
+        ]
+      },
+      {
+        "_index": "earthquakes",
+        "_id": "us7000qwg4",
+        "_score": null,
+        "_source": {
+          "title": "M 5.1 - 130 km SSW of Nikolski, Alaska",
+          "time": "2025-09-16T09:02:37.586000Z",
+          "longitude": -169.6612,
+          "depth": 26.935,
+          "magnitude": 5.1,
+          "latitude": 51.8776,
+          "place": "130 km SSW of Nikolski, Alaska"
+        },
+        "highlight": {
+          "place": [
+            "130 km SSW of Nikolski, <em>Alaska</em>"
+          ]
+        },
+        "sort": [
+          5.1
+        ]
+      },
+      {
+        "_index": "earthquakes",
+        "_id": "us7000qucj",
+        "_score": null,
+        "_source": {
+          "title": "M 5.1 - 141 km SSE of Sand Point, Alaska",
+          "time": "2025-09-06T06:25:25.833000Z",
+          "longitude": -159.9425,
+          "depth": 10,
+          "magnitude": 5.1,
+          "latitude": 54.1089,
+          "place": "141 km SSE of Sand Point, Alaska"
+        },
+        "highlight": {
+          "place": [
+            "141 km SSE of Sand Point, <em>Alaska</em>"
+          ]
+        },
+        "sort": [
+          5.1
+        ]
+      },
+      {
+        "_index": "earthquakes",
+        "_id": "us6000rt9a",
+        "_score": null,
+        "_source": {
+          "title": "M 5.1 - 109 km N of Yakutat, Alaska",
+          "time": "2025-12-07T23:50:34.471000Z",
+          "longitude": -139.9162,
+          "depth": 5,
+          "magnitude": 5.1,
+          "latitude": 60.5259,
+          "place": "109 km N of Yakutat, Alaska"
+        },
+        "highlight": {
+          "place": [
+            "109 km N of Yakutat, <em>Alaska</em>"
+          ]
+        },
+        "sort": [
+          5.1
+        ]
+      },
+      {
+        "_index": "earthquakes",
+        "_id": "us7000rrjh",
+        "_score": null,
+        "_source": {
+          "title": "M 5.1 - 293 km ESE of Attu Station, Alaska",
+          "time": "2026-01-23T08:25:41.388000Z",
+          "longitude": 177.3723,
+          "depth": 10,
+          "magnitude": 5.1,
+          "latitude": 52.1792,
+          "place": "293 km ESE of Attu Station, Alaska"
+        },
+        "highlight": {
+          "place": [
+            "293 km ESE of Attu Station, <em>Alaska</em>"
+          ]
+        },
+        "sort": [
+          5.1
+        ]
+      },
+      {
+        "_index": "earthquakes",
+        "_id": "us7000rlhy",
+        "_score": null,
+        "_source": {
+          "title": "M 5.1 - 97 km N of Yakutat, Alaska",
+          "time": "2025-12-30T10:17:19.055000Z",
+          "longitude": -139.56,
+          "depth": 5,
+          "magnitude": 5.1,
+          "latitude": 60.4206,
+          "place": "97 km N of Yakutat, Alaska"
+        },
+        "highlight": {
+          "place": [
+            "97 km N of Yakutat, <em>Alaska</em>"
+          ]
+        },
+        "sort": [
+          5.1
+        ]
+      },
+      {
+        "_index": "earthquakes",
+        "_id": "us6000s5ul",
+        "_score": null,
+        "_source": {
+          "title": "M 5.1 - 40 km E of Adak, Alaska",
+          "time": "2026-02-01T12:43:08.296000Z",
+          "longitude": -176.0392,
+          "depth": 61.756,
+          "magnitude": 5.1,
+          "latitude": 51.8631,
+          "place": "40 km E of Adak, Alaska"
+        },
+        "highlight": {
+          "place": [
+            "40 km E of Adak, <em>Alaska</em>"
+          ]
+        },
+        "sort": [
+          5.1
+        ]
+      },
+      {
+        "_index": "earthquakes",
+        "_id": "us6000qvdz",
+        "_score": null,
+        "_source": {
+          "title": "M 5.1 - Rat Islands, Aleutian Islands, Alaska",
+          "time": "2025-07-26T23:09:39.073000Z",
+          "longitude": 178.2398,
+          "depth": 135.161,
+          "magnitude": 5.1,
+          "latitude": 52.0667,
+          "place": "Rat Islands, Aleutian Islands, Alaska"
+        },
+        "highlight": {
+          "place": [
+            "Rat Islands, Aleutian Islands, <em>Alaska</em>"
+          ]
+        },
+        "sort": [
+          5.1
+        ]
+      }
+    ]
+  },
+  "aggregations": {
+    "mag_distribution": {
+      "buckets": [
+        {
+          "key": 2.0,
+          "doc_count": 8561
+        },
+        {
+          "key": 2.5,
+          "doc_count": 3789
+        },
+        {
+          "key": 3.0,
+          "doc_count": 1774
+        },
+        {
+          "key": 3.5,
+          "doc_count": 670
+        },
+        {
+          "key": 4.0,
+          "doc_count": 280
+        },
+        {
+          "key": 4.5,
+          "doc_count": 104
+        },
+        {
+          "key": 5.0,
+          "doc_count": 44
+        },
+        {
+          "key": 5.5,
+          "doc_count": 15
+        },
+        {
+          "key": 6.0,
+          "doc_count": 4
+        },
+        {
+          "key": 6.5,
+          "doc_count": 0
+        },
+        {
+          "key": 7.0,
+          "doc_count": 1
+        }
+      ]
+    },
+    "mag_stats_alaska": {
+      "count": 15242,
+      "min": 2.0,
+      "max": 7.300000190734863,
+      "avg": 2.5357640883128267,
+      "sum": 38650.1162340641,
+      "sum_of_squares": 102924.74910682483,
+      "variance": 0.32260676757436685,
+      "variance_population": 0.32260676757436685,
+      "variance_sampling": 0.322627934608523,
+      "std_deviation": 0.5679848304086711,
+      "std_deviation_population": 0.5679848304086711,
+      "std_deviation_sampling": 0.5680034635532807,
+      "std_deviation_bounds": {
+        "upper": 3.671733749130169,
+        "lower": 1.3997944274954846,
+        "upper_population": 3.671733749130169,
+        "lower_population": 1.3997944274954846,
+        "upper_sampling": 3.671771015419388,
+        "lower_sampling": 1.3997571612062654
+      }
+    },
+    "top_lieux": {
+      "doc_count_error_upper_bound": 0,
+      "sum_other_doc_count": 13703,
+      "buckets": [
+        {
+          "key": "Rat Islands, Aleutian Islands, Alaska",
+          "doc_count": 236
+        },
+        {
+          "key": "112 km N of Yakutat, Alaska",
+          "doc_count": 179
+        },
+        {
+          "key": "113 km N of Yakutat, Alaska",
+          "doc_count": 179
+        },
+        {
+          "key": "114 km N of Yakutat, Alaska",
+          "doc_count": 168
+        },
+        {
+          "key": "111 km N of Yakutat, Alaska",
+          "doc_count": 158
+        },
+        {
+          "key": "115 km N of Yakutat, Alaska",
+          "doc_count": 133
+        },
+        {
+          "key": "108 km N of Yakutat, Alaska",
+          "doc_count": 129
+        },
+        {
+          "key": "116 km N of Yakutat, Alaska",
+          "doc_count": 125
+        },
+        {
+          "key": "110 km N of Yakutat, Alaska",
+          "doc_count": 117
+        },
+        {
+          "key": "107 km N of Yakutat, Alaska",
+          "doc_count": 115
+        }
+      ]
+    }
+  }
+}

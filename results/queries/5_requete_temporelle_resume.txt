@@ -1,0 +1,44 @@
+=================================================================
+  5_requete_temporelle
+  Serie hebdo + moving_fn + cumulative_sum
+=================================================================
+Temps d'execution : 174 ms
+Resultats totaux  : 10000
+
+--- Agregations ---
+
+  [timeline_hebdo] (52 buckets)
+    2025-03-03: 456 docs  nb_seismes=456 | magnitude_moyenne=3.31 | profondeur_moyenne=58.52 | magnitude_max=6.00 | magnitude_min=2.00 | cumul_seismes=456.00
+    2025-03-10: 656 docs  nb_seismes=656 | magnitude_moyenne=3.26 | profondeur_moyenne=55.73 | magnitude_max=6.50 | magnitude_min=2.00 | moving_avg_magnitude=3.31 | cumul_seismes=1112.00
+    2025-03-17: 961 docs  nb_seismes=961 | magnitude_moyenne=3.15 | profondeur_moyenne=45.44 | magnitude_max=6.20 | magnitude_min=2.00 | moving_avg_magnitude=3.28 | cumul_seismes=2073.00
+    2025-03-24: 717 docs  nb_seismes=717 | magnitude_moyenne=3.29 | profondeur_moyenne=55.87 | magnitude_max=7.70 | magnitude_min=2.00 | moving_avg_magnitude=3.24 | cumul_seismes=2790.00
+    2025-03-31: 845 docs  nb_seismes=845 | magnitude_moyenne=3.56 | profondeur_moyenne=49.79 | magnitude_max=6.90 | magnitude_min=2.00 | moving_avg_magnitude=3.23 | cumul_seismes=3635.00
+    2025-04-07: 690 docs  nb_seismes=690 | magnitude_moyenne=3.34 | profondeur_moyenne=54.33 | magnitude_max=6.50 | magnitude_min=2.00 | moving_avg_magnitude=3.34 | cumul_seismes=4325.00
+    2025-04-14: 711 docs  nb_seismes=711 | magnitude_moyenne=3.33 | profondeur_moyenne=52.85 | magnitude_max=6.60 | magnitude_min=2.00 | moving_avg_magnitude=3.40 | cumul_seismes=5036.00
+    2025-04-21: 688 docs  nb_seismes=688 | magnitude_moyenne=3.23 | profondeur_moyenne=56.01 | magnitude_max=6.30 | magnitude_min=2.00 | moving_avg_magnitude=3.41 | cumul_seismes=5724.00
+    2025-04-28: 725 docs  nb_seismes=725 | magnitude_moyenne=3.57 | profondeur_moyenne=50.81 | magnitude_max=7.40 | magnitude_min=2.00 | moving_avg_magnitude=3.30 | cumul_seismes=6449.00
+    2025-05-05: 682 docs  nb_seismes=682 | magnitude_moyenne=3.31 | profondeur_moyenne=60.93 | magnitude_max=6.00 | magnitude_min=2.00 | moving_avg_magnitude=3.38 | cumul_seismes=7131.00
+    2025-05-12: 637 docs  nb_seismes=637 | magnitude_moyenne=3.25 | profondeur_moyenne=50.30 | magnitude_max=6.40 | magnitude_min=2.00 | moving_avg_magnitude=3.37 | cumul_seismes=7768.00
+    2025-05-19: 610 docs  nb_seismes=610 | magnitude_moyenne=3.29 | profondeur_moyenne=49.92 | magnitude_max=6.50 | magnitude_min=2.00 | moving_avg_magnitude=3.38 | cumul_seismes=8378.00
+    2025-05-26: 700 docs  nb_seismes=700 | magnitude_moyenne=3.35 | profondeur_moyenne=54.07 | magnitude_max=6.20 | magnitude_min=2.00 | moving_avg_magnitude=3.28 | cumul_seismes=9078.00
+    2025-06-02: 771 docs  nb_seismes=771 | magnitude_moyenne=3.15 | profondeur_moyenne=47.98 | magnitude_max=6.40 | magnitude_min=2.00 | moving_avg_magnitude=3.30 | cumul_seismes=9849.00
+    2025-06-09: 628 docs  nb_seismes=628 | magnitude_moyenne=3.23 | profondeur_moyenne=47.71 | magnitude_max=6.00 | magnitude_min=2.00 | moving_avg_magnitude=3.26 | cumul_seismes=10477.00
+    2025-06-16: 690 docs  nb_seismes=690 | magnitude_moyenne=3.38 | profondeur_moyenne=52.36 | magnitude_max=6.00 | magnitude_min=2.00 | moving_avg_magnitude=3.24 | cumul_seismes=11167.00
+    2025-06-23: 743 docs  nb_seismes=743 | magnitude_moyenne=3.39 | profondeur_moyenne=50.06 | magnitude_max=6.60 | magnitude_min=2.00 | moving_avg_magnitude=3.25 | cumul_seismes=11910.00
+    2025-06-30: 724 docs  nb_seismes=724 | magnitude_moyenne=3.39 | profondeur_moyenne=48.27 | magnitude_max=5.60 | magnitude_min=2.00 | moving_avg_magnitude=3.33 | cumul_seismes=12634.00
+    2025-07-07: 657 docs  nb_seismes=657 | magnitude_moyenne=3.40 | profondeur_moyenne=58.95 | magnitude_max=6.20 | magnitude_min=2.00 | moving_avg_magnitude=3.39 | cumul_seismes=13291.00
+    2025-07-14: 2166 docs  nb_seismes=2166 | magnitude_moyenne=2.96 | profondeur_moyenne=31.80 | magnitude_max=7.40 | magnitude_min=2.00 | moving_avg_magnitude=3.39 | cumul_seismes=15457.00
+
+  [repartition_mois] (12 buckets)
+    2025-03: 2901 docs  magnitude_moyenne_mois=3.24
+    2025-04: 3107 docs  magnitude_moyenne_mois=3.38
+    2025-05: 2978 docs  magnitude_moyenne_mois=3.36
+    2025-06: 3021 docs  magnitude_moyenne_mois=3.29
+    2025-07: 6127 docs  magnitude_moyenne_mois=3.40
+    2025-08: 4261 docs  magnitude_moyenne_mois=3.53
+    2025-09: 2936 docs  magnitude_moyenne_mois=3.64
+    2025-10: 2757 docs  magnitude_moyenne_mois=3.62
+    2025-11: 2929 docs  magnitude_moyenne_mois=3.40
+    2025-12: 5626 docs  magnitude_moyenne_mois=2.89
+    2026-01: 3324 docs  magnitude_moyenne_mois=3.25
+    2026-02: 2668 docs  magnitude_moyenne_mois=3.06

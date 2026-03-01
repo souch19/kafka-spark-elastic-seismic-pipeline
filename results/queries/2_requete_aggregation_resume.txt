@@ -1,0 +1,26 @@
+=================================================================
+  2_requete_aggregation
+  Pipeline agg : percentiles, cardinality, range profondeur
+=================================================================
+Temps d'execution : 285 ms
+Resultats totaux  : 10000
+
+--- Agregations ---
+
+  [par_tranche_profondeur] (4 buckets)
+    superficiel (0-10 km): 10413 docs  mag_max=7.60 | mag_moyenne=2.48
+    peu profond (10-70 km): 24906 docs  mag_max=8.80 | mag_moyenne=3.57
+    intermediaire (70-300 km): 5985 docs  mag_max=6.70 | mag_moyenne=3.62
+    profond (300+ km): 1065 docs  mag_max=7.10 | mag_moyenne=4.38
+
+  [par_mag_type] (10 buckets)
+    ml: 20445 docs  profondeur_moyenne=26.46 | nb_regions_distinctes=9837
+    mb: 15778 docs  profondeur_moyenne=76.83 | nb_regions_distinctes=10266
+    md: 4348 docs  profondeur_moyenne=20.13 | nb_regions_distinctes=2714
+    mww: 1399 docs  profondeur_moyenne=51.26 | nb_regions_distinctes=1120
+    mwr: 376 docs  profondeur_moyenne=27.60 | nb_regions_distinctes=360
+    mb_lg: 141 docs  profondeur_moyenne=7.26 | nb_regions_distinctes=139
+    mw: 139 docs  profondeur_moyenne=7.92 | nb_regions_distinctes=115
+    mwb: 6 docs  profondeur_moyenne=17.63 | nb_regions_distinctes=6
+    mh: 2 docs  profondeur_moyenne=8.87 | nb_regions_distinctes=2
+    ms_vx: 1 docs  profondeur_moyenne=0.00 | nb_regions_distinctes=1

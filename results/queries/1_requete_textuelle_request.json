@@ -1,0 +1,78 @@
+{
+  "size": 15,
+  "query": {
+    "bool": {
+      "must": [
+        {
+          "multi_match": {
+            "query": "California",
+            "fields": [
+              "place^3",
+              "title^2"
+            ],
+            "type": "best_fields"
+          }
+        }
+      ],
+      "filter": [
+        {
+          "range": {
+            "magnitude": {
+              "gte": 2.5
+            }
+          }
+        },
+        {
+          "term": {
+            "type": "earthquake"
+          }
+        }
+      ],
+      "should": [
+        {
+          "range": {
+            "magnitude": {
+              "gte": 4.5,
+              "boost": 2.0
+            }
+          }
+        },
+        {
+          "term": {
+            "tsunami": {
+              "value": 1,
+              "boost": 3.0
+            }
+          }
+        }
+      ],
+      "minimum_should_match": 0
+    }
+  },
+  "highlight": {
+    "fields": {
+      "place": {
+        "number_of_fragments": 1
+      },
+      "title": {
+        "number_of_fragments": 1
+      }
+    }
+  },
+  "sort": [
+    {
+      "_score": "desc"
+    },
+    {
+      "magnitude": "desc"
+    }
+  ],
+  "_source": [
+    "title",
+    "magnitude",
+    "place",
+    "time",
+    "depth",
+    "tsunami"
+  ]
+}

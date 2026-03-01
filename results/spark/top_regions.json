@@ -1,0 +1,142 @@
+[
+  {
+    "region": "Yakutat, Alaska",
+    "nombre_seismes": 3305,
+    "magnitude_moyenne": 2.42,
+    "magnitude_max": 5.800000190734863,
+    "profondeur_moyenne": 5.7
+  },
+  {
+    "region": "Sand Point, Alaska",
+    "nombre_seismes": 2665,
+    "magnitude_moyenne": 2.55,
+    "magnitude_max": 6.199999809265137,
+    "profondeur_moyenne": 22.1
+  },
+  {
+    "region": "Petropavlovsk-Kamchatsky, Russia",
+    "nombre_seismes": 1659,
+    "magnitude_moyenne": 4.51,
+    "magnitude_max": 7.800000190734863,
+    "profondeur_moyenne": 26.2
+  },
+  {
+    "region": "Adak, Alaska",
+    "nombre_seismes": 1465,
+    "magnitude_moyenne": 2.75,
+    "magnitude_max": 6.199999809265137,
+    "profondeur_moyenne": 45.5
+  },
+  {
+    "region": "Vilyuchinsk, Russia",
+    "nombre_seismes": 988,
+    "magnitude_moyenne": 4.55,
+    "magnitude_max": 6.199999809265137,
+    "profondeur_moyenne": 27.8
+  },
+  {
+    "region": "Severo-Kuril’sk, Russia",
+    "nombre_seismes": 901,
+    "magnitude_moyenne": 4.53,
+    "magnitude_max": 6.800000190734863,
+    "profondeur_moyenne": 36.7
+  },
+  {
+    "region": "Whites City, New Mexico",
+    "nombre_seismes": 641,
+    "magnitude_moyenne": 2.37,
+    "magnitude_max": 5.400000095367432,
+    "profondeur_moyenne": 6.3
+  },
+  {
+    "region": "Nikolski, Alaska",
+    "nombre_seismes": 640,
+    "magnitude_moyenne": 2.99,
+    "magnitude_max": 6.099999904632568,
+    "profondeur_moyenne": 27.4
+  },
+  {
+    "region": "Atka, Alaska",
+    "nombre_seismes": 491,
+    "magnitude_moyenne": 2.93,
+    "magnitude_max": 5.099999904632568,
+    "profondeur_moyenne": 55.6
+  },
+  {
+    "region": "Pāhala, Hawaii",
+    "nombre_seismes": 393,
+    "magnitude_moyenne": 2.4,
+    "magnitude_max": 4.199999809265137,
+    "profondeur_moyenne": 28.6
+  },
+  {
+    "region": "Ozernovskiy, Russia",
+    "nombre_seismes": 393,
+    "magnitude_moyenne": 4.49,
+    "magnitude_max": 6.099999904632568,
+    "profondeur_moyenne": 43.5
+  },
+  {
+    "region": "Indios, Puerto Rico",
+    "nombre_seismes": 370,
+    "magnitude_moyenne": 2.36,
+    "magnitude_max": 4.400000095367432,
+    "profondeur_moyenne": 14.8
+  },
+  {
+    "region": "False Pass, Alaska",
+    "nombre_seismes": 337,
+    "magnitude_moyenne": 2.56,
+    "magnitude_max": 4.599999904632568,
+    "profondeur_moyenne": 31.6
+  },
+  {
+    "region": "the Fiji Islands",
+    "nombre_seismes": 328,
+    "magnitude_moyenne": 4.48,
+    "magnitude_max": 6.599999904632568,
+    "profondeur_moyenne": 457.5
+  },
+  {
+    "region": "Petrolia, CA",
+    "nombre_seismes": 320,
+    "magnitude_moyenne": 2.63,
+    "magnitude_max": 4.699999809265137,
+    "profondeur_moyenne": 12.4
+  },
+  {
+    "region": "Toyah, Texas",
+    "nombre_seismes": 311,
+    "magnitude_moyenne": 2.28,
+    "magnitude_max": 3.5,
+    "profondeur_moyenne": 6.6
+  },
+  {
+    "region": "Kimbe, Papua New Guinea",
+    "nombre_seismes": 293,
+    "magnitude_moyenne": 4.57,
+    "magnitude_max": 6.900000095367432,
+    "profondeur_moyenne": 22.0
+  },
+  {
+    "region": "Akutan, Alaska",
+    "nombre_seismes": 289,
+    "magnitude_moyenne": 2.59,
+    "magnitude_max": 5.199999809265137,
+    "profondeur_moyenne": 40.8
+  },
+  {
+    "region": "South Sandwich Islands region",
+    "nombre_seismes": 280,
+    "magnitude_moyenne": 4.7,
+    "magnitude_max": 6.0,
+    "profondeur_moyenne": 41.1
+  },
+  {
+    "region": "Pedro Bay, Alaska",
+    "nombre_seismes": 262,
+    "magnitude_moyenne": 2.38,
+    "magnitude_max": 4.300000190734863,
+    "profondeur_moyenne": 123.5
+  }
+]

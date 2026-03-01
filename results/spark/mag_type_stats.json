@@ -1,0 +1,72 @@
+[
+  {
+    "mag_type": "ml",
+    "nombre": 20445,
+    "mag_moyenne": 2.46,
+    "mag_mediane": 2.299999952316284,
+    "prof_moyenne": 26.5
+  },
+  {
+    "mag_type": "mb",
+    "nombre": 15778,
+    "mag_moyenne": 4.43,
+    "mag_mediane": 4.400000095367432,
+    "prof_moyenne": 76.8
+  },
+  {
+    "mag_type": "md",
+    "nombre": 4348,
+    "mag_moyenne": 2.61,
+    "mag_mediane": 2.430000066757202,
+    "prof_moyenne": 20.1
+  },
+  {
+    "mag_type": "mww",
+    "nombre": 1399,
+    "mag_moyenne": 5.34,
+    "mag_mediane": 5.199999809265137,
+    "prof_moyenne": 51.3
+  },
+  {
+    "mag_type": "mwr",
+    "nombre": 376,
+    "mag_moyenne": 4.27,
+    "mag_mediane": 4.300000190734863,
+    "prof_moyenne": 27.6
+  },
+  {
+    "mag_type": "mb_lg",
+    "nombre": 141,
+    "mag_moyenne": 2.69,
+    "mag_mediane": 2.5999999046325684,
+    "prof_moyenne": 7.3
+  },
+  {
+    "mag_type": "mw",
+    "nombre": 139,
+    "mag_moyenne": 3.79,
+    "mag_mediane": 3.700000047683716,
+    "prof_moyenne": 7.9
+  },
+  {
+    "mag_type": "mwb",
+    "nombre": 6,
+    "mag_moyenne": 5.78,
+    "mag_mediane": 5.800000190734863,
+    "prof_moyenne": 17.6
+  },
+  {
+    "mag_type": "mh",
+    "nombre": 2,
+    "mag_moyenne": 2.3,
+    "mag_mediane": 2.200000047683716,
+    "prof_moyenne": 8.9
+  },
+  {
+    "mag_type": "ms_vx",
+    "nombre": 1,
+    "mag_moyenne": 4.9,
+    "mag_mediane": 4.900000095367432,
+    "prof_moyenne": 0.0
+  }
+]
