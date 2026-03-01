@@ -139,9 +139,7 @@ pipeline-earthquakes/
 |   |-- spark/                          # Resultats Spark (*.json, *.csv)
 |
 |-- screenshots/                        # Captures d'ecran (Kibana, Kafka, ES, Spark)
-|
-|-- rapport/
-    |-- rapport.tex                     # Rapport LaTeX complet
+
 ```
 
 ---
