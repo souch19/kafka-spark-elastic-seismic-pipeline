@@ -137,7 +137,8 @@ pipeline-earthquakes/
 |   |-- spark/                          # Resultats Spark (*.json, *.csv)
 |
 |-- rapport/
-|   |-- rapport.pdf  
+|   |-- rapport.pdf
+|
 |-- screenshots/                        # Captures d'ecran (Kibana, Kafka, ES, Spark)
 
 ```
